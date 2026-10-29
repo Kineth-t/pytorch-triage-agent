@@ -98,6 +98,7 @@ safe-outputs:
       - "proposal accepted"
       - "release-feature-request"
       - "OSS contribution wanted"
+      - "agentic-workflows"
       - "good first issue"
       - "newcomer"
       - "small"
