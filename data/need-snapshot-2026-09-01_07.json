@@ -1,0 +1,27 @@
+{
+  "source": "GitHub search API, unauthenticated, run by the assistant on 2026-10-27 (see AI-use statement)",
+  "query": "repo:pytorch/pytorch is:issue created:2026-09-01..2026-09-07",
+  "issues_total": 163,
+  "opened_by_bots": 21,
+  "human_issues_analysed": 133,
+  "author_association": {
+    "NONE": 90,
+    "CONTRIBUTOR": 29,
+    "COLLABORATOR": 14
+  },
+  "labels_now": {
+    "bot-triaged": 128,
+    "triaged": 116,
+    "triage review": 8,
+    "high priority": 10,
+    "no labels at all": 2
+  },
+  "state_now": {
+    "open/None": 86,
+    "closed/not_planned": 7,
+    "closed/completed": 38,
+    "closed/duplicate": 2
+  },
+  "zero_comments_now": 38,
+  "caveat": "Snapshot of CURRENT labels/state seven weeks later, not time-to-first-response. Use scripts/measure_need.py (authenticated) for timing metrics."
+}

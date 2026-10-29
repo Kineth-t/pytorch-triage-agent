@@ -1,0 +1,29 @@
+{
+  "id": "02-docs-feedback-no-info",
+  "action": "act",
+  "labels_required": [
+    "bot-triaged"
+  ],
+  "labels_optional": [
+    "module: docs",
+    "triage review"
+  ],
+  "labels_forbidden": [
+    "triaged",
+    "feature",
+    "enhancement"
+  ],
+  "comment": [
+    "request_more_info"
+  ],
+  "comment_alternatives": [],
+  "rationale": "One-line docs feedback ('no information') with a docs URL. Too little to act on: ask for details; module: docs is acceptable because the URL makes the area unambiguous.",
+  "reference_only": {
+    "upstream_labels_on": "2026-10-27",
+    "labels": [],
+    "state": "closed",
+    "state_reason": "completed",
+    "note": "Post-hoc information used ONLY to justify the expected outcome. Never shown to the agent."
+  },
+  "status": "DRAFT - review, edit if you disagree, then commit BEFORE the first run"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "13-noop-already-triaged",
+  "upstream": {
+    "repo": "pytorch/pytorch",
+    "number": 195694,
+    "url": "https://github.com/pytorch/pytorch/issues/195694",
+    "created_at": "2026-09-02T05:30:07Z",
+    "author_association": "COLLABORATOR"
+  },
+  "title": "[XPU] Migrate XPU support package to Intel OMIX in CI/CD",
+  "body": "## What is OMIX\n\n[Intel OMIX](https://dgpu-docs.intel.com/installation-guides/installing-omix.html) is Intel's consolidated distribution for XPU support packages. On Linux it bundles the GPU user-mode driver together with the oneAPI Deep Learning Essentials (DLE) runtime and development components into a single versioned package installed with the platform package manager, so one OMIX version identifies a driver and oneAPI runtime combination that Intel validates and releases together. As currently released, it lays its oneAPI components out under `/opt/intel/oneapi/` the same way the standalone DLE installer does.\n\n## Motivation\n\nPyTorch XPU Docker images install XPU support packages in two separate steps: the GPU driver from Intel repositories, then DLE from an offline installer. The two are versioned independently, and `install_xpu.sh` carries a separate driver install path per distribution and driver channel. OMIX collapses this into a single install and reduces the maintenance surface to one version number per image.\n\n## Proposal\n\nReplace the driver + DLE flow with a single OMIX install for **Linux** XPU images, covering both CI (Ubuntu) and CD (AlmaLinux manywheel). A new `OMIX_VERSION` build argument selects the method: set → OMIX, unset → existing DLE path, unchanged.\n\nThe OMIX releases we are targeting keep the oneAPI components under the same `/opt/intel/oneapi/` paths the DLE installer uses, so this change needs no edits to environment sourcing in `build.sh`, `test.sh`, `build_env_setup.py`, or the inductor `oneapi_root` config. If a future OMIX release relocates those components, that sourcing becomes part of the migration.\n\n| File | Change |\n|---|---|\n| `.ci/docker/common/install_xpu.sh` | OMIX install functions + `OMIX_VERSION`-gated dispatch |\n| `.ci/docker/build.sh` | Set `OMIX_VERSION` for XPU CI images + `--build-arg` pass-through |\n| `.ci/docker/ubuntu-xpu/Dockerfile` | `ARG OMIX_VERSION` |\n| `.ci/docker/manywheel/Dockerfile_2_28` | `ENV OMIX_VERSION` in the `xpu_final` stage |\n\n**Out of scope:** Windows CI/CD, the runtime pip pins in `generate_binary_build_matrix.py`, and the n-1 XPU CI image. Windows migration is planned for a future release; this plan will be updated as it progresses.\n\n## Compatibility and rollback\n\nThe legacy path is retained rather than deleted, so unsetting `OMIX_VERSION` restores previous behavior exactly — rollback is a one-line change, not a revert. Files under `.ci/docker/` are content-hashed, so this triggers a rebuild of the affected XPU images.\n\n## Related\n\n- PR: upstream issue 187900\n- Intel OMIX installation guide: https://dgpu-docs.intel.com/installation-guides/installing-omix.html\n",
+  "preset_labels": [
+    "module: xpu",
+    "triaged"
+  ],
+  "provenance": "Title/body fetched via GitHub search API on 2026-10-27 and sanitised by tools/sanitize.py. Only information present when the issue was opened is used; labels, comments and outcome are NOT part of the input. Limitation: the API returns the current body, so a later edit by the author would not be visible (no edit was observed for the selected cases; verify with tools/fetch_case.py --check-edits)."
+}

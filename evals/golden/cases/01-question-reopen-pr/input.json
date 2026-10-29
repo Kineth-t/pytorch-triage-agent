@@ -1,0 +1,14 @@
+{
+  "id": "01-question-reopen-pr",
+  "upstream": {
+    "repo": "pytorch/pytorch",
+    "number": 196218,
+    "url": "https://github.com/pytorch/pytorch/issues/196218",
+    "created_at": "2026-09-07T11:37:45Z",
+    "author_association": "CONTRIBUTOR"
+  },
+  "title": "[GITHUB] How is it possible to reopen a closed pull request?",
+  "body": "I can’t find a way to reopen a closed PR due to lack of access rights? Or is there any Command for PyTorch bot?\n",
+  "preset_labels": [],
+  "provenance": "Title/body fetched via GitHub search API on 2026-10-27 and sanitised by tools/sanitize.py. Only information present when the issue was opened is used; labels, comments and outcome are NOT part of the input. Limitation: the API returns the current body, so a later edit by the author would not be visible (no edit was observed for the selected cases; verify with tools/fetch_case.py --check-edits)."
+}

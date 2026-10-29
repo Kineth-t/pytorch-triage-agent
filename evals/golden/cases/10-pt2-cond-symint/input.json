@@ -1,0 +1,14 @@
+{
+  "id": "10-pt2-cond-symint",
+  "upstream": {
+    "repo": "pytorch/pytorch",
+    "number": 196207,
+    "url": "https://github.com/pytorch/pytorch/issues/196207",
+    "created_at": "2026-09-07T09:13:19Z",
+    "author_association": "NONE"
+  },
+  "title": "Support returning SymInt beyond constant integer in torch.cond",
+  "body": "### 🚀 The feature, motivation and pitch\n\nCurrent torch.cond supports returning a tuple of tensors or constant ints. When the true branch and the false branch returns different integer constants, the returned value will be merged into a SymInt type. However, there is currently no support for directly returning SymInt values in the true branch or false branch. This functionality is very helpful in real applications when doing tensor shape computation due to the fundamental nature of control flow. I believe this feature should be quite easy to implement as the SymInt return type is already largely available in torch.cond.\n\n### Alternatives\n\nThe feature is very simple so no need to provide alternatives.\n\n### Additional context\n\nThis functionality is crucial. Control-flow for SymInt computation can become much more powerful with this feature.\n",
+  "preset_labels": [],
+  "provenance": "Title/body fetched via GitHub search API on 2026-10-27 and sanitised by tools/sanitize.py. Only information present when the issue was opened is used; labels, comments and outcome are NOT part of the input. Limitation: the API returns the current body, so a later edit by the author would not be visible (no edit was observed for the selected cases; verify with tools/fetch_case.py --check-edits)."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "06-dataloader-prefetch-zero",
+  "upstream": {
+    "repo": "pytorch/pytorch",
+    "number": 196089,
+    "url": "https://github.com/pytorch/pytorch/issues/196089",
+    "created_at": "2026-09-05T03:31:24Z",
+    "author_association": "NONE"
+  },
+  "title": "DataLoader(prefetch_factor=0) constructs, then raises AssertionError on iterate",
+  "body": "I confirmed this on current pytorch `main`. The constructor allows 0, but the multiprocessing iterator requires a positive factor. Drafted with AI assistance; I reviewed the repro and the two checks.\n\n> ### 🐛 Describe the bug\n>\n> `DataLoader(..., num_workers>0, prefetch_factor=0)` constructs successfully, then fails on first iteration with `AssertionError`.\n>\n> ```python\n> import torch\n>\n> loader = torch.utils.data.DataLoader([1, 2], num_workers=1, prefetch_factor=0)\n> next(iter(loader))\n> # AssertionError: prefetch_factor must be greater than 0 for MultiProcessingDataLoaderIter\n> ```\n>\n> The constructor only rejects `prefetch_factor < 0` (`\"should be non-negative\"`). The iterator later requires `prefetch_factor > 0`. Zero is accepted at construction and rejected too late, with the wrong exception type.\n>\n> Negative values already raise `ValueError` at construction. Zero should do the same.\n>\n> ### Versions\n>\n> pytorch `main`.\n",
+  "preset_labels": [],
+  "provenance": "Title/body fetched via GitHub search API on 2026-10-27 and sanitised by tools/sanitize.py. Only information present when the issue was opened is used; labels, comments and outcome are NOT part of the input. Limitation: the API returns the current body, so a later edit by the author would not be visible (no edit was observed for the selected cases; verify with tools/fetch_case.py --check-edits)."
+}

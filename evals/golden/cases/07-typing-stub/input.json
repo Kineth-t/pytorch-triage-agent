@@ -1,0 +1,14 @@
+{
+  "id": "07-typing-stub",
+  "upstream": {
+    "repo": "pytorch/pytorch",
+    "number": 196122,
+    "url": "https://github.com/pytorch/pytorch/issues/196122",
+    "created_at": "2026-09-05T17:00:27Z",
+    "author_association": "CONTRIBUTOR"
+  },
+  "title": "[TYPING] `function.mse_loss` stub misses `weight` argument",
+  "body": "The stubs for some `torch.nn.functional` members seem to be out of sync, for instance the `weight` argument is missing for `mse_loss`:\n\nhttps://github.com/pytorch/pytorch/blob/2b3ec34829036a65cd9d1398ea72a0167dc37470/torch/nn/functional.pyi.in#L600-L606\n\nhttps://github.com/pytorch/pytorch/blob/2b3ec34829036a65cd9d1398ea72a0167dc37470/torch/nn/functional.py#L4271-L4278\n",
+  "preset_labels": [],
+  "provenance": "Title/body fetched via GitHub search API on 2026-10-27 and sanitised by tools/sanitize.py. Only information present when the issue was opened is used; labels, comments and outcome are NOT part of the input. Limitation: the API returns the current body, so a later edit by the author would not be visible (no edit was observed for the selected cases; verify with tools/fetch_case.py --check-edits)."
+}

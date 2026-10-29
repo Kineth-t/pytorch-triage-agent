@@ -1,0 +1,14 @@
+{
+  "id": "03-promotional-badge",
+  "upstream": {
+    "repo": "pytorch/pytorch",
+    "number": 196117,
+    "url": "https://github.com/pytorch/pytorch/issues/196117",
+    "created_at": "2026-09-05T14:58:24Z",
+    "author_association": "NONE"
+  },
+  "title": "Embed Agent-Friendly Score badge in README",
+  "body": "Hello team,\n\nI am working on a project that scores public codebases based on agent friendliness. And `pytorch` has scored 84.4 out of 100.\n\n[![Agent Friendly](https://agentfriendlycode.com/api/badge/github/pytorch/pytorch.svg)](https://agentfriendlycode.com/repo/15011)\n\n--\n\nYou can add the badge in your README to let the world know about it. You just need to copy and paste this snippet 👇\n```\n[![Agent Friendly](https://agentfriendlycode.com/api/badge/github/pytorch/pytorch.svg)](https://agentfriendlycode.com/repo/15011)\n```\n\n---\nhttps://www.agentfriendlycode.com/repo/15011\n\n<img width=\"1841\" height=\"1149\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/327b0208-046b-4538-9e81-17f8d51d7792\" />\n",
+  "preset_labels": [],
+  "provenance": "Title/body fetched via GitHub search API on 2026-10-27 and sanitised by tools/sanitize.py. Only information present when the issue was opened is used; labels, comments and outcome are NOT part of the input. Limitation: the API returns the current body, so a later edit by the author would not be visible (no edit was observed for the selected cases; verify with tools/fetch_case.py --check-edits)."
+}

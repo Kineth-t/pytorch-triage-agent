@@ -1,0 +1,5 @@
+.triage-context/
+__pycache__/
+*.pyc
+.DS_Store
+evals/golden/runs/*/logs/*/artifacts/**/*.tar

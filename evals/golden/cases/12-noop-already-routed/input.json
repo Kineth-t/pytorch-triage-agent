@@ -1,0 +1,16 @@
+{
+  "id": "12-noop-already-routed",
+  "upstream": {
+    "repo": "pytorch/pytorch",
+    "number": 196082,
+    "url": "https://github.com/pytorch/pytorch/issues/196082",
+    "created_at": "2026-09-05T00:44:28Z",
+    "author_association": "COLLABORATOR"
+  },
+  "title": "[symm_mem]: rendezvous on a subgroup hangs a later rendezvous on a larger group",
+  "body": "### 🐛 Describe the bug\n\n`symm_mem.rendezvous()` on a process group that excludes some ranks leaves the\nranks with mismatched store-exchange sequence numbers. A later rendezvous on a\ngroup that includes the excluded ranks then hangs forever.\n\nThis is on the default path and needs no special hardware or topology, only a\ngroup that is not a partition of the world.\n\nRepro (needs 3+ GPUs so a subgroup can exclude a rank):\n\n```python\n# torchrun --nproc_per_node=3 repro.py\nimport os\nimport torch\nimport torch.distributed as dist\nimport torch.distributed._symmetric_memory as symm_mem\n\nrank = int(os.environ[\"RANK\"])\nworld_size = int(os.environ[\"WORLD_SIZE\"])\ntorch.cuda.set_device(rank)\ndist.init_process_group(\"nccl\")\n\nsub_ranks = list(range(world_size - 1))  # excludes the last rank\nsubgroup = dist.new_group(sub_ranks)\n\nif rank in sub_ranks:\n    a = symm_mem.empty(64, device=f\"cuda:{rank}\")\n    symm_mem.rendezvous(a, subgroup)\ndist.barrier()\nif rank == 0:\n    print(\"STEP1 ok: rendezvous on the subgroup\", flush=True)\n\nb = symm_mem.empty(64, device=f\"cuda:{rank}\")\nsymm_mem.rendezvous(b, dist.group.WORLD)\nif rank == 0:\n    print(\"STEP2 ok: rendezvous on WORLD\", flush=True)\n\ndist.destroy_process_group()\n```\n\nExpected: both steps print.\nActual: `STEP1` prints, `STEP2` never does, all ranks block inside `rendezvous`.\n\n### Cause\n\n`StoreExchange` builds store keys as `\"<prefix>/<seq_id>/<rank>\"` and bumps a\nsingle process-global `seq_id_` per exchange\n(`CUDASymmetricMemoryUtils.hpp`), and the CUDA backend has one static\ninstance:\n\n```cpp\nstatic StoreExchange storeExchange = StoreExchange(\"CUDASymmetricMemory\");\n```\n\n`make_peer_alloc_info` runs several exchanges per rendezvous. On a subgroup\nrendezvous only the participating ranks run them, so the excluded ranks' counter\nfalls behind. The next rendezvous including those ranks has each side deriving a\ndifferent key, and it blocks.\n",
+  "preset_labels": [
+    "oncall: distributed"
+  ],
+  "provenance": "Title/body fetched via GitHub search API on 2026-10-27 and sanitised by tools/sanitize.py. Only information present when the issue was opened is used; labels, comments and outcome are NOT part of the input. Limitation: the API returns the current body, so a later edit by the author would not be visible (no edit was observed for the selected cases; verify with tools/fetch_case.py --check-edits)."
+}

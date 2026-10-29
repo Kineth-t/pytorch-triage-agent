@@ -1,0 +1,39 @@
+{
+  "id": "08-mps-lerp-silent-wrong",
+  "action": "act",
+  "labels_required": [
+    "module: mps",
+    "module: correctness (silent)",
+    "triage review",
+    "bot-triaged"
+  ],
+  "labels_optional": [
+    "module: half",
+    "module: bfloat16",
+    "module: regression"
+  ],
+  "labels_forbidden": [
+    "high priority",
+    "triaged"
+  ],
+  "comment": [],
+  "comment_alternatives": [],
+  "rationale": "Silent wrong results on MPS in a released version. Upstream marked it high priority. Policy: escalate with 'triage review'; never 'high priority' (blocked).",
+  "reference_only": {
+    "upstream_labels_on": "2026-10-27",
+    "labels": [
+      "high priority",
+      "triage review",
+      "module: bfloat16",
+      "module: half",
+      "module: correctness (silent)",
+      "module: mps",
+      "bot-triaged",
+      "release triage"
+    ],
+    "state": "closed",
+    "state_reason": "completed",
+    "note": "Post-hoc information used ONLY to justify the expected outcome. Never shown to the agent."
+  },
+  "status": "DRAFT - review, edit if you disagree, then commit BEFORE the first run"
+}

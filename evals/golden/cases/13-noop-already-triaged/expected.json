@@ -1,0 +1,23 @@
+{
+  "id": "13-noop-already-triaged",
+  "action": "noop",
+  "labels_required": [],
+  "labels_optional": [],
+  "labels_forbidden": [
+    "*"
+  ],
+  "comment": [],
+  "comment_alternatives": [],
+  "rationale": "Tracking issue opened by a collaborator who triaged it on creation. Policy step 1: already triaged -> noop.",
+  "reference_only": {
+    "upstream_labels_on": "2026-10-27",
+    "labels": [
+      "triaged",
+      "module: xpu"
+    ],
+    "state": "open",
+    "state_reason": null,
+    "note": "Post-hoc information used ONLY to justify the expected outcome. Never shown to the agent."
+  },
+  "status": "DRAFT - review, edit if you disagree, then commit BEFORE the first run"
+}

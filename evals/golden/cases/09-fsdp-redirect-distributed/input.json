@@ -1,0 +1,14 @@
+{
+  "id": "09-fsdp-redirect-distributed",
+  "upstream": {
+    "repo": "pytorch/pytorch",
+    "number": 195732,
+    "url": "https://github.com/pytorch/pytorch/issues/195732",
+    "created_at": "2026-09-02T13:42:05Z",
+    "author_association": "NONE"
+  },
+  "title": "[FSDP] World-size-one gradient division allocates a full-size temporary",
+  "body": "\n### Author's observation\n\nAscend NPU에서 FSDP world-size-one 구성의 backward 중 OOM을 관찰했습니다. 원인을 확인한 결과 gradient division이 (`reduce_output.copy_(reduce_scatter_input / gradient_divide_factor)`) degree가 1이어도 다음을 전체 크기 임시 텐서로 만들고 있어, 의미를 유지하면서 in-place 처리하여 Full-size 임시텐서를 수정하는 것이 필요하다고 판단했습니다.\n\n### AI-assisted English summary\n\n> The following English summary was prepared with an AI assistant to explain the author's observation above.\n>\n> In FSDP2 `foreach_reduce()`, a reduce-scatter group with world size one skips the collective. When `gradient_divide_factor` is set, the current world-size-one expression divides `reduce_scatter_input` out of place before copying the result into the already allocated `reduce_output`. The division therefore allocates another full-size tensor at the backward memory peak.\n>\n> A minimal regression check can configure a one-rank FSDP model with a custom gradient divide factor, run backward under `TorchDispatchMode`, and inspect the dispatched division operators. The current path dispatches an out-of-place `aten.div`; the world-size-one path should not require an additional full-size buffer for this scaling.\n\n### Versions\n\n> The original observation came from a 16-device DeepSeek-V4 training run on Ascend NPU where the relevant FSDP reduce-scatter group had world size one. A complete `collect_env.py` report from that remote run is not available in this macOS checkout.\n>\n> The inspected upstream source revision is `pytorch/pytorch@046f15d65a23d5a6683e0309ce202ba377e9c17c`.\n>\n> Related downstream report: https://gitcode.com/cann/torchtitan-npu/pull/684\n",
+  "preset_labels": [],
+  "provenance": "Title/body fetched via GitHub search API on 2026-10-27 and sanitised by tools/sanitize.py. Only information present when the issue was opened is used; labels, comments and outcome are NOT part of the input. Limitation: the API returns the current body, so a later edit by the author would not be visible (no edit was observed for the selected cases; verify with tools/fetch_case.py --check-edits)."
+}

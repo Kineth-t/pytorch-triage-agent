@@ -1,0 +1,30 @@
+{
+  "id": "07-typing-stub",
+  "action": "act",
+  "labels_required": [
+    "module: typing",
+    "bot-triaged"
+  ],
+  "labels_optional": [
+    "module: nn",
+    "module: loss"
+  ],
+  "labels_forbidden": [
+    "triaged"
+  ],
+  "comment": [],
+  "comment_alternatives": [],
+  "rationale": "Type stub missing an argument. Upstream: module: typing.",
+  "reference_only": {
+    "upstream_labels_on": "2026-10-27",
+    "labels": [
+      "module: typing",
+      "triaged",
+      "bot-triaged"
+    ],
+    "state": "open",
+    "state_reason": null,
+    "note": "Post-hoc information used ONLY to justify the expected outcome. Never shown to the agent."
+  },
+  "status": "DRAFT - review, edit if you disagree, then commit BEFORE the first run"
+}

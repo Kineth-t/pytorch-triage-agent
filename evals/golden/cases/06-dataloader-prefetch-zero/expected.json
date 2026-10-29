@@ -1,0 +1,30 @@
+{
+  "id": "06-dataloader-prefetch-zero",
+  "action": "act",
+  "labels_required": [
+    "module: dataloader",
+    "module: error checking",
+    "bot-triaged"
+  ],
+  "labels_optional": [],
+  "labels_forbidden": [
+    "triaged",
+    "oncall: *"
+  ],
+  "comment": [],
+  "comment_alternatives": [],
+  "rationale": "Bad argument accepted at construction and failing later: input validation in DataLoader. Matches upstream labels exactly.",
+  "reference_only": {
+    "upstream_labels_on": "2026-10-27",
+    "labels": [
+      "module: dataloader",
+      "module: error checking",
+      "triaged",
+      "bot-triaged"
+    ],
+    "state": "open",
+    "state_reason": null,
+    "note": "Post-hoc information used ONLY to justify the expected outcome. Never shown to the agent."
+  },
+  "status": "DRAFT - review, edit if you disagree, then commit BEFORE the first run"
+}

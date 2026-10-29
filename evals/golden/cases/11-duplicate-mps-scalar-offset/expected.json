@@ -1,0 +1,36 @@
+{
+  "id": "11-duplicate-mps-scalar-offset",
+  "action": "act",
+  "labels_required": [
+    "module: mps",
+    "module: correctness (silent)",
+    "triage review",
+    "bot-triaged"
+  ],
+  "labels_optional": [
+    "module: regression"
+  ],
+  "labels_forbidden": [
+    "high priority",
+    "triaged"
+  ],
+  "comment": [
+    "possible_duplicate"
+  ],
+  "comment_alternatives": [],
+  "duplicate_of_background": "bg-01-mps-scalar-offset",
+  "rationale": "Same defect as background issue bg-01 (upstream 191929, opened 8 days earlier): 0-dim CPU view with storage offset used in MPS arithmetic reads offset 0. Upstream closed it as a duplicate. Expected: flag possible duplicate in a comment, escalate, never close.",
+  "reference_only": {
+    "upstream_labels_on": "2026-10-27",
+    "labels": [
+      "triage review",
+      "module: correctness (silent)",
+      "module: mps",
+      "bot-triaged"
+    ],
+    "state": "closed",
+    "state_reason": "duplicate",
+    "note": "Post-hoc information used ONLY to justify the expected outcome. Never shown to the agent."
+  },
+  "status": "DRAFT - review, edit if you disagree, then commit BEFORE the first run"
+}

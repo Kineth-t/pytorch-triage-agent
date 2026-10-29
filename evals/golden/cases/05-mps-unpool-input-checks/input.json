@@ -1,0 +1,14 @@
+{
+  "id": "05-mps-unpool-input-checks",
+  "upstream": {
+    "repo": "pytorch/pytorch",
+    "number": 195849,
+    "url": "https://github.com/pytorch/pytorch/issues/195849",
+    "created_at": "2026-09-03T13:51:34Z",
+    "author_association": "NONE"
+  },
+  "title": "Unpooling operators skip input checks on MPS",
+  "body": "This code feeds completely invalid inputs to `max_unpool3d`. On CPU it fails saying \"elements in indices should be type int64 but got: Float\", but on MPS it returns an empty tensor. I also see it with `max_unpool2d`:\n```python\nimport torch\nimport torch.nn.functional as F\n\nx = torch.rand((2, 3, 4), dtype=torch.float32, device=\"mps\")\nindices = torch.rand((2, 3, 4), dtype=torch.float32, device=\"mps\")\n\ny = F.max_unpool3d(\n    x,\n    indices,\n    kernel_size=(1, 2, 3),\n    stride=(1, 2, 3),\n    padding=(1, 2, 3),\n)\nprint(y)\n```\n",
+  "preset_labels": [],
+  "provenance": "Title/body fetched via GitHub search API on 2026-10-27 and sanitised by tools/sanitize.py. Only information present when the issue was opened is used; labels, comments and outcome are NOT part of the input. Limitation: the API returns the current body, so a later edit by the author would not be visible (no edit was observed for the selected cases; verify with tools/fetch_case.py --check-edits)."
+}

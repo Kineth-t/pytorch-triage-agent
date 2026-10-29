@@ -1,0 +1,9 @@
+# Changes to the agent's configuration need the owner's review.
+# (Enforced once branch protection / a ruleset requires code-owner review on main.)
+/.github/                  @Kineth-t
+/.claude/                  @Kineth-t
+/AGENTS.md                 @Kineth-t
+/CONTRIBUTING.md           @Kineth-t
+/DESIGN.md                 @Kineth-t
+/evals/**/expected.json    @Kineth-t
+/scripts/                  @Kineth-t
