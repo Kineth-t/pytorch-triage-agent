@@ -2,10 +2,10 @@
   "id": "02-docs-feedback-no-info",
   "action": "act",
   "labels_required": [
+    "module: docs",
     "bot-triaged"
   ],
   "labels_optional": [
-    "module: docs",
     "triage review"
   ],
   "labels_forbidden": [
@@ -24,6 +24,5 @@
     "state": "closed",
     "state_reason": "completed",
     "note": "Post-hoc information used ONLY to justify the expected outcome. Never shown to the agent."
-  },
-  "status": "DRAFT - review, edit if you disagree, then commit BEFORE the first run"
+  }
 }

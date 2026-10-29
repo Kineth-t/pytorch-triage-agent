@@ -29,6 +29,5 @@
     "state": "open",
     "state_reason": null,
     "note": "Post-hoc information used ONLY to justify the expected outcome. Never shown to the agent."
-  },
-  "status": "DRAFT - review, edit if you disagree, then commit BEFORE the first run"
+  }
 }
