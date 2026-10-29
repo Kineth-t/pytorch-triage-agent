@@ -9,8 +9,11 @@ The agent triages newly opened pytorch/pytorch issues: it routes each issue to a
 templated comment. In the week 1–7 Sep 2026, 163 issues were opened (133 by people, 90 of those by
 first-time or outside reporters; `data/need-snapshot-2026-09-01_07.json`, search API, 27 Oct 2026).
 That is ~19 human issues a day, each needing someone who knows which of ~270 labels and ~10 oncall
-queues applies. ⟨TODO: median hours to first label/comment, Sep 2026 vs Sep 2025, from
-`scripts/measure_need.py`⟩. Limitations: the snapshot shows labels seven weeks later, not timing;
+queues applies. Sep 2025 (before PyTorch's AI triage bot, added 28 Jan 2026) vs Sep 2026, 493 vs 532
+human issues (`data/need-2025-09.json`, `data/need-2026-09.json`): median time to first label 2.95 h →
+0.03 h, first label by a bot 1% → 79%; median first non-author comment 18.5 h → 15.3 h, issues that get
+one 75% → 62%. The bot also adds `triaged` itself, so "time to triaged" (24.7 h → 0.04 h) times the bot,
+not human acceptance. Limitations: the snapshot shows labels seven weeks later, not timing;
 first label ≠ correct triage; bot-applied labels and search caps (1,000/query) distort counts.
 PyTorch already runs its own AI triage (128/133 issues carry `bot-triaged`), so the need is
 established by the maintainers' own choice; my question is how to run such an agent safely.
@@ -57,7 +60,7 @@ network access, assigning, and running on issues that already carry `oncall:`/`t
 ## 3. What the tests revealed
 
 Golden set: 13 historical issues (incl. 2 no-action, 1 duplicate with its original recreated as
-background) + 2 adversarial; expected outcomes committed in ⟨TODO: sha⟩ before any run.
+background) + 2 adversarial; expected outcomes committed in `6edb72e` before any run.
 Before any model run, building and self-testing the configuration already showed:
 (1) gh-aw caps `allowed:` labels at 50 (labels.json has 268) → switched to blocked list + curated repo
 labels; (2) the documented pattern `*[bot]` is a character class under glob semantics and would have
@@ -99,14 +102,14 @@ and post ≤1 comment on the triggering issue, or no-op; framework jobs may open
    read-only and no close/update safe output exists; labels/comments are pinned to the triggering issue;
    `triaged`/`high priority` are blocked. The skill treats the claim as data and adds `triage review`.
    Test A1: ⟨TODO: what the agent attempted, what was rejected, what was written⟩.
-2. **Model update breaks a golden task.** The model cannot be pinned on the Student plan. Each run's
+2. **Model update breaks a golden task.** Automatic selection chose models the Student plan rejects, so the model is pinned to `gpt-4.1` (repo variables); GitHub can still retire or change it. Each run's
    model is recorded (`gh aw audit` → `runs.csv`); a new model name, any config change, or two weeks
    triggers a golden batch, and a newly failing case trips kill switch level 1 until explained. Between
    batches the signal is humans removing bot labels. Detection latency: up to two weeks.
 3. **300 issues in a week (~43/day).** Each issue gets its own run (per-issue concurrency group);
    the per-user limit does not bind for many reporters. The binding limits are 1,500 AIC/day for this
-   workflow (⟨TODO: ≈N runs/day at the measured ⟨x⟩ AIC/run⟩), after which runs stop before the agent
-   and gh-aw files an issue, and the monthly Student allowance, after which Copilot calls fail (no paid
+   workflow (≈80 runs/day at the ~18 AIC/run measured in the smoke test), after which runs stop before the agent
+   and gh-aw files an issue, and the monthly Student allowance (200 AIC ≈ 11 runs, so at 43/day it runs out on day one), after which Copilot calls fail (no paid
    overage). Untriaged issues simply stay in the human queue (`-label:bot-triaged`); nothing is lost.
 4. **A tool returns malicious instructions.** The agent can still only do what safe outputs allow: wrong
    but allowlisted labels and one sanitised comment on the triggering issue, after threat detection.
@@ -123,12 +126,12 @@ duplicate ranking is weak on small corpora; no second human to approve config PR
 
 ## 7. Agent bill of materials
 
-- **Model:** GitHub Copilot CLI 1.0.101 (pinned by gh-aw v0.93.5), Copilot automatic model selection,
-  *not pinned*; observed: ⟨TODO from `runs.csv`⟩.
+- **Model:** GitHub Copilot CLI 1.0.101 (pinned by gh-aw v0.93.5), model pinned to `gpt-4.1`
+  via repo variables `GH_AW_MODEL_AGENT_COPILOT`/`GH_AW_MODEL_DETECTION_COPILOT` (automatic selection chose `claude-sonnet-5.5`/`claude-haiku-5.5`, rejected by the Student plan, as was `gpt-5-mini`); observed: `gpt-4.1` (smoke run 40829490262).
 - **Instructions:** workflow body (`issue-triage.md`), `SKILL.md`, `labels.json`, `templates.json`, `AGENTS.md`.
 - **Tools/MCP:** GitHub MCP server v2.0.3 (`issue_read`, `list_issues`, `list_issue_types`,
-  `search_issues`); safe-outputs MCP (`add_labels`, `add_comment`, `noop`, `report_*`); bash: the
-  three skill scripts plus gh-aw defaults (`cat`, `grep`, …, and file writes in the throwaway
+  `search_issues`); safe-outputs MCP (`add_labels`, `add_comment`, `noop`, `report_*`); bash:
+  `python3` (whole command; Copilot CLI matches allow rules by command name, so per-script rules never matched) plus
   workspace, with no git credentials). Container images are digest-pinned in the lock file.
 - **Permissions:** agent `contents/issues: read`; `safe_outputs` job `issues: write`; PAT: Copilot Requests only.
 - **Data sources:** triggering issue and ≤500 other issues (pre-agent step, read-only token); sparse checkout.

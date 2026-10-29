@@ -1,0 +1,3472 @@
+{
+ "repo": "pytorch/pytorch",
+ "window": [
+  "2025-09-01",
+  "2025-09-28"
+ ],
+ "measured_at": "2026-10-29T07:08:59.533571+00:00",
+ "excluded": "bot authors and 'DISABLED ' auto-generated test issues",
+ "summary": {
+  "issues": 493,
+  "median_hours_to_first_label": 2.95,
+  "median_hours_to_first_comment_by_other": 18.54,
+  "median_hours_to_triaged": 24.68,
+  "share_labelled_within_24h": 0.726,
+  "share_first_label_by_bot": 0.014,
+  "share_never_labelled": 0.073,
+  "share_never_triaged": 0.26
+ },
+ "issues": [
+  {
+   "number": 164089,
+   "hours_to_first_label": 15.340277777777779,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 10.277777777777779,
+   "hours_to_triaged": 15.340277777777779
+  },
+  {
+   "number": 164088,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1184.3313888888888,
+   "hours_to_triaged": 18.621388888888887
+  },
+  {
+   "number": 164086,
+   "hours_to_first_label": 0.0,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 72.13944444444445,
+   "hours_to_triaged": 20.275
+  },
+  {
+   "number": 164083,
+   "hours_to_first_label": 18.171388888888888,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 25.45777777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 164076,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 20.593055555555555,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 164074,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 24.825277777777778,
+   "hours_to_triaged": 9.561388888888889
+  },
+  {
+   "number": 164073,
+   "hours_to_first_label": 22.170555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 23.50722222222222,
+   "hours_to_triaged": 22.170555555555556
+  },
+  {
+   "number": 164071,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 164070,
+   "hours_to_first_label": 13.0725,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 252.74055555555555,
+   "hours_to_triaged": 13.0725
+  },
+  {
+   "number": 164063,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 35.717777777777776
+  },
+  {
+   "number": 164062,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 39.98083333333334,
+   "hours_to_triaged": 34.376666666666665
+  },
+  {
+   "number": 164061,
+   "hours_to_first_label": 32.69861111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 32.69861111111111
+  },
+  {
+   "number": 164059,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1214.6408333333334,
+   "hours_to_triaged": 36.609722222222224
+  },
+  {
+   "number": 164057,
+   "hours_to_first_label": 33.9675,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 262.0463888888889,
+   "hours_to_triaged": 33.968333333333334
+  },
+  {
+   "number": 164048,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 164041,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 600.7269444444445,
+   "hours_to_triaged": 52.63388888888889
+  },
+  {
+   "number": 164030,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 164015,
+   "hours_to_first_label": 63.3775,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 5.892777777777778,
+   "hours_to_triaged": 63.3775
+  },
+  {
+   "number": 164010,
+   "hours_to_first_label": 20.673333333333332,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 20.684444444444445,
+   "hours_to_triaged": 20.68166666666667
+  },
+  {
+   "number": 163997,
+   "hours_to_first_label": 65.13861111111112,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 65.1475
+  },
+  {
+   "number": 163990,
+   "hours_to_first_label": 65.8125,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 500.25805555555553,
+   "hours_to_triaged": 65.81361111111111
+  },
+  {
+   "number": 163984,
+   "hours_to_first_label": 66.24777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 69.04083333333334,
+   "hours_to_triaged": 69.04527777777778
+  },
+  {
+   "number": 163983,
+   "hours_to_first_label": 0.009444444444444445,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.009444444444444445
+  },
+  {
+   "number": 163982,
+   "hours_to_first_label": 0.01,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.01
+  },
+  {
+   "number": 163979,
+   "hours_to_first_label": 0.003611111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 129.18333333333334,
+   "hours_to_triaged": 0.003611111111111111
+  },
+  {
+   "number": 163978,
+   "hours_to_first_label": 67.24222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.05694444444444444,
+   "hours_to_triaged": 70.08916666666667
+  },
+  {
+   "number": 163974,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 68.03222222222222
+  },
+  {
+   "number": 163971,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 71.67472222222223
+  },
+  {
+   "number": 163970,
+   "hours_to_first_label": 69.20222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 142.49,
+   "hours_to_triaged": 69.20222222222222
+  },
+  {
+   "number": 163964,
+   "hours_to_first_label": 0.006111111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3181.301111111111,
+   "hours_to_triaged": 0.0077777777777777776
+  },
+  {
+   "number": 163963,
+   "hours_to_first_label": 0.15833333333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1796.0144444444445,
+   "hours_to_triaged": 0.15833333333333333
+  },
+  {
+   "number": 163962,
+   "hours_to_first_label": 50.57111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 50.56944444444444,
+   "hours_to_triaged": 70.56833333333333
+  },
+  {
+   "number": 163958,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 79.13055555555556,
+   "hours_to_triaged": 0.08916666666666667
+  },
+  {
+   "number": 163950,
+   "hours_to_first_label": 0.7263888888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 78.03666666666666,
+   "hours_to_triaged": 78.02805555555555
+  },
+  {
+   "number": 163949,
+   "hours_to_first_label": 1.11,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.3533333333333333,
+   "hours_to_triaged": 1.136111111111111
+  },
+  {
+   "number": 163946,
+   "hours_to_first_label": 3.1044444444444443,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.115,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163945,
+   "hours_to_first_label": 3.385,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 7571.011111111111,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163938,
+   "hours_to_first_label": 79.66805555555555,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163932,
+   "hours_to_first_label": 0.0,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 84.63222222222223,
+   "hours_to_triaged": 84.61888888888889
+  },
+  {
+   "number": 163929,
+   "hours_to_first_label": 10.959722222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 13.763055555555555,
+   "hours_to_triaged": 571.8980555555555
+  },
+  {
+   "number": 163923,
+   "hours_to_first_label": 83.10472222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 83.1475,
+   "hours_to_triaged": 83.10472222222222
+  },
+  {
+   "number": 163915,
+   "hours_to_first_label": 0.013055555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163913,
+   "hours_to_first_label": 0.015,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 6064.277777777777
+  },
+  {
+   "number": 163902,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 3.7730555555555556
+  },
+  {
+   "number": 163900,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.024444444444444446,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163894,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 696.9513888888889,
+   "hours_to_triaged": 2.483611111111111
+  },
+  {
+   "number": 163880,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.7313888888888889,
+   "hours_to_triaged": 5.348055555555556
+  },
+  {
+   "number": 163878,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 5.589166666666666,
+   "hours_to_triaged": 5.6113888888888885
+  },
+  {
+   "number": 163877,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 5792.270555555556,
+   "hours_to_triaged": 5.596666666666667
+  },
+  {
+   "number": 163876,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1211.576388888889,
+   "hours_to_triaged": 5.603611111111111
+  },
+  {
+   "number": 163875,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 5289.471388888889,
+   "hours_to_triaged": 5.559444444444445
+  },
+  {
+   "number": 163874,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 5591.37,
+   "hours_to_triaged": 5.57
+  },
+  {
+   "number": 163872,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2959.5408333333335,
+   "hours_to_triaged": 5.581111111111111
+  },
+  {
+   "number": 163871,
+   "hours_to_first_label": 0.0,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2958.543611111111,
+   "hours_to_triaged": 5.574722222222222
+  },
+  {
+   "number": 163859,
+   "hours_to_first_label": 3.903888888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 23.448888888888888,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163857,
+   "hours_to_first_label": 0.0,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163853,
+   "hours_to_first_label": 0.005277777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.005277777777777778
+  },
+  {
+   "number": 163851,
+   "hours_to_first_label": 1.5986111111111112,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.6519444444444447,
+   "hours_to_triaged": 1.6
+  },
+  {
+   "number": 163849,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 98.38194444444444,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163845,
+   "hours_to_first_label": 0.002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 4.828055555555555
+  },
+  {
+   "number": 163836,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 107.2175,
+   "hours_to_triaged": 105.64138888888888
+  },
+  {
+   "number": 163834,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.5494444444444444,
+   "hours_to_triaged": 19.643055555555556
+  },
+  {
+   "number": 163833,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 20.396944444444443
+  },
+  {
+   "number": 163821,
+   "hours_to_first_label": 109.61416666666666,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 109.61416666666666
+  },
+  {
+   "number": 163816,
+   "hours_to_first_label": 19.364722222222223,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 24.40222222222222,
+   "hours_to_triaged": 19.368055555555557
+  },
+  {
+   "number": 163811,
+   "hours_to_first_label": 19.780833333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 4.395277777777777,
+   "hours_to_triaged": 23.540277777777778
+  },
+  {
+   "number": 163801,
+   "hours_to_first_label": 15.773055555555555,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.8544444444444445,
+   "hours_to_triaged": 15.773333333333333
+  },
+  {
+   "number": 163798,
+   "hours_to_first_label": 0.004166666666666667,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 24.5275
+  },
+  {
+   "number": 163791,
+   "hours_to_first_label": 17.116666666666667,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 94.045,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163789,
+   "hours_to_first_label": 0.10472222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.10027777777777777,
+   "hours_to_triaged": 0.10722222222222222
+  },
+  {
+   "number": 163786,
+   "hours_to_first_label": 17.766944444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 17.775555555555556,
+   "hours_to_triaged": 24.680833333333332
+  },
+  {
+   "number": 163785,
+   "hours_to_first_label": 0.03305555555555555,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 27.325277777777778
+  },
+  {
+   "number": 163761,
+   "hours_to_first_label": 29.126944444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 8.943333333333333,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163759,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.9683333333333333,
+   "hours_to_triaged": 33.63388888888889
+  },
+  {
+   "number": 163756,
+   "hours_to_first_label": 2.4483333333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.47,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163753,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 1.0158333333333334,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163741,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 0.2152777777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163730,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163722,
+   "hours_to_first_label": 12.395,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 6110.777222222222
+  },
+  {
+   "number": 163721,
+   "hours_to_first_label": 1.548888888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 16.372777777777777,
+   "hours_to_triaged": 135.5775
+  },
+  {
+   "number": 163716,
+   "hours_to_first_label": 15.504444444444445,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 17.641944444444444,
+   "hours_to_triaged": 45.590833333333336
+  },
+  {
+   "number": 163713,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 182.15166666666667,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163709,
+   "hours_to_first_label": 16.538611111111113,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 20.239444444444445,
+   "hours_to_triaged": 16.570555555555554
+  },
+  {
+   "number": 163702,
+   "hours_to_first_label": 17.861944444444443,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 47.69111111111111,
+   "hours_to_triaged": 47.68638888888889
+  },
+  {
+   "number": 163699,
+   "hours_to_first_label": 0.14972222222222223,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 116.48055555555555,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163692,
+   "hours_to_first_label": 0.006666666666666667,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 28.058333333333334,
+   "hours_to_triaged": 6259.989722222223
+  },
+  {
+   "number": 163690,
+   "hours_to_first_label": 1.0997222222222223,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.0980555555555556,
+   "hours_to_triaged": 1.0997222222222223
+  },
+  {
+   "number": 163688,
+   "hours_to_first_label": 1.2455555555555555,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 65.54166666666667,
+   "hours_to_triaged": 6260.327222222222
+  },
+  {
+   "number": 163687,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163686,
+   "hours_to_first_label": 20.08361111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 9.115,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163684,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 1.7519444444444445,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163678,
+   "hours_to_first_label": 1.9672222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.9655555555555555,
+   "hours_to_triaged": 6116.696666666667
+  },
+  {
+   "number": 163675,
+   "hours_to_first_label": 2.1933333333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.2725,
+   "hours_to_triaged": 2.1933333333333334
+  },
+  {
+   "number": 163674,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 50.422222222222224,
+   "hours_to_triaged": 50.397222222222226
+  },
+  {
+   "number": 163672,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 70.58777777777777,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163670,
+   "hours_to_first_label": 0.007222222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 19.726111111111113,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163668,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 6.218055555555556,
+   "hours_to_triaged": 52.583888888888886
+  },
+  {
+   "number": 163666,
+   "hours_to_first_label": 0.08083333333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 136.53222222222223,
+   "hours_to_triaged": 1.976388888888889
+  },
+  {
+   "number": 163664,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.0002777777777777778
+  },
+  {
+   "number": 163659,
+   "hours_to_first_label": 0.0044444444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 10.530277777777778,
+   "hours_to_triaged": 0.006666666666666667
+  },
+  {
+   "number": 163658,
+   "hours_to_first_label": 0.1438888888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 340.3647222222222,
+   "hours_to_triaged": 0.1438888888888889
+  },
+  {
+   "number": 163657,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.14305555555555555
+  },
+  {
+   "number": 163650,
+   "hours_to_first_label": 0.0033333333333333335,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.0033333333333333335
+  },
+  {
+   "number": 163641,
+   "hours_to_first_label": 0.0044444444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.49527777777777776,
+   "hours_to_triaged": 2.5769444444444445
+  },
+  {
+   "number": 163640,
+   "hours_to_first_label": 3.1552777777777776,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.0647222222222221,
+   "hours_to_triaged": 3.1552777777777776
+  },
+  {
+   "number": 163637,
+   "hours_to_first_label": 3.2047222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 3.2047222222222222
+  },
+  {
+   "number": 163630,
+   "hours_to_first_label": 6.384444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 6.391944444444444,
+   "hours_to_triaged": 6.384444444444444
+  },
+  {
+   "number": 163624,
+   "hours_to_first_label": 7.636111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.6161111111111112,
+   "hours_to_triaged": 7.636111111111111
+  },
+  {
+   "number": 163611,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 65.2125,
+   "hours_to_triaged": 65.205
+  },
+  {
+   "number": 163608,
+   "hours_to_first_label": 11.404722222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 11.408333333333333,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163606,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 2.0172222222222222,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163604,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.0527777777777776,
+   "hours_to_triaged": 67.0886111111111
+  },
+  {
+   "number": 163603,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3020.4772222222223,
+   "hours_to_triaged": 67.10805555555555
+  },
+  {
+   "number": 163597,
+   "hours_to_first_label": 13.999722222222223,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 4857.078611111111,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163588,
+   "hours_to_first_label": 0.4986111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.5011111111111111,
+   "hours_to_triaged": 70.02361111111111
+  },
+  {
+   "number": 163577,
+   "hours_to_first_label": 0.004722222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.004722222222222222
+  },
+  {
+   "number": 163576,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 17.462777777777777,
+   "hours_to_triaged": 162.86916666666667
+  },
+  {
+   "number": 163574,
+   "hours_to_first_label": 0.0019444444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.8055555555555556,
+   "hours_to_triaged": 17.529444444444444
+  },
+  {
+   "number": 163572,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3025.619166666667,
+   "hours_to_triaged": 72.19527777777778
+  },
+  {
+   "number": 163569,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 1.1647222222222222
+  },
+  {
+   "number": 163568,
+   "hours_to_first_label": 0.0044444444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163567,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.6716666666666666,
+   "hours_to_triaged": 45.48138888888889
+  },
+  {
+   "number": 163563,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 7.580277777777778,
+   "hours_to_triaged": 44.01444444444444
+  },
+  {
+   "number": 163548,
+   "hours_to_first_label": 0.09666666666666666,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 53.24111111111111,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163546,
+   "hours_to_first_label": 0.7452777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 30.923055555555557,
+   "hours_to_triaged": 6141.608611111111
+  },
+  {
+   "number": 163545,
+   "hours_to_first_label": 0.8655555555555555,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 267.69694444444445,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163543,
+   "hours_to_first_label": 1.0086111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1037.3780555555556,
+   "hours_to_triaged": 1.0094444444444444
+  },
+  {
+   "number": 163539,
+   "hours_to_first_label": 1.771388888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.7755555555555556,
+   "hours_to_triaged": 1.771388888888889
+  },
+  {
+   "number": 163536,
+   "hours_to_first_label": 1.9530555555555555,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.332777777777778,
+   "hours_to_triaged": 3.3313888888888887
+  },
+  {
+   "number": 163530,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.0975,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163528,
+   "hours_to_first_label": 3.4186111111111113,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 4.745,
+   "hours_to_triaged": 4.735
+  },
+  {
+   "number": 163519,
+   "hours_to_first_label": 1.29,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.2952777777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163510,
+   "hours_to_first_label": 2.4519444444444445,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.457777777777778,
+   "hours_to_triaged": 2.4519444444444445
+  },
+  {
+   "number": 163504,
+   "hours_to_first_label": 2.701388888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.8408333333333333,
+   "hours_to_triaged": 2.7041666666666666
+  },
+  {
+   "number": 163502,
+   "hours_to_first_label": 10.450555555555555,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 10.450555555555555
+  },
+  {
+   "number": 163501,
+   "hours_to_first_label": 11.233055555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2341.9127777777776,
+   "hours_to_triaged": 11.233055555555556
+  },
+  {
+   "number": 163500,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 514.1136111111111,
+   "hours_to_triaged": 0.0002777777777777778
+  },
+  {
+   "number": 163496,
+   "hours_to_first_label": 0.0,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 10.445833333333333,
+   "hours_to_triaged": 0.0
+  },
+  {
+   "number": 163491,
+   "hours_to_first_label": 12.72,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 14.18138888888889
+  },
+  {
+   "number": 163483,
+   "hours_to_first_label": 14.481944444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 15.065277777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163462,
+   "hours_to_first_label": 15.805,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 14.963055555555556,
+   "hours_to_triaged": 15.805
+  },
+  {
+   "number": 163457,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 8.648888888888889
+  },
+  {
+   "number": 163451,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 31.54388888888889,
+   "hours_to_triaged": 29.414722222222224
+  },
+  {
+   "number": 163450,
+   "hours_to_first_label": 28.143333333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 28.15222222222222,
+   "hours_to_triaged": 28.145
+  },
+  {
+   "number": 163449,
+   "hours_to_first_label": 0.5136111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 23.3725
+  },
+  {
+   "number": 163435,
+   "hours_to_first_label": 10.837777777777777,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 40.05694444444445,
+   "hours_to_triaged": 40.05638888888889
+  },
+  {
+   "number": 163429,
+   "hours_to_first_label": 39.96944444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 6416.393888888889,
+   "hours_to_triaged": 42.348055555555554
+  },
+  {
+   "number": 163428,
+   "hours_to_first_label": 42.39416666666666,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 43.64611111111111,
+   "hours_to_triaged": 43.65
+  },
+  {
+   "number": 163427,
+   "hours_to_first_label": 43.34583333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 30.10388888888889,
+   "hours_to_triaged": 44.59388888888889
+  },
+  {
+   "number": 163425,
+   "hours_to_first_label": 45.385,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 48.87111111111111,
+   "hours_to_triaged": 45.389722222222225
+  },
+  {
+   "number": 163420,
+   "hours_to_first_label": 19.34,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 31.8175
+  },
+  {
+   "number": 163413,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163409,
+   "hours_to_first_label": 55.30777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 50.998333333333335,
+   "hours_to_triaged": 55.31027777777778
+  },
+  {
+   "number": 163408,
+   "hours_to_first_label": 57.28,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 107.84583333333333,
+   "hours_to_triaged": 155.55388888888888
+  },
+  {
+   "number": 163400,
+   "hours_to_first_label": 63.07055555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1093.9386111111112,
+   "hours_to_triaged": 63.07055555555556
+  },
+  {
+   "number": 163397,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163374,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 26.798055555555557,
+   "hours_to_triaged": 3.621111111111111
+  },
+  {
+   "number": 163372,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 20.154444444444444
+  },
+  {
+   "number": 163359,
+   "hours_to_first_label": 5.603055555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.391388888888889,
+   "hours_to_triaged": 5.603055555555556
+  },
+  {
+   "number": 163347,
+   "hours_to_first_label": 9.624444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 73.90972222222223,
+   "hours_to_triaged": 73.91638888888889
+  },
+  {
+   "number": 163346,
+   "hours_to_first_label": 3.637777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.6327777777777777,
+   "hours_to_triaged": 3.637777777777778
+  },
+  {
+   "number": 163343,
+   "hours_to_first_label": 3.616111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.6094444444444442,
+   "hours_to_triaged": 10.098333333333333
+  },
+  {
+   "number": 163342,
+   "hours_to_first_label": 0.030833333333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.9202777777777778,
+   "hours_to_triaged": 0.9008333333333334
+  },
+  {
+   "number": 163338,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163337,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.8683333333333333,
+   "hours_to_triaged": 2.6733333333333333
+  },
+  {
+   "number": 163336,
+   "hours_to_first_label": 13.561111111111112,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 14.190555555555555,
+   "hours_to_triaged": 29.356944444444444
+  },
+  {
+   "number": 163331,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 4.200833333333334,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163330,
+   "hours_to_first_label": 15.655,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 38.90777777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163329,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 84.83083333333333,
+   "hours_to_triaged": 84.83277777777778
+  },
+  {
+   "number": 163328,
+   "hours_to_first_label": 16.51222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 32.100833333333334
+  },
+  {
+   "number": 163327,
+   "hours_to_first_label": 7.033888888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 7.081111111111111,
+   "hours_to_triaged": 7.041111111111111
+  },
+  {
+   "number": 163323,
+   "hours_to_first_label": 18.105833333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 89.30777777777777,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163321,
+   "hours_to_first_label": 0.06472222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 8.269444444444444,
+   "hours_to_triaged": 0.06694444444444445
+  },
+  {
+   "number": 163314,
+   "hours_to_first_label": 22.07888888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 10.044166666666667,
+   "hours_to_triaged": 22.101944444444445
+  },
+  {
+   "number": 163312,
+   "hours_to_first_label": 22.266944444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163311,
+   "hours_to_first_label": 0.46444444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.47055555555555556
+  },
+  {
+   "number": 163309,
+   "hours_to_first_label": 4.049166666666666,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.34305555555555556,
+   "hours_to_triaged": 87.75777777777778
+  },
+  {
+   "number": 163307,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.13722222222222222,
+   "hours_to_triaged": 0.13833333333333334
+  },
+  {
+   "number": 163303,
+   "hours_to_first_label": 0.017777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163302,
+   "hours_to_first_label": 0.0044444444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 117.47,
+   "hours_to_triaged": 0.029166666666666667
+  },
+  {
+   "number": 163300,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 7.358055555555556,
+   "hours_to_triaged": 54.97361111111111
+  },
+  {
+   "number": 163294,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163290,
+   "hours_to_first_label": 0.12555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.12666666666666668
+  },
+  {
+   "number": 163287,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 90.17333333333333,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163286,
+   "hours_to_first_label": 0.002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.002777777777777778
+  },
+  {
+   "number": 163283,
+   "hours_to_first_label": 0.058611111111111114,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 72.095,
+   "hours_to_triaged": 0.058611111111111114
+  },
+  {
+   "number": 163275,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 10.783333333333333,
+   "hours_to_triaged": 45.74
+  },
+  {
+   "number": 163274,
+   "hours_to_first_label": 30.49222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 18.316388888888888,
+   "hours_to_triaged": 94.81111111111112
+  },
+  {
+   "number": 163271,
+   "hours_to_first_label": 2.102222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.1075,
+   "hours_to_triaged": 2.102222222222222
+  },
+  {
+   "number": 163266,
+   "hours_to_first_label": 32.314166666666665,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.285,
+   "hours_to_triaged": 32.314166666666665
+  },
+  {
+   "number": 163257,
+   "hours_to_first_label": 34.57138888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 53.95,
+   "hours_to_triaged": 55.2125
+  },
+  {
+   "number": 163253,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 39.32416666666666,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163243,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 131.23333333333332,
+   "hours_to_triaged": 59.39277777777778
+  },
+  {
+   "number": 163202,
+   "hours_to_first_label": 2.9530555555555558,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 2.9605555555555556
+  },
+  {
+   "number": 163196,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 12.738611111111112,
+   "hours_to_triaged": 119.63916666666667
+  },
+  {
+   "number": 163193,
+   "hours_to_first_label": 0.03805555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.312222222222222,
+   "hours_to_triaged": 6428.234166666667
+  },
+  {
+   "number": 163189,
+   "hours_to_first_label": 0.005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 41.07805555555556,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163184,
+   "hours_to_first_label": 5.545555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 20.774444444444445,
+   "hours_to_triaged": 5.551111111111111
+  },
+  {
+   "number": 163170,
+   "hours_to_first_label": 0.08944444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 45.41833333333334,
+   "hours_to_triaged": 0.08944444444444444
+  },
+  {
+   "number": 163153,
+   "hours_to_first_label": 7.835555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163149,
+   "hours_to_first_label": 18.217777777777776,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 18.220833333333335
+  },
+  {
+   "number": 163146,
+   "hours_to_first_label": 8.373333333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 8.60388888888889,
+   "hours_to_triaged": 8.373333333333333
+  },
+  {
+   "number": 163143,
+   "hours_to_first_label": 12.804166666666667,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 136.2725
+  },
+  {
+   "number": 163142,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 21.17388888888889
+  },
+  {
+   "number": 163129,
+   "hours_to_first_label": 0.026944444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03277777777777778
+  },
+  {
+   "number": 163108,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163105,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163103,
+   "hours_to_first_label": 28.101666666666667,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 28.102777777777778
+  },
+  {
+   "number": 163093,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163082,
+   "hours_to_first_label": 1.2669444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 97.21694444444445
+  },
+  {
+   "number": 163076,
+   "hours_to_first_label": 35.13638888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 35.090555555555554,
+   "hours_to_triaged": 50.36
+  },
+  {
+   "number": 163075,
+   "hours_to_first_label": 30.956944444444446,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 402.0,
+   "hours_to_triaged": 6291.345555555556
+  },
+  {
+   "number": 163072,
+   "hours_to_first_label": 35.75666666666667,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 35.76111111111111
+  },
+  {
+   "number": 163071,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.9925,
+   "hours_to_triaged": 4.846666666666667
+  },
+  {
+   "number": 163066,
+   "hours_to_first_label": 38.70666666666666,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 150.83833333333334,
+   "hours_to_triaged": 154.71055555555554
+  },
+  {
+   "number": 163064,
+   "hours_to_first_label": 29.021944444444443,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 106.08916666666667,
+   "hours_to_triaged": 155.02416666666667
+  },
+  {
+   "number": 163062,
+   "hours_to_first_label": 40.09777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 151.2422222222222,
+   "hours_to_triaged": 40.10111111111111
+  },
+  {
+   "number": 163061,
+   "hours_to_first_label": 29.541944444444443,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 79.48611111111111,
+   "hours_to_triaged": 155.50472222222223
+  },
+  {
+   "number": 163052,
+   "hours_to_first_label": 9.715,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1912.7855555555554,
+   "hours_to_triaged": 1912.8077777777778
+  },
+  {
+   "number": 163051,
+   "hours_to_first_label": 41.4925,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 56.83305555555555,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 163048,
+   "hours_to_first_label": 42.15138888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 179.43305555555557,
+   "hours_to_triaged": 157.54583333333332
+  },
+  {
+   "number": 163043,
+   "hours_to_first_label": 43.227222222222224,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 45.80444444444444,
+   "hours_to_triaged": 6299.044166666667
+  },
+  {
+   "number": 163040,
+   "hours_to_first_label": 40.8175,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 37.46944444444444,
+   "hours_to_triaged": 60.7825
+  },
+  {
+   "number": 163037,
+   "hours_to_first_label": 46.58138888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 109.81666666666666
+  },
+  {
+   "number": 163035,
+   "hours_to_first_label": 15.378333333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 15.41611111111111
+  },
+  {
+   "number": 163033,
+   "hours_to_first_label": 14.745833333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 14.745833333333334
+  },
+  {
+   "number": 163026,
+   "hours_to_first_label": 48.706944444444446,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 52.14055555555556,
+   "hours_to_triaged": 48.70777777777778
+  },
+  {
+   "number": 163013,
+   "hours_to_first_label": 50.64611111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 126.08888888888889,
+   "hours_to_triaged": 126.09083333333334
+  },
+  {
+   "number": 162989,
+   "hours_to_first_label": 5.825277777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 18.183055555555555,
+   "hours_to_triaged": 5.8275
+  },
+  {
+   "number": 162980,
+   "hours_to_first_label": 55.37555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 99.18,
+   "hours_to_triaged": 55.37694444444445
+  },
+  {
+   "number": 162978,
+   "hours_to_first_label": 2.4141666666666666,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.0944444444444446,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162973,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 3.1191666666666666
+  },
+  {
+   "number": 162971,
+   "hours_to_first_label": 0.0022222222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 196.0311111111111,
+   "hours_to_triaged": 0.0075
+  },
+  {
+   "number": 162970,
+   "hours_to_first_label": 0.011111111111111112,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 152.27027777777778,
+   "hours_to_triaged": 3.3497222222222223
+  },
+  {
+   "number": 162964,
+   "hours_to_first_label": 57.93972222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.4575,
+   "hours_to_triaged": 57.94222222222222
+  },
+  {
+   "number": 162962,
+   "hours_to_first_label": 1.3897222222222223,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.4688888888888889,
+   "hours_to_triaged": 1.4041666666666666
+  },
+  {
+   "number": 162957,
+   "hours_to_first_label": 2.191666666666667,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.2469444444444444,
+   "hours_to_triaged": 4.253611111111111
+  },
+  {
+   "number": 162952,
+   "hours_to_first_label": 59.4775,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 7.307777777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162949,
+   "hours_to_first_label": 5.736111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 15.397777777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162948,
+   "hours_to_first_label": 65.20138888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162940,
+   "hours_to_first_label": 67.11888888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 6322.843333333333
+  },
+  {
+   "number": 162934,
+   "hours_to_first_label": 0.0077777777777777776,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 13.537777777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162931,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162923,
+   "hours_to_first_label": 76.2786111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 186.51111111111112,
+   "hours_to_triaged": 76.28277777777778
+  },
+  {
+   "number": 162922,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 9.464166666666667,
+   "hours_to_triaged": 22.642222222222223
+  },
+  {
+   "number": 162918,
+   "hours_to_first_label": 78.77222222222223,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 12.329722222222221,
+   "hours_to_triaged": 78.77333333333333
+  },
+  {
+   "number": 162917,
+   "hours_to_first_label": 78.68638888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 66.31527777777778,
+   "hours_to_triaged": 6334.548611111111
+  },
+  {
+   "number": 162911,
+   "hours_to_first_label": 77.00583333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 24.899444444444445,
+   "hours_to_triaged": 77.00694444444444
+  },
+  {
+   "number": 162909,
+   "hours_to_first_label": 3.0016666666666665,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 13.018333333333333,
+   "hours_to_triaged": 3.0016666666666665
+  },
+  {
+   "number": 162908,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 10.590555555555556,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162907,
+   "hours_to_first_label": 82.25305555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 20.073333333333334,
+   "hours_to_triaged": 82.25416666666666
+  },
+  {
+   "number": 162898,
+   "hours_to_first_label": 91.80444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 5615.961388888889,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162897,
+   "hours_to_first_label": 92.49944444444445,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 20.067777777777778,
+   "hours_to_triaged": 6348.2733333333335
+  },
+  {
+   "number": 162884,
+   "hours_to_first_label": 4.008611111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 4.012777777777778,
+   "hours_to_triaged": 4.008611111111111
+  },
+  {
+   "number": 162882,
+   "hours_to_first_label": 6.073333333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 9.643055555555556,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162881,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.1463888888888889,
+   "hours_to_triaged": 6.66
+  },
+  {
+   "number": 162878,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.4469444444444446,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162876,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 32.75944444444445,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162872,
+   "hours_to_first_label": 15.9475,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 4752.900833333333,
+   "hours_to_triaged": 15.9475
+  },
+  {
+   "number": 162871,
+   "hours_to_first_label": 107.48166666666667,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 188.75333333333333,
+   "hours_to_triaged": 6370.733055555555
+  },
+  {
+   "number": 162870,
+   "hours_to_first_label": 46.77111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 60.67777777777778,
+   "hours_to_triaged": 67.38
+  },
+  {
+   "number": 162868,
+   "hours_to_first_label": 119.7925,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 148.1025
+  },
+  {
+   "number": 162860,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 504.22555555555556,
+   "hours_to_triaged": 69.12722222222222
+  },
+  {
+   "number": 162859,
+   "hours_to_first_label": 0.008611111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 15.658611111111112,
+   "hours_to_triaged": 68.86805555555556
+  },
+  {
+   "number": 162858,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 68.9811111111111
+  },
+  {
+   "number": 162857,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 576.9852777777778,
+   "hours_to_triaged": 69.10083333333333
+  },
+  {
+   "number": 162854,
+   "hours_to_first_label": 0.8288888888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.19,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162852,
+   "hours_to_first_label": 0.0,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 68.92444444444445
+  },
+  {
+   "number": 162848,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.0005555555555555556
+  },
+  {
+   "number": 162845,
+   "hours_to_first_label": 2.1719444444444442,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 795.415,
+   "hours_to_triaged": 2.1719444444444442
+  },
+  {
+   "number": 162838,
+   "hours_to_first_label": 0.018333333333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 95.12777777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162837,
+   "hours_to_first_label": 3.3713888888888888,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 28.976388888888888,
+   "hours_to_triaged": 3.3713888888888888
+  },
+  {
+   "number": 162835,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 403.38916666666665,
+   "hours_to_triaged": 71.64416666666666
+  },
+  {
+   "number": 162832,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3815.8922222222222,
+   "hours_to_triaged": 154.89305555555555
+  },
+  {
+   "number": 162831,
+   "hours_to_first_label": 126.61611111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 6111.511666666666,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162824,
+   "hours_to_first_label": 0.4413888888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 47.4875,
+   "hours_to_triaged": 0.4413888888888889
+  },
+  {
+   "number": 162822,
+   "hours_to_first_label": 123.43527777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 123.43611111111112
+  },
+  {
+   "number": 162820,
+   "hours_to_first_label": 121.19027777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 243.945,
+   "hours_to_triaged": 243.94666666666666
+  },
+  {
+   "number": 162817,
+   "hours_to_first_label": 68.48277777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 76.3875
+  },
+  {
+   "number": 162813,
+   "hours_to_first_label": 1.0494444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 63.44,
+   "hours_to_triaged": 1.0494444444444444
+  },
+  {
+   "number": 162812,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.08527777777777777,
+   "hours_to_triaged": 0.09055555555555556
+  },
+  {
+   "number": 162805,
+   "hours_to_first_label": 1.7886111111111112,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.836111111111111,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162801,
+   "hours_to_first_label": 3.5630555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.569722222222222,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162800,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 7.354722222222223,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162798,
+   "hours_to_first_label": 6.033611111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 9.896666666666667,
+   "hours_to_triaged": 6.0375
+  },
+  {
+   "number": 162797,
+   "hours_to_first_label": 12.831388888888888,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 12.865555555555556,
+   "hours_to_triaged": 12.8325
+  },
+  {
+   "number": 162792,
+   "hours_to_first_label": 138.3775,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 6123.421111111111,
+   "hours_to_triaged": 201.87333333333333
+  },
+  {
+   "number": 162790,
+   "hours_to_first_label": 139.13861111111112,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 139.13944444444445
+  },
+  {
+   "number": 162786,
+   "hours_to_first_label": 10.839722222222223,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 10.840833333333334
+  },
+  {
+   "number": 162782,
+   "hours_to_first_label": 12.268333333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 184.79722222222222,
+   "hours_to_triaged": 12.268333333333333
+  },
+  {
+   "number": 162780,
+   "hours_to_first_label": 1.4041666666666666,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.4147222222222222,
+   "hours_to_triaged": 1.4108333333333334
+  },
+  {
+   "number": 162769,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162762,
+   "hours_to_first_label": 14.17361111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 25.555,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162756,
+   "hours_to_first_label": 15.859444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162755,
+   "hours_to_first_label": 15.886388888888888,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 6403.730277777778
+  },
+  {
+   "number": 162748,
+   "hours_to_first_label": 2.15,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 6404.205
+  },
+  {
+   "number": 162746,
+   "hours_to_first_label": 2.3113888888888887,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162745,
+   "hours_to_first_label": 0.19805555555555557,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2125.4816666666666,
+   "hours_to_triaged": 6404.663611111111
+  },
+  {
+   "number": 162743,
+   "hours_to_first_label": 0.8097222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162741,
+   "hours_to_first_label": 1.6997222222222221,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 6406.163611111111
+  },
+  {
+   "number": 162734,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.957222222222222,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162731,
+   "hours_to_first_label": 0.0019444444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 12.260833333333334,
+   "hours_to_triaged": 6553.1177777777775
+  },
+  {
+   "number": 162730,
+   "hours_to_first_label": 0.5197222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 8.008055555555556,
+   "hours_to_triaged": 0.5197222222222222
+  },
+  {
+   "number": 162728,
+   "hours_to_first_label": 0.4533333333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 101.91944444444445,
+   "hours_to_triaged": 101.88222222222223
+  },
+  {
+   "number": 162727,
+   "hours_to_first_label": 0.2733333333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 841.6813888888889,
+   "hours_to_triaged": 100.47
+  },
+  {
+   "number": 162725,
+   "hours_to_first_label": 0.41555555555555557,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.4016666666666666,
+   "hours_to_triaged": 101.77638888888889
+  },
+  {
+   "number": 162723,
+   "hours_to_first_label": 0.5783333333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 102.6025,
+   "hours_to_triaged": 231.11444444444444
+  },
+  {
+   "number": 162722,
+   "hours_to_first_label": 1.7733333333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 102.19722222222222,
+   "hours_to_triaged": 227.85305555555556
+  },
+  {
+   "number": 162719,
+   "hours_to_first_label": 1.9425,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 90.05416666666666,
+   "hours_to_triaged": 1.9461111111111111
+  },
+  {
+   "number": 162714,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 1.1527777777777777,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162712,
+   "hours_to_first_label": 5.310833333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 12.924444444444445,
+   "hours_to_triaged": 5.310833333333333
+  },
+  {
+   "number": 162711,
+   "hours_to_first_label": 7.102777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.8016666666666667,
+   "hours_to_triaged": 7.102777777777778
+  },
+  {
+   "number": 162710,
+   "hours_to_first_label": 7.045277777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 6.893055555555556,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162708,
+   "hours_to_first_label": 7.667222222222223,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 7.667222222222223
+  },
+  {
+   "number": 162700,
+   "hours_to_first_label": 9.608333333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 110.82916666666667,
+   "hours_to_triaged": 110.83416666666666
+  },
+  {
+   "number": 162697,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 10.419722222222223,
+   "hours_to_triaged": 9.260277777777778
+  },
+  {
+   "number": 162692,
+   "hours_to_first_label": 0.0038888888888888888,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 152.64138888888888,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162687,
+   "hours_to_first_label": 11.376388888888888,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 110.98,
+   "hours_to_triaged": 110.98138888888889
+  },
+  {
+   "number": 162685,
+   "hours_to_first_label": 11.77138888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.6602777777777777,
+   "hours_to_triaged": 11.77361111111111
+  },
+  {
+   "number": 162683,
+   "hours_to_first_label": 12.14,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.608611111111111,
+   "hours_to_triaged": 12.14
+  },
+  {
+   "number": 162674,
+   "hours_to_first_label": 14.046944444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 14.046944444444444
+  },
+  {
+   "number": 162671,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.09888888888888889,
+   "hours_to_triaged": 6.153611111111111
+  },
+  {
+   "number": 162668,
+   "hours_to_first_label": 15.4225,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 6425.143055555555
+  },
+  {
+   "number": 162640,
+   "hours_to_first_label": 0.006666666666666667,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.20444444444444446,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162638,
+   "hours_to_first_label": 18.404166666666665,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 6428.122777777778
+  },
+  {
+   "number": 162630,
+   "hours_to_first_label": 19.674444444444443,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.13666666666666666,
+   "hours_to_triaged": 19.674444444444443
+  },
+  {
+   "number": 162613,
+   "hours_to_first_label": 22.15361111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 22.219444444444445,
+   "hours_to_triaged": 22.17111111111111
+  },
+  {
+   "number": 162612,
+   "hours_to_first_label": 21.185555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 22.3375,
+   "hours_to_triaged": 21.190277777777776
+  },
+  {
+   "number": 162607,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.0002777777777777778
+  },
+  {
+   "number": 162606,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.8225,
+   "hours_to_triaged": 22.773333333333333
+  },
+  {
+   "number": 162604,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 1.1916666666666667,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162602,
+   "hours_to_first_label": 3.7494444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.747777777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162601,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 3.6694444444444443,
+   "hours_to_triaged": 24.1175
+  },
+  {
+   "number": 162599,
+   "hours_to_first_label": 24.299722222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.45361111111111113,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162598,
+   "hours_to_first_label": 0.011666666666666667,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 13.268055555555556,
+   "hours_to_triaged": 0.015277777777777777
+  },
+  {
+   "number": 162592,
+   "hours_to_first_label": 25.4775,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 25.4775
+  },
+  {
+   "number": 162591,
+   "hours_to_first_label": 25.89027777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1612.1344444444444,
+   "hours_to_triaged": 25.89027777777778
+  },
+  {
+   "number": 162588,
+   "hours_to_first_label": 26.141944444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 6921.184444444444,
+   "hours_to_triaged": 26.141944444444444
+  },
+  {
+   "number": 162582,
+   "hours_to_first_label": 27.163333333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 27.163333333333334
+  },
+  {
+   "number": 162574,
+   "hours_to_first_label": 5.276388888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 128.20472222222222,
+   "hours_to_triaged": 128.265
+  },
+  {
+   "number": 162570,
+   "hours_to_first_label": 17.412222222222223,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 17.83138888888889,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162561,
+   "hours_to_first_label": 2.683611111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 253.1375,
+   "hours_to_triaged": 253.14527777777778
+  },
+  {
+   "number": 162553,
+   "hours_to_first_label": 37.389722222222225,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 20.70722222222222,
+   "hours_to_triaged": 38.40083333333333
+  },
+  {
+   "number": 162522,
+   "hours_to_first_label": 10.0525,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 13.361666666666666,
+   "hours_to_triaged": 261.3186111111111
+  },
+  {
+   "number": 162512,
+   "hours_to_first_label": 0.006111111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.17888888888888888,
+   "hours_to_triaged": 0.007222222222222222
+  },
+  {
+   "number": 162507,
+   "hours_to_first_label": 44.77583333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 44.77583333333333
+  },
+  {
+   "number": 162504,
+   "hours_to_first_label": 46.26861111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 46.26861111111111
+  },
+  {
+   "number": 162497,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.21833333333333332,
+   "hours_to_triaged": 0.0002777777777777778
+  },
+  {
+   "number": 162489,
+   "hours_to_first_label": 3.888888888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1696.2327777777778,
+   "hours_to_triaged": 3.888888888888889
+  },
+  {
+   "number": 162486,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 6.556666666666667,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162482,
+   "hours_to_first_label": 0.0025,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 51.12138888888889
+  },
+  {
+   "number": 162481,
+   "hours_to_first_label": 0.010555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 702.3166666666667,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162480,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 21.198333333333334,
+   "hours_to_triaged": 21.19472222222222
+  },
+  {
+   "number": 162476,
+   "hours_to_first_label": 54.3175,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 5.5088888888888885,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162473,
+   "hours_to_first_label": 55.03527777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 7.196666666666666,
+   "hours_to_triaged": 55.03527777777778
+  },
+  {
+   "number": 162466,
+   "hours_to_first_label": 13.063888888888888,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 13.104444444444445,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162458,
+   "hours_to_first_label": 15.525833333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 15.553888888888888,
+   "hours_to_triaged": 15.525833333333333
+  },
+  {
+   "number": 162456,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.0002777777777777778
+  },
+  {
+   "number": 162453,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 30.854444444444443,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162451,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 27.245277777777776,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162449,
+   "hours_to_first_label": 60.84,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 60.840833333333336
+  },
+  {
+   "number": 162430,
+   "hours_to_first_label": 0.0,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 32.58083333333333,
+   "hours_to_triaged": 32.58416666666667
+  },
+  {
+   "number": 162429,
+   "hours_to_first_label": 0.22166666666666668,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.5280555555555555,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162422,
+   "hours_to_first_label": 0.042222222222222223,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.17833333333333334,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162415,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.0002777777777777778
+  },
+  {
+   "number": 162410,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.395,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162408,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 0.09833333333333333,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162403,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 37.11638888888889,
+   "hours_to_triaged": 67.95694444444445
+  },
+  {
+   "number": 162402,
+   "hours_to_first_label": 5.7619444444444445,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.9808333333333332,
+   "hours_to_triaged": 37.49111111111111
+  },
+  {
+   "number": 162398,
+   "hours_to_first_label": 4.237777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 4.254722222222222,
+   "hours_to_triaged": 6.0761111111111115
+  },
+  {
+   "number": 162397,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 4.336111111111111,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162395,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 0.1075,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162386,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162379,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162378,
+   "hours_to_first_label": 4.713611111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 4.818888888888889,
+   "hours_to_triaged": 4.723611111111111
+  },
+  {
+   "number": 162376,
+   "hours_to_first_label": 4.752777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 5.496944444444445,
+   "hours_to_triaged": 4.752777777777778
+  },
+  {
+   "number": 162375,
+   "hours_to_first_label": 13.960277777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 13.95888888888889,
+   "hours_to_triaged": 46.77333333333333
+  },
+  {
+   "number": 162374,
+   "hours_to_first_label": 14.281666666666666,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 14.280555555555555,
+   "hours_to_triaged": 177.55694444444444
+  },
+  {
+   "number": 162373,
+   "hours_to_first_label": 7.598333333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 7.703055555555555,
+   "hours_to_triaged": 7.603611111111111
+  },
+  {
+   "number": 162367,
+   "hours_to_first_label": 15.95138888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 15.9725,
+   "hours_to_triaged": 16.748333333333335
+  },
+  {
+   "number": 162366,
+   "hours_to_first_label": 9.473888888888888,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162365,
+   "hours_to_first_label": 9.696388888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 9266.118055555555,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162362,
+   "hours_to_first_label": 84.12694444444445,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 84.12694444444445
+  },
+  {
+   "number": 162359,
+   "hours_to_first_label": 21.19972222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 21.2
+  },
+  {
+   "number": 162358,
+   "hours_to_first_label": 14.709722222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 14.817222222222222,
+   "hours_to_triaged": 14.718333333333334
+  },
+  {
+   "number": 162352,
+   "hours_to_first_label": 29.070555555555554,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 89.88777777777777
+  },
+  {
+   "number": 162350,
+   "hours_to_first_label": 28.00027777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 28.00027777777778
+  },
+  {
+   "number": 162346,
+   "hours_to_first_label": 4.524444444444445,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2200.496111111111,
+   "hours_to_triaged": 4.524444444444445
+  },
+  {
+   "number": 162343,
+   "hours_to_first_label": 214.35305555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 255.1725
+  },
+  {
+   "number": 162338,
+   "hours_to_first_label": 19.521944444444443,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 557.3505555555555,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162335,
+   "hours_to_first_label": 54.90277777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 7.349166666666667,
+   "hours_to_triaged": 54.90416666666667
+  },
+  {
+   "number": 162333,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 52.6225,
+   "hours_to_triaged": 51.204166666666666
+  },
+  {
+   "number": 162331,
+   "hours_to_first_label": 29.773888888888887,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 65.08722222222222,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162327,
+   "hours_to_first_label": 59.04694444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 58.73777777777778,
+   "hours_to_triaged": 59.053333333333335
+  },
+  {
+   "number": 162313,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.0005555555555555556
+  },
+  {
+   "number": 162302,
+   "hours_to_first_label": 1.228888888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.3077777777777777,
+   "hours_to_triaged": 1.2297222222222222
+  },
+  {
+   "number": 162299,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 93.32333333333334
+  },
+  {
+   "number": 162290,
+   "hours_to_first_label": 75.39777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 75.60777777777778,
+   "hours_to_triaged": 6549.466111111111
+  },
+  {
+   "number": 162287,
+   "hours_to_first_label": 75.7213888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 107.80444444444444
+  },
+  {
+   "number": 162283,
+   "hours_to_first_label": 1.2061111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 1.206388888888889
+  },
+  {
+   "number": 162282,
+   "hours_to_first_label": 98.57694444444445,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 108.24638888888889,
+   "hours_to_triaged": 108.29611111111112
+  },
+  {
+   "number": 162280,
+   "hours_to_first_label": 76.57694444444445,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 76.57694444444445
+  },
+  {
+   "number": 162279,
+   "hours_to_first_label": 0.01361111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162274,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 1.3994444444444445,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162271,
+   "hours_to_first_label": 0.001388888888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.0341666666666667,
+   "hours_to_triaged": 4.110833333333333
+  },
+  {
+   "number": 162270,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 3.720833333333333
+  },
+  {
+   "number": 162259,
+   "hours_to_first_label": 75.32833333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 77.67583333333333,
+   "hours_to_triaged": 77.795
+  },
+  {
+   "number": 162258,
+   "hours_to_first_label": 77.36638888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 77.36638888888889
+  },
+  {
+   "number": 162257,
+   "hours_to_first_label": 83.97055555555555,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 87.5663888888889,
+   "hours_to_triaged": 6726.3725
+  },
+  {
+   "number": 162255,
+   "hours_to_first_label": 6.0905555555555555,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 10.133888888888889,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162251,
+   "hours_to_first_label": 86.58166666666666,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 262.70722222222224,
+   "hours_to_triaged": 86.58166666666666
+  },
+  {
+   "number": 162248,
+   "hours_to_first_label": 22.3125,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 92.28694444444444,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162246,
+   "hours_to_first_label": 0.051944444444444446,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 12.084166666666667,
+   "hours_to_triaged": 0.051944444444444446
+  },
+  {
+   "number": 162242,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 16.265,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162237,
+   "hours_to_first_label": 91.87944444444445,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2374.0233333333335,
+   "hours_to_triaged": 6566.073055555556
+  },
+  {
+   "number": 162235,
+   "hours_to_first_label": 85.54555555555555,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 8.849166666666667,
+   "hours_to_triaged": 85.54555555555555
+  },
+  {
+   "number": 162228,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 19.420555555555556,
+   "hours_to_triaged": 113.42194444444445
+  },
+  {
+   "number": 162215,
+   "hours_to_first_label": 0.0025,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 4.418888888888889,
+   "hours_to_triaged": 6715.3983333333335
+  },
+  {
+   "number": 162199,
+   "hours_to_first_label": 0.0025,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.5583333333333333,
+   "hours_to_triaged": 2.8141666666666665
+  },
+  {
+   "number": 162198,
+   "hours_to_first_label": 0.003611111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.004722222222222222
+  },
+  {
+   "number": 162196,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.9266666666666667,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162188,
+   "hours_to_first_label": 0.9305555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 6321.393888888889,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162182,
+   "hours_to_first_label": 1.9097222222222223,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 1.9097222222222223
+  },
+  {
+   "number": 162179,
+   "hours_to_first_label": 5.7025,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3186.6883333333335,
+   "hours_to_triaged": 6575.895277777778
+  },
+  {
+   "number": 162178,
+   "hours_to_first_label": 102.48277777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 148.30916666666667,
+   "hours_to_triaged": 102.48277777777778
+  },
+  {
+   "number": 162174,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 5.383333333333334,
+   "hours_to_triaged": 121.97277777777778
+  },
+  {
+   "number": 162160,
+   "hours_to_first_label": 2.395277777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 307.06055555555554,
+   "hours_to_triaged": 6580.299166666667
+  },
+  {
+   "number": 162157,
+   "hours_to_first_label": 7.441666666666666,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 6129.865277777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162156,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162154,
+   "hours_to_first_label": 6.654444444444445,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 6.704722222222222,
+   "hours_to_triaged": 6.788333333333333
+  },
+  {
+   "number": 162152,
+   "hours_to_first_label": 7.053055555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 42.955,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162151,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 101.17777777777778,
+   "hours_to_triaged": 130.74583333333334
+  },
+  {
+   "number": 162147,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 7.695277777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162146,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.021388888888888888,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162143,
+   "hours_to_first_label": 8.59,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 16.60333333333333,
+   "hours_to_triaged": 10.475277777777778
+  },
+  {
+   "number": 162135,
+   "hours_to_first_label": 11.143055555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 17.561944444444446,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162131,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 18.54138888888889,
+   "hours_to_triaged": 18.5375
+  },
+  {
+   "number": 162129,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 37.963055555555556,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162127,
+   "hours_to_first_label": 14.21,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 14.228333333333333,
+   "hours_to_triaged": 14.229166666666666
+  },
+  {
+   "number": 162116,
+   "hours_to_first_label": 12.811111111111112,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 12.811111111111112
+  },
+  {
+   "number": 162113,
+   "hours_to_first_label": 0.06638888888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.06638888888888889
+  },
+  {
+   "number": 162110,
+   "hours_to_first_label": 13.398055555555555,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 117.69666666666667,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162092,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2265.449722222222,
+   "hours_to_triaged": 0.0002777777777777778
+  },
+  {
+   "number": 162087,
+   "hours_to_first_label": 18.270555555555557,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 25.474444444444444,
+   "hours_to_triaged": 25.468333333333334
+  },
+  {
+   "number": 162074,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 0.7669444444444444,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162070,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 308.5263888888889,
+   "hours_to_triaged": 145.3361111111111
+  },
+  {
+   "number": 162065,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 0.6402777777777777,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162064,
+   "hours_to_first_label": 1.0763888888888888,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.1630555555555555,
+   "hours_to_triaged": 1.0763888888888888
+  },
+  {
+   "number": 162061,
+   "hours_to_first_label": 4.510555555555555,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 4.691944444444444,
+   "hours_to_triaged": 4.510555555555555
+  },
+  {
+   "number": 162060,
+   "hours_to_first_label": 1.8633333333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 4.4383333333333335,
+   "hours_to_triaged": 1.8633333333333333
+  },
+  {
+   "number": 162057,
+   "hours_to_first_label": 5.068611111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 5.065555555555555,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 162054,
+   "hours_to_first_label": 14.081666666666667,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 14.081666666666667
+  },
+  {
+   "number": 162049,
+   "hours_to_first_label": 9.82638888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 11.168888888888889,
+   "hours_to_triaged": 9.82638888888889
+  },
+  {
+   "number": 162032,
+   "hours_to_first_label": 35.705,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2191.755277777778,
+   "hours_to_triaged": 6615.325277777778
+  },
+  {
+   "number": 162019,
+   "hours_to_first_label": 38.68083333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.8702777777777777,
+   "hours_to_triaged": 43.496944444444445
+  },
+  {
+   "number": 162004,
+   "hours_to_first_label": 1.2244444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 40.812222222222225
+  },
+  {
+   "number": 162002,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 6.323333333333333,
+   "hours_to_triaged": 6.306388888888889
+  },
+  {
+   "number": 161997,
+   "hours_to_first_label": 1.5522222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.625,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 161993,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.0002777777777777778
+  },
+  {
+   "number": 161985,
+   "hours_to_first_label": 2.930833333333333,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.4347222222222222,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 161974,
+   "hours_to_first_label": 0.0019444444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.14444444444444443,
+   "hours_to_triaged": 6771.4725
+  },
+  {
+   "number": 161970,
+   "hours_to_first_label": 1.8908333333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 113.59833333333333,
+   "hours_to_triaged": 1.8908333333333334
+  },
+  {
+   "number": 161969,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 176.04416666666665
+  },
+  {
+   "number": 161960,
+   "hours_to_first_label": 5.276944444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 6.787222222222222,
+   "hours_to_triaged": 5.276944444444444
+  },
+  {
+   "number": 161954,
+   "hours_to_first_label": 6.724444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1910.3111111111111,
+   "hours_to_triaged": 6.724444444444444
+  },
+  {
+   "number": 161948,
+   "hours_to_first_label": 7.213055555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 9.793888888888889,
+   "hours_to_triaged": 7.213055555555556
+  },
+  {
+   "number": 161945,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 13.463611111111112
+  },
+  {
+   "number": 161944,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 13.62888888888889,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 161943,
+   "hours_to_first_label": 9.244722222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 11.869444444444444,
+   "hours_to_triaged": 9.244722222222222
+  },
+  {
+   "number": 161942,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": 4.9558333333333335,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 161941,
+   "hours_to_first_label": 9.771944444444445,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.095,
+   "hours_to_triaged": 9.772222222222222
+  },
+  {
+   "number": 161937,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 41.34777777777778,
+   "hours_to_triaged": 63.12388888888889
+  },
+  {
+   "number": 161935,
+   "hours_to_first_label": 10.393611111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 8152.491111111111,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 161933,
+   "hours_to_first_label": 10.426111111111112,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 38.82416666666666,
+   "hours_to_triaged": 63.48138888888889
+  },
+  {
+   "number": 161921,
+   "hours_to_first_label": 19.432222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 19.43027777777778,
+   "hours_to_triaged": 19.432222222222222
+  },
+  {
+   "number": 161915,
+   "hours_to_first_label": 22.635833333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 79.25972222222222,
+   "hours_to_triaged": 22.635833333333334
+  },
+  {
+   "number": 161906,
+   "hours_to_first_label": 25.34138888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 53.639722222222225,
+   "hours_to_triaged": 54.39138888888889
+  },
+  {
+   "number": 161905,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 54.54638888888889,
+   "hours_to_triaged": 78.14777777777778
+  },
+  {
+   "number": 161904,
+   "hours_to_first_label": 25.845833333333335,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 54.22888888888889,
+   "hours_to_triaged": 54.23083333333334
+  },
+  {
+   "number": 161902,
+   "hours_to_first_label": 2.6530555555555555,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 28.760277777777777,
+   "hours_to_triaged": 30.138055555555557
+  },
+  {
+   "number": 161899,
+   "hours_to_first_label": 27.79138888888889,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 27.79138888888889
+  },
+  {
+   "number": 161889,
+   "hours_to_first_label": 32.69,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 58.10472222222222,
+   "hours_to_triaged": 58.10666666666667
+  },
+  {
+   "number": 161888,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 161886,
+   "hours_to_first_label": 33.405833333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 273.6463888888889,
+   "hours_to_triaged": 56.94916666666666
+  },
+  {
+   "number": 161884,
+   "hours_to_first_label": 78.68666666666667,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 78.68666666666667
+  },
+  {
+   "number": 161878,
+   "hours_to_first_label": 36.185833333333335,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.2722222222222221,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 161877,
+   "hours_to_first_label": 2.5861111111111112,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.757222222222222,
+   "hours_to_triaged": 2.606388888888889
+  },
+  {
+   "number": 161875,
+   "hours_to_first_label": 10.953055555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.8658333333333332,
+   "hours_to_triaged": 10.953055555555556
+  },
+  {
+   "number": 161874,
+   "hours_to_first_label": 2.8869444444444445,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 4.065555555555555,
+   "hours_to_triaged": 2.8872222222222224
+  },
+  {
+   "number": 161873,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 161871,
+   "hours_to_first_label": 0.25,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 5.921111111111111,
+   "hours_to_triaged": 13.261111111111111
+  },
+  {
+   "number": 161869,
+   "hours_to_first_label": 84.7625,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 4.243333333333333,
+   "hours_to_triaged": 84.7625
+  },
+  {
+   "number": 161868,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 5.592777777777778,
+   "hours_to_triaged": null
+  }
+ ]
+}

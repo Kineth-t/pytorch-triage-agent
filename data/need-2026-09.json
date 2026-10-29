@@ -1,0 +1,3745 @@
+{
+ "repo": "pytorch/pytorch",
+ "window": [
+  "2026-09-01",
+  "2026-09-28"
+ ],
+ "measured_at": "2026-10-29T07:01:41.291875+00:00",
+ "excluded": "bot authors and 'DISABLED ' auto-generated test issues",
+ "summary": {
+  "issues": 532,
+  "median_hours_to_first_label": 0.03,
+  "median_hours_to_first_comment_by_other": 15.26,
+  "median_hours_to_triaged": 0.04,
+  "share_labelled_within_24h": 0.991,
+  "share_first_label_by_bot": 0.789,
+  "share_never_labelled": 0.006,
+  "share_never_triaged": 0.141
+ },
+ "issues": [
+  {
+   "number": 198956,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.043333333333333335
+  },
+  {
+   "number": 198951,
+   "hours_to_first_label": 0.034444444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 166.8761111111111,
+   "hours_to_triaged": 163.7461111111111
+  },
+  {
+   "number": 198898,
+   "hours_to_first_label": 0.0275,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 317.3461111111111,
+   "hours_to_triaged": 11.231388888888889
+  },
+  {
+   "number": 198896,
+   "hours_to_first_label": 0.04055555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 11.438055555555556
+  },
+  {
+   "number": 198891,
+   "hours_to_first_label": 0.02666666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 167.3175
+  },
+  {
+   "number": 198880,
+   "hours_to_first_label": 0.0225,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 324.62333333333333,
+   "hours_to_triaged": 0.07666666666666666
+  },
+  {
+   "number": 198874,
+   "hours_to_first_label": 0.043611111111111114,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 20.24888888888889,
+   "hours_to_triaged": 3.472777777777778
+  },
+  {
+   "number": 198869,
+   "hours_to_first_label": 0.03861111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.23722222222222222,
+   "hours_to_triaged": 0.03861111111111111
+  },
+  {
+   "number": 198868,
+   "hours_to_first_label": 0.025555555555555557,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 77.3236111111111
+  },
+  {
+   "number": 198866,
+   "hours_to_first_label": 0.029166666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 4.745,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198863,
+   "hours_to_first_label": 0.0225,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.18222222222222223,
+   "hours_to_triaged": 6.282222222222222
+  },
+  {
+   "number": 198862,
+   "hours_to_first_label": 0.028333333333333332,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 78.78833333333333
+  },
+  {
+   "number": 198856,
+   "hours_to_first_label": 0.030833333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 375.99111111111114,
+   "hours_to_triaged": 80.06138888888889
+  },
+  {
+   "number": 198854,
+   "hours_to_first_label": 0.02861111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.02861111111111111
+  },
+  {
+   "number": 198853,
+   "hours_to_first_label": 0.03638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 80.26638888888888
+  },
+  {
+   "number": 198852,
+   "hours_to_first_label": 0.03777777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 235.8411111111111,
+   "hours_to_triaged": 78.38305555555556
+  },
+  {
+   "number": 198851,
+   "hours_to_first_label": 0.027777777777777776,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 77.96527777777777
+  },
+  {
+   "number": 198850,
+   "hours_to_first_label": 0.030833333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 15.664166666666667,
+   "hours_to_triaged": 0.030833333333333334
+  },
+  {
+   "number": 198849,
+   "hours_to_first_label": 0.029722222222222223,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198847,
+   "hours_to_first_label": 0.024166666666666666,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 7.536666666666667,
+   "hours_to_triaged": 8.915833333333333
+  },
+  {
+   "number": 198846,
+   "hours_to_first_label": 0.028333333333333332,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 212.44027777777777,
+   "hours_to_triaged": 78.73388888888888
+  },
+  {
+   "number": 198841,
+   "hours_to_first_label": 0.04666666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198821,
+   "hours_to_first_label": 0.027777777777777776,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 4.597222222222222,
+   "hours_to_triaged": 0.027777777777777776
+  },
+  {
+   "number": 198794,
+   "hours_to_first_label": 0.035277777777777776,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 8.141666666666667,
+   "hours_to_triaged": 1.4636111111111112
+  },
+  {
+   "number": 198793,
+   "hours_to_first_label": 0.030555555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 22.567222222222224
+  },
+  {
+   "number": 198792,
+   "hours_to_first_label": 0.024444444444444446,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.3794444444444444,
+   "hours_to_triaged": 0.34055555555555556
+  },
+  {
+   "number": 198734,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 11.662222222222223,
+   "hours_to_triaged": 112.81472222222222
+  },
+  {
+   "number": 198708,
+   "hours_to_first_label": 0.03388888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 24.74361111111111,
+   "hours_to_triaged": 24.641944444444444
+  },
+  {
+   "number": 198698,
+   "hours_to_first_label": 0.0022222222222222222,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.165,
+   "hours_to_triaged": 0.025833333333333333
+  },
+  {
+   "number": 198694,
+   "hours_to_first_label": 0.020833333333333332,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 64.6061111111111,
+   "hours_to_triaged": 63.62305555555555
+  },
+  {
+   "number": 198693,
+   "hours_to_first_label": 0.024722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.024722222222222222
+  },
+  {
+   "number": 198691,
+   "hours_to_first_label": 0.035,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 212.9597222222222,
+   "hours_to_triaged": 0.035
+  },
+  {
+   "number": 198682,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198676,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.2477777777777779,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198669,
+   "hours_to_first_label": 0.028055555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.028055555555555556
+  },
+  {
+   "number": 198667,
+   "hours_to_first_label": 0.03027777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03027777777777778
+  },
+  {
+   "number": 198664,
+   "hours_to_first_label": 0.03777777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03777777777777778
+  },
+  {
+   "number": 198663,
+   "hours_to_first_label": 0.04083333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 115.78055555555555
+  },
+  {
+   "number": 198657,
+   "hours_to_first_label": 0.0275,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.0275
+  },
+  {
+   "number": 198652,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198636,
+   "hours_to_first_label": 0.02666666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.02666666666666667
+  },
+  {
+   "number": 198624,
+   "hours_to_first_label": 0.027777777777777776,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 16.870277777777776,
+   "hours_to_triaged": 77.49138888888889
+  },
+  {
+   "number": 198613,
+   "hours_to_first_label": 0.03305555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 178.275,
+   "hours_to_triaged": 0.03305555555555555
+  },
+  {
+   "number": 198609,
+   "hours_to_first_label": 0.023055555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.4686111111111111,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198606,
+   "hours_to_first_label": 0.028888888888888888,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 8.199722222222222,
+   "hours_to_triaged": 149.925
+  },
+  {
+   "number": 198584,
+   "hours_to_first_label": 0.035833333333333335,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.3288888888888889,
+   "hours_to_triaged": 1.8711111111111112
+  },
+  {
+   "number": 198583,
+   "hours_to_first_label": 0.023333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.1355555555555557,
+   "hours_to_triaged": 130.57777777777778
+  },
+  {
+   "number": 198582,
+   "hours_to_first_label": 0.03638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 236.13,
+   "hours_to_triaged": 130.59194444444444
+  },
+  {
+   "number": 198581,
+   "hours_to_first_label": 0.025555555555555557,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 83.82944444444445
+  },
+  {
+   "number": 198580,
+   "hours_to_first_label": 0.02638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.1775,
+   "hours_to_triaged": 83.8488888888889
+  },
+  {
+   "number": 198579,
+   "hours_to_first_label": 0.035555555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 19.43722222222222,
+   "hours_to_triaged": 0.035555555555555556
+  },
+  {
+   "number": 198578,
+   "hours_to_first_label": 0.04416666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 19.48472222222222,
+   "hours_to_triaged": 0.04416666666666667
+  },
+  {
+   "number": 198577,
+   "hours_to_first_label": 0.02277777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 63.84638888888889,
+   "hours_to_triaged": 0.02277777777777778
+  },
+  {
+   "number": 198568,
+   "hours_to_first_label": 0.03777777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03777777777777778
+  },
+  {
+   "number": 198567,
+   "hours_to_first_label": 0.028888888888888888,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 11.483055555555556,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198566,
+   "hours_to_first_label": 0.028333333333333332,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 7.387777777777778,
+   "hours_to_triaged": 0.028333333333333332
+  },
+  {
+   "number": 198563,
+   "hours_to_first_label": 0.03138888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 286.8786111111111,
+   "hours_to_triaged": 90.80166666666666
+  },
+  {
+   "number": 198562,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.23277777777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198559,
+   "hours_to_first_label": 0.034722222222222224,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.034722222222222224
+  },
+  {
+   "number": 198555,
+   "hours_to_first_label": 0.03888888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.02638888888888889,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198553,
+   "hours_to_first_label": 0.025555555555555557,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 162.1797222222222
+  },
+  {
+   "number": 198545,
+   "hours_to_first_label": 0.03361111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 162.66444444444446
+  },
+  {
+   "number": 198539,
+   "hours_to_first_label": 0.028333333333333332,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.034444444444444444,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198533,
+   "hours_to_first_label": 0.03222222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.07027777777777777,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198526,
+   "hours_to_first_label": 0.025833333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.025833333333333333
+  },
+  {
+   "number": 198522,
+   "hours_to_first_label": 0.02666666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 79.78277777777778,
+   "hours_to_triaged": 11.44361111111111
+  },
+  {
+   "number": 198513,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198509,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.16083333333333333,
+   "hours_to_triaged": 167.18833333333333
+  },
+  {
+   "number": 198507,
+   "hours_to_first_label": 0.023333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 14.608055555555556,
+   "hours_to_triaged": 14.325
+  },
+  {
+   "number": 198506,
+   "hours_to_first_label": 0.04027777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 14.361666666666666,
+   "hours_to_triaged": 14.325555555555555
+  },
+  {
+   "number": 198503,
+   "hours_to_first_label": 0.06638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.1633333333333336,
+   "hours_to_triaged": 0.8775
+  },
+  {
+   "number": 198499,
+   "hours_to_first_label": 0.04055555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 96.77805555555555,
+   "hours_to_triaged": 98.49944444444445
+  },
+  {
+   "number": 198486,
+   "hours_to_first_label": 0.02666666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 98.58666666666667,
+   "hours_to_triaged": 171.20583333333335
+  },
+  {
+   "number": 198485,
+   "hours_to_first_label": 0.028055555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 98.66805555555555,
+   "hours_to_triaged": 0.028055555555555556
+  },
+  {
+   "number": 198484,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 112.73583333333333,
+   "hours_to_triaged": 171.72055555555556
+  },
+  {
+   "number": 198478,
+   "hours_to_first_label": 0.03361111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03361111111111111
+  },
+  {
+   "number": 198475,
+   "hours_to_first_label": 0.03805555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03805555555555556
+  },
+  {
+   "number": 198473,
+   "hours_to_first_label": 0.03027777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 21.764722222222222
+  },
+  {
+   "number": 198471,
+   "hours_to_first_label": 0.025277777777777777,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 74.89416666666666,
+   "hours_to_triaged": 22.11861111111111
+  },
+  {
+   "number": 198470,
+   "hours_to_first_label": 0.028055555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 248.67777777777778,
+   "hours_to_triaged": 0.028055555555555556
+  },
+  {
+   "number": 198450,
+   "hours_to_first_label": 0.027777777777777776,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.027777777777777776
+  },
+  {
+   "number": 198448,
+   "hours_to_first_label": 0.029722222222222223,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 772.0261111111112,
+   "hours_to_triaged": 155.47666666666666
+  },
+  {
+   "number": 198444,
+   "hours_to_first_label": 0.01861111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.01861111111111111
+  },
+  {
+   "number": 198432,
+   "hours_to_first_label": 0.02722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.11388888888888889,
+   "hours_to_triaged": 0.02722222222222222
+  },
+  {
+   "number": 198431,
+   "hours_to_first_label": 0.0325,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.7183333333333333,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198427,
+   "hours_to_first_label": 0.024166666666666666,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 21.61138888888889,
+   "hours_to_triaged": 0.030833333333333334
+  },
+  {
+   "number": 198425,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 9.686111111111112,
+   "hours_to_triaged": 0.03361111111111111
+  },
+  {
+   "number": 198424,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 105.22638888888889,
+   "hours_to_triaged": 0.03888888888888889
+  },
+  {
+   "number": 198422,
+   "hours_to_first_label": 0.035555555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.10777777777777778,
+   "hours_to_triaged": 0.035555555555555556
+  },
+  {
+   "number": 198420,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.04027777777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198399,
+   "hours_to_first_label": 0.041666666666666664,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198382,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.1333333333333333,
+   "hours_to_triaged": 194.71027777777778
+  },
+  {
+   "number": 198379,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.312777777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198375,
+   "hours_to_first_label": 0.03027777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 136.80138888888888,
+   "hours_to_triaged": 0.03027777777777778
+  },
+  {
+   "number": 198373,
+   "hours_to_first_label": 0.026944444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 122.51944444444445,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198372,
+   "hours_to_first_label": 0.035833333333333335,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 149.3802777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198367,
+   "hours_to_first_label": 0.02722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.02722222222222222
+  },
+  {
+   "number": 198364,
+   "hours_to_first_label": 0.035277777777777776,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.035277777777777776
+  },
+  {
+   "number": 198345,
+   "hours_to_first_label": 0.03611111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03611111111111111
+  },
+  {
+   "number": 198344,
+   "hours_to_first_label": 0.03138888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 10.796666666666667,
+   "hours_to_triaged": 0.06944444444444445
+  },
+  {
+   "number": 198343,
+   "hours_to_first_label": 0.03305555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 181.82194444444445
+  },
+  {
+   "number": 198333,
+   "hours_to_first_label": 0.03027777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 18.35388888888889,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198332,
+   "hours_to_first_label": 0.04055555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198307,
+   "hours_to_first_label": 0.058888888888888886,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 5.195833333333334,
+   "hours_to_triaged": 0.058888888888888886
+  },
+  {
+   "number": 198305,
+   "hours_to_first_label": 0.03,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 24.432777777777776,
+   "hours_to_triaged": 135.66972222222222
+  },
+  {
+   "number": 198304,
+   "hours_to_first_label": 0.029444444444444443,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 6.688888888888889,
+   "hours_to_triaged": 0.029444444444444443
+  },
+  {
+   "number": 198280,
+   "hours_to_first_label": 0.03,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 193.0861111111111
+  },
+  {
+   "number": 198270,
+   "hours_to_first_label": 0.0325,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198249,
+   "hours_to_first_label": 0.035833333333333335,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 12.482777777777779,
+   "hours_to_triaged": 0.035833333333333335
+  },
+  {
+   "number": 198239,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 21.767222222222223,
+   "hours_to_triaged": 0.0008333333333333334
+  },
+  {
+   "number": 198225,
+   "hours_to_first_label": 0.0044444444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 167.57833333333335,
+   "hours_to_triaged": 0.027777777777777776
+  },
+  {
+   "number": 198224,
+   "hours_to_first_label": 0.034722222222222224,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.034722222222222224
+  },
+  {
+   "number": 198222,
+   "hours_to_first_label": 0.029166666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.2475,
+   "hours_to_triaged": 0.029444444444444443
+  },
+  {
+   "number": 198206,
+   "hours_to_first_label": 0.02722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 112.08527777777778,
+   "hours_to_triaged": 0.02722222222222222
+  },
+  {
+   "number": 198205,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 3.018611111111111
+  },
+  {
+   "number": 198201,
+   "hours_to_first_label": 0.030555555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 372.53027777777777,
+   "hours_to_triaged": 3.4341666666666666
+  },
+  {
+   "number": 198197,
+   "hours_to_first_label": 0.025277777777777777,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 3.8986111111111112
+  },
+  {
+   "number": 198192,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 277.9791666666667,
+   "hours_to_triaged": 0.035
+  },
+  {
+   "number": 198190,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.8008333333333333,
+   "hours_to_triaged": 5.107777777777778
+  },
+  {
+   "number": 198189,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.2194444444444446,
+   "hours_to_triaged": 5.2275
+  },
+  {
+   "number": 198187,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 176.03222222222223,
+   "hours_to_triaged": 5.6075
+  },
+  {
+   "number": 198186,
+   "hours_to_first_label": 0.03833333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 186.86166666666668,
+   "hours_to_triaged": 150.00694444444446
+  },
+  {
+   "number": 198185,
+   "hours_to_first_label": 0.02722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 186.86583333333334,
+   "hours_to_triaged": 0.02722222222222222
+  },
+  {
+   "number": 198183,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198182,
+   "hours_to_first_label": 0.03805555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 77.17444444444445,
+   "hours_to_triaged": 0.03805555555555556
+  },
+  {
+   "number": 198175,
+   "hours_to_first_label": 0.03722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.0375
+  },
+  {
+   "number": 198174,
+   "hours_to_first_label": 0.028888888888888888,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.029166666666666667
+  },
+  {
+   "number": 198173,
+   "hours_to_first_label": 0.029166666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.029166666666666667
+  },
+  {
+   "number": 198172,
+   "hours_to_first_label": 0.03888888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 53.985277777777775,
+   "hours_to_triaged": 53.98166666666667
+  },
+  {
+   "number": 198171,
+   "hours_to_first_label": 0.029166666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.9280555555555554,
+   "hours_to_triaged": 0.029166666666666667
+  },
+  {
+   "number": 198155,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 6.414722222222222,
+   "hours_to_triaged": 9.19111111111111
+  },
+  {
+   "number": 198140,
+   "hours_to_first_label": 0.0225,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03611111111111111
+  },
+  {
+   "number": 198134,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 11.3475
+  },
+  {
+   "number": 198133,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 11.374166666666667
+  },
+  {
+   "number": 198131,
+   "hours_to_first_label": 0.03361111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 11.060555555555556
+  },
+  {
+   "number": 198128,
+   "hours_to_first_label": 0.03,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03
+  },
+  {
+   "number": 198126,
+   "hours_to_first_label": 0.04,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 7.003888888888889,
+   "hours_to_triaged": 0.04
+  },
+  {
+   "number": 198119,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 14.063611111111111
+  },
+  {
+   "number": 198118,
+   "hours_to_first_label": 0.04888888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 211.65416666666667
+  },
+  {
+   "number": 198102,
+   "hours_to_first_label": 0.03611111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 13.97638888888889
+  },
+  {
+   "number": 198101,
+   "hours_to_first_label": 0.021944444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 13.97638888888889
+  },
+  {
+   "number": 198100,
+   "hours_to_first_label": 0.04388888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.04388888888888889
+  },
+  {
+   "number": 198095,
+   "hours_to_first_label": 0.03138888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 14.329722222222221
+  },
+  {
+   "number": 198094,
+   "hours_to_first_label": 0.0275,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 14.329722222222221
+  },
+  {
+   "number": 198081,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 11.92361111111111,
+   "hours_to_triaged": 14.947222222222223
+  },
+  {
+   "number": 198077,
+   "hours_to_first_label": 0.03138888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 160.04416666666665
+  },
+  {
+   "number": 198076,
+   "hours_to_first_label": 0.0025,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 17.5625,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 198072,
+   "hours_to_first_label": 0.03972222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 344.80805555555554,
+   "hours_to_triaged": 205.01111111111112
+  },
+  {
+   "number": 198071,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 644.7297222222222,
+   "hours_to_triaged": 16.58416666666667
+  },
+  {
+   "number": 198070,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 859.4008333333334,
+   "hours_to_triaged": 16.636666666666667
+  },
+  {
+   "number": 198068,
+   "hours_to_first_label": 0.024722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 16.407777777777778
+  },
+  {
+   "number": 198064,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 344.93611111111113,
+   "hours_to_triaged": 16.943055555555556
+  },
+  {
+   "number": 198057,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 17.5525
+  },
+  {
+   "number": 198056,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 491.05305555555555,
+   "hours_to_triaged": 17.984444444444446
+  },
+  {
+   "number": 198052,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 515.7088888888889,
+   "hours_to_triaged": 18.259444444444444
+  },
+  {
+   "number": 198037,
+   "hours_to_first_label": 0.04527777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 66.24805555555555,
+   "hours_to_triaged": 66.15444444444445
+  },
+  {
+   "number": 198033,
+   "hours_to_first_label": 0.04555555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 19.950833333333332
+  },
+  {
+   "number": 198031,
+   "hours_to_first_label": 0.03916666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 20.106666666666666
+  },
+  {
+   "number": 198017,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.8319444444444444,
+   "hours_to_triaged": 0.0008333333333333334
+  },
+  {
+   "number": 198014,
+   "hours_to_first_label": 0.035,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.035
+  },
+  {
+   "number": 197898,
+   "hours_to_first_label": 0.028888888888888888,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.7455555555555557,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197897,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 248.41444444444446,
+   "hours_to_triaged": 0.029444444444444443
+  },
+  {
+   "number": 197896,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 8.348333333333333,
+   "hours_to_triaged": 24.888333333333332
+  },
+  {
+   "number": 197895,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.0458333333333334,
+   "hours_to_triaged": 26.7275
+  },
+  {
+   "number": 197894,
+   "hours_to_first_label": 0.02638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.8266666666666667,
+   "hours_to_triaged": 215.3925
+  },
+  {
+   "number": 197893,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 2.966388888888889,
+   "hours_to_triaged": 26.77
+  },
+  {
+   "number": 197889,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 489.9141666666667,
+   "hours_to_triaged": 27.23361111111111
+  },
+  {
+   "number": 197888,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.5769444444444445,
+   "hours_to_triaged": 27.357222222222223
+  },
+  {
+   "number": 197887,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.6013888888888888,
+   "hours_to_triaged": 27.38861111111111
+  },
+  {
+   "number": 197880,
+   "hours_to_first_label": 0.03833333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 99.80611111111111,
+   "hours_to_triaged": 0.03833333333333333
+  },
+  {
+   "number": 197875,
+   "hours_to_first_label": 0.020277777777777777,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 7.081111111111111,
+   "hours_to_triaged": 0.0325
+  },
+  {
+   "number": 197871,
+   "hours_to_first_label": 0.034166666666666665,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 8.097777777777777,
+   "hours_to_triaged": 0.034166666666666665
+  },
+  {
+   "number": 197870,
+   "hours_to_first_label": 0.0011111111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 249.99305555555554,
+   "hours_to_triaged": 0.0325
+  },
+  {
+   "number": 197869,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.028055555555555556
+  },
+  {
+   "number": 197867,
+   "hours_to_first_label": 0.034166666666666665,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 11.08611111111111
+  },
+  {
+   "number": 197860,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 42.02472222222222,
+   "hours_to_triaged": 32.090555555555554
+  },
+  {
+   "number": 197859,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 32.12861111111111
+  },
+  {
+   "number": 197847,
+   "hours_to_first_label": 0.01972222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 23.66583333333333,
+   "hours_to_triaged": 0.01972222222222222
+  },
+  {
+   "number": 197846,
+   "hours_to_first_label": 0.030833333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 14.500277777777777,
+   "hours_to_triaged": 37.45916666666667
+  },
+  {
+   "number": 197842,
+   "hours_to_first_label": 0.022222222222222223,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 17.04,
+   "hours_to_triaged": 0.022222222222222223
+  },
+  {
+   "number": 197838,
+   "hours_to_first_label": 0.04,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 11.214444444444444,
+   "hours_to_triaged": 0.04
+  },
+  {
+   "number": 197829,
+   "hours_to_first_label": 0.026111111111111113,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 21.602777777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197815,
+   "hours_to_first_label": 0.02388888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 3.755,
+   "hours_to_triaged": 0.02388888888888889
+  },
+  {
+   "number": 197811,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 50.592777777777776
+  },
+  {
+   "number": 197810,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 28.945,
+   "hours_to_triaged": 52.05277777777778
+  },
+  {
+   "number": 197807,
+   "hours_to_first_label": 0.0225,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.2025,
+   "hours_to_triaged": 0.0225
+  },
+  {
+   "number": 197805,
+   "hours_to_first_label": 0.02638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 3.941666666666667,
+   "hours_to_triaged": 32.27361111111111
+  },
+  {
+   "number": 197803,
+   "hours_to_first_label": 0.02277777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197800,
+   "hours_to_first_label": 0.027777777777777776,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.028055555555555556
+  },
+  {
+   "number": 197796,
+   "hours_to_first_label": 0.025555555555555557,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.05611111111111111,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197795,
+   "hours_to_first_label": 0.029722222222222223,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 21.131666666666668,
+   "hours_to_triaged": 201.81583333333333
+  },
+  {
+   "number": 197789,
+   "hours_to_first_label": 0.03305555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 37.06472222222222,
+   "hours_to_triaged": 0.03305555555555555
+  },
+  {
+   "number": 197777,
+   "hours_to_first_label": 0.035555555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.7138888888888889,
+   "hours_to_triaged": 108.45222222222222
+  },
+  {
+   "number": 197774,
+   "hours_to_first_label": 0.02638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.02638888888888889
+  },
+  {
+   "number": 197765,
+   "hours_to_first_label": 0.04055555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.437222222222222,
+   "hours_to_triaged": 0.04055555555555555
+  },
+  {
+   "number": 197739,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 33.602222222222224,
+   "hours_to_triaged": 71.05777777777777
+  },
+  {
+   "number": 197738,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 69.73027777777777,
+   "hours_to_triaged": 71.36138888888888
+  },
+  {
+   "number": 197718,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.15222222222222223,
+   "hours_to_triaged": 0.03305555555555555
+  },
+  {
+   "number": 197716,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 51.52388888888889,
+   "hours_to_triaged": 0.03194444444444444
+  },
+  {
+   "number": 197715,
+   "hours_to_first_label": 0.03277777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.1969444444444444,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197709,
+   "hours_to_first_label": 0.02722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197673,
+   "hours_to_first_label": 0.036944444444444446,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 8.635833333333334,
+   "hours_to_triaged": 146.0427777777778
+  },
+  {
+   "number": 197636,
+   "hours_to_first_label": 0.0275,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.8566666666666665,
+   "hours_to_triaged": 277.2186111111111
+  },
+  {
+   "number": 197622,
+   "hours_to_first_label": 0.03888888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03888888888888889
+  },
+  {
+   "number": 197599,
+   "hours_to_first_label": 0.02388888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197598,
+   "hours_to_first_label": 0.03222222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 834.0944444444444,
+   "hours_to_triaged": 0.03222222222222222
+  },
+  {
+   "number": 197586,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 16.131666666666668,
+   "hours_to_triaged": 93.61166666666666
+  },
+  {
+   "number": 197582,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 165.76333333333332,
+   "hours_to_triaged": 93.89694444444444
+  },
+  {
+   "number": 197574,
+   "hours_to_first_label": 0.03138888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03138888888888889
+  },
+  {
+   "number": 197561,
+   "hours_to_first_label": 0.034722222222222224,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 28.295555555555556,
+   "hours_to_triaged": 96.45166666666667
+  },
+  {
+   "number": 197554,
+   "hours_to_first_label": 0.03916666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 72.02083333333333,
+   "hours_to_triaged": 0.03916666666666667
+  },
+  {
+   "number": 197552,
+   "hours_to_first_label": 0.025277777777777777,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.081111111111111,
+   "hours_to_triaged": 0.025277777777777777
+  },
+  {
+   "number": 197548,
+   "hours_to_first_label": 0.0375,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197539,
+   "hours_to_first_label": 0.02638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 291.7247222222222
+  },
+  {
+   "number": 197520,
+   "hours_to_first_label": 0.028888888888888888,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 67.28722222222223,
+   "hours_to_triaged": 67.29694444444445
+  },
+  {
+   "number": 197519,
+   "hours_to_first_label": 0.029444444444444443,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 105.65416666666667
+  },
+  {
+   "number": 197517,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03666666666666667
+  },
+  {
+   "number": 197516,
+   "hours_to_first_label": 0.03805555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 4.167222222222223,
+   "hours_to_triaged": 0.03805555555555556
+  },
+  {
+   "number": 197515,
+   "hours_to_first_label": 0.035833333333333335,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.035833333333333335
+  },
+  {
+   "number": 197514,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.5661111111111112,
+   "hours_to_triaged": 303.6086111111111
+  },
+  {
+   "number": 197493,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1.0733333333333333,
+   "hours_to_triaged": 307.57916666666665
+  },
+  {
+   "number": 197489,
+   "hours_to_first_label": 0.028333333333333332,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 15.255833333333333,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197465,
+   "hours_to_first_label": 0.02638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.050833333333333335,
+   "hours_to_triaged": 0.035555555555555556
+  },
+  {
+   "number": 197463,
+   "hours_to_first_label": 0.043611111111111114,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 7.4075,
+   "hours_to_triaged": 0.043611111111111114
+  },
+  {
+   "number": 197461,
+   "hours_to_first_label": 0.0225,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 161.82722222222222,
+   "hours_to_triaged": 261.265
+  },
+  {
+   "number": 197448,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 70.93944444444445,
+   "hours_to_triaged": 118.5075
+  },
+  {
+   "number": 197434,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 20.60861111111111,
+   "hours_to_triaged": 119.63111111111111
+  },
+  {
+   "number": 197432,
+   "hours_to_first_label": 0.035277777777777776,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.09444444444444444,
+   "hours_to_triaged": 0.035277777777777776
+  },
+  {
+   "number": 197431,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 42.77916666666667,
+   "hours_to_triaged": 119.72055555555555
+  },
+  {
+   "number": 197416,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 5.012777777777778,
+   "hours_to_triaged": 125.12194444444444
+  },
+  {
+   "number": 197409,
+   "hours_to_first_label": 0.03388888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.7127777777777777,
+   "hours_to_triaged": 272.2652777777778
+  },
+  {
+   "number": 197408,
+   "hours_to_first_label": 0.030833333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 128.1797222222222
+  },
+  {
+   "number": 197404,
+   "hours_to_first_label": 0.03027777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03027777777777778
+  },
+  {
+   "number": 197399,
+   "hours_to_first_label": 0.035555555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 100.475,
+   "hours_to_triaged": 0.035555555555555556
+  },
+  {
+   "number": 197376,
+   "hours_to_first_label": 0.02722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 868.8988888888889,
+   "hours_to_triaged": 134.0247222222222
+  },
+  {
+   "number": 197374,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 5.4675,
+   "hours_to_triaged": 0.024444444444444446
+  },
+  {
+   "number": 197358,
+   "hours_to_first_label": 0.035555555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 137.50194444444443
+  },
+  {
+   "number": 197339,
+   "hours_to_first_label": 0.021666666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 18.296388888888888,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197312,
+   "hours_to_first_label": 0.06666666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.1175,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197246,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 4.8886111111111115,
+   "hours_to_triaged": 0.03777777777777778
+  },
+  {
+   "number": 197242,
+   "hours_to_first_label": 0.0019444444444444444,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.0019444444444444444
+  },
+  {
+   "number": 197236,
+   "hours_to_first_label": 0.030555555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 50.32555555555555,
+   "hours_to_triaged": 338.66277777777776
+  },
+  {
+   "number": 197235,
+   "hours_to_first_label": 0.028888888888888888,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 50.66833333333334,
+   "hours_to_triaged": 126.31611111111111
+  },
+  {
+   "number": 197211,
+   "hours_to_first_label": 0.042222222222222223,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.8766666666666667,
+   "hours_to_triaged": 154.1536111111111
+  },
+  {
+   "number": 197198,
+   "hours_to_first_label": 0.041944444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 202.83055555555555,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197196,
+   "hours_to_first_label": 0.022222222222222223,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 21.211666666666666,
+   "hours_to_triaged": 0.022222222222222223
+  },
+  {
+   "number": 197192,
+   "hours_to_first_label": 0.028333333333333332,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.6013888888888888,
+   "hours_to_triaged": 0.028333333333333332
+  },
+  {
+   "number": 197121,
+   "hours_to_first_label": 0.024166666666666666,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.024166666666666666
+  },
+  {
+   "number": 197114,
+   "hours_to_first_label": 0.03166666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.5391666666666667,
+   "hours_to_triaged": 7.115
+  },
+  {
+   "number": 197112,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 17.54083333333333,
+   "hours_to_triaged": 0.027777777777777776
+  },
+  {
+   "number": 197110,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 29.657222222222224,
+   "hours_to_triaged": 49.348333333333336
+  },
+  {
+   "number": 197109,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 149.6927777777778,
+   "hours_to_triaged": 0.034722222222222224
+  },
+  {
+   "number": 197108,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 53.65027777777778,
+   "hours_to_triaged": 173.0677777777778
+  },
+  {
+   "number": 197107,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 18.871388888888887,
+   "hours_to_triaged": 0.02722222222222222
+  },
+  {
+   "number": 197106,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 162.8986111111111,
+   "hours_to_triaged": 0.035
+  },
+  {
+   "number": 197105,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 15.235277777777778,
+   "hours_to_triaged": 0.025833333333333333
+  },
+  {
+   "number": 197104,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.034166666666666665
+  },
+  {
+   "number": 197103,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 1050.6983333333333,
+   "hours_to_triaged": 0.034444444444444444
+  },
+  {
+   "number": 197102,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.036944444444444446
+  },
+  {
+   "number": 197101,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 49.503055555555555
+  },
+  {
+   "number": 197099,
+   "hours_to_first_label": 0.02388888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 149.59277777777777,
+   "hours_to_triaged": 361.8355555555556
+  },
+  {
+   "number": 197098,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197097,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 21.886388888888888,
+   "hours_to_triaged": 0.028055555555555556
+  },
+  {
+   "number": 197096,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 5.710277777777778,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197095,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 74.15222222222222,
+   "hours_to_triaged": 173.32222222222222
+  },
+  {
+   "number": 197094,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 71.72777777777777,
+   "hours_to_triaged": 0.03388888888888889
+  },
+  {
+   "number": 197093,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 97.95666666666666,
+   "hours_to_triaged": 0.029444444444444443
+  },
+  {
+   "number": 197092,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 173.36527777777778
+  },
+  {
+   "number": 197091,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 173.40722222222223
+  },
+  {
+   "number": 197090,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.028055555555555556
+  },
+  {
+   "number": 197089,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 402.00944444444445,
+   "hours_to_triaged": 173.45833333333334
+  },
+  {
+   "number": 197088,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 44.92611111111111,
+   "hours_to_triaged": 173.4736111111111
+  },
+  {
+   "number": 197087,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 150.02805555555557,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197086,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 173.51611111111112
+  },
+  {
+   "number": 197085,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 91.32,
+   "hours_to_triaged": 75.7688888888889
+  },
+  {
+   "number": 197084,
+   "hours_to_first_label": 0.029444444444444443,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 173.78083333333333
+  },
+  {
+   "number": 197083,
+   "hours_to_first_label": 0.025277777777777777,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.025277777777777777
+  },
+  {
+   "number": 197080,
+   "hours_to_first_label": 0.04388888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.8672222222222221,
+   "hours_to_triaged": 0.04388888888888889
+  },
+  {
+   "number": 197079,
+   "hours_to_first_label": 0.03166666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.06472222222222222,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197077,
+   "hours_to_first_label": 0.027777777777777776,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 157.15083333333334,
+   "hours_to_triaged": 177.7813888888889
+  },
+  {
+   "number": 197073,
+   "hours_to_first_label": 0.009444444444444445,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.029722222222222223
+  },
+  {
+   "number": 197070,
+   "hours_to_first_label": 0.020555555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197067,
+   "hours_to_first_label": 0.023333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 181.43138888888888
+  },
+  {
+   "number": 197066,
+   "hours_to_first_label": 0.029166666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197062,
+   "hours_to_first_label": 0.02666666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 47.31611111111111,
+   "hours_to_triaged": 0.02666666666666667
+  },
+  {
+   "number": 197054,
+   "hours_to_first_label": 0.027777777777777776,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 40.77861111111111,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197036,
+   "hours_to_first_label": 0.060833333333333336,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.060833333333333336
+  },
+  {
+   "number": 197005,
+   "hours_to_first_label": 0.0225,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.1875,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 197002,
+   "hours_to_first_label": 0.03333333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 13.786111111111111,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196996,
+   "hours_to_first_label": 0.03333333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.2144444444444444,
+   "hours_to_triaged": 0.07583333333333334
+  },
+  {
+   "number": 196993,
+   "hours_to_first_label": 0.025,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.025
+  },
+  {
+   "number": 196990,
+   "hours_to_first_label": 0.024444444444444446,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.024444444444444446
+  },
+  {
+   "number": 196977,
+   "hours_to_first_label": 0.04416666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 4.649444444444445,
+   "hours_to_triaged": 4.6425
+  },
+  {
+   "number": 196975,
+   "hours_to_first_label": 0.03194444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03194444444444444
+  },
+  {
+   "number": 196972,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 188.27666666666667,
+   "hours_to_triaged": 0.03888888888888889
+  },
+  {
+   "number": 196969,
+   "hours_to_first_label": 0.029444444444444443,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.029444444444444443
+  },
+  {
+   "number": 196968,
+   "hours_to_first_label": 0.03027777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 44.34638888888889,
+   "hours_to_triaged": 0.08
+  },
+  {
+   "number": 196958,
+   "hours_to_first_label": 0.025555555555555557,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 9.85361111111111,
+   "hours_to_triaged": 0.025555555555555557
+  },
+  {
+   "number": 196957,
+   "hours_to_first_label": 0.025,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.028055555555555556
+  },
+  {
+   "number": 196949,
+   "hours_to_first_label": 0.02361111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.45555555555555555,
+   "hours_to_triaged": 10.571388888888889
+  },
+  {
+   "number": 196936,
+   "hours_to_first_label": 0.03138888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 104.80055555555556,
+   "hours_to_triaged": 0.03138888888888889
+  },
+  {
+   "number": 196935,
+   "hours_to_first_label": 0.03361111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03361111111111111
+  },
+  {
+   "number": 196934,
+   "hours_to_first_label": 0.02388888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.7891666666666666,
+   "hours_to_triaged": 0.02388888888888889
+  },
+  {
+   "number": 196931,
+   "hours_to_first_label": 0.023333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 886.97,
+   "hours_to_triaged": 0.023333333333333334
+  },
+  {
+   "number": 196927,
+   "hours_to_first_label": 0.02722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.02722222222222222
+  },
+  {
+   "number": 196914,
+   "hours_to_first_label": 0.04138888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.04138888888888889
+  },
+  {
+   "number": 196912,
+   "hours_to_first_label": 0.023055555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.09,
+   "hours_to_triaged": 0.023055555555555555
+  },
+  {
+   "number": 196906,
+   "hours_to_first_label": 0.026111111111111113,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.18833333333333332,
+   "hours_to_triaged": 11.591388888888888
+  },
+  {
+   "number": 196905,
+   "hours_to_first_label": 0.02277777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.3933333333333333,
+   "hours_to_triaged": 0.02277777777777778
+  },
+  {
+   "number": 196903,
+   "hours_to_first_label": 0.028888888888888888,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.22694444444444445,
+   "hours_to_triaged": 25.871944444444445
+  },
+  {
+   "number": 196886,
+   "hours_to_first_label": 0.056666666666666664,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 45.55972222222222,
+   "hours_to_triaged": 43.135
+  },
+  {
+   "number": 196875,
+   "hours_to_first_label": 0.026111111111111113,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 4.159722222222222,
+   "hours_to_triaged": 54.460277777777776
+  },
+  {
+   "number": 196864,
+   "hours_to_first_label": 0.02361111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 61.69916666666666
+  },
+  {
+   "number": 196773,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 8.022777777777778,
+   "hours_to_triaged": 0.029722222222222223
+  },
+  {
+   "number": 196772,
+   "hours_to_first_label": 0.04055555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 56.755833333333335,
+   "hours_to_triaged": 56.710277777777776
+  },
+  {
+   "number": 196749,
+   "hours_to_first_label": 0.043611111111111114,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 3.9430555555555555,
+   "hours_to_triaged": 0.043611111111111114
+  },
+  {
+   "number": 196745,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.06416666666666666,
+   "hours_to_triaged": 77.37666666666667
+  },
+  {
+   "number": 196744,
+   "hours_to_first_label": 0.042222222222222223,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 27.499166666666667,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196743,
+   "hours_to_first_label": 0.029722222222222223,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.4002777777777777,
+   "hours_to_triaged": 0.029722222222222223
+  },
+  {
+   "number": 196728,
+   "hours_to_first_label": 0.0325,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.866111111111111,
+   "hours_to_triaged": 0.0325
+  },
+  {
+   "number": 196708,
+   "hours_to_first_label": 0.027777777777777776,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 7.734444444444445,
+   "hours_to_triaged": 467.46166666666664
+  },
+  {
+   "number": 196707,
+   "hours_to_first_label": 0.025277777777777777,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 257.13416666666666
+  },
+  {
+   "number": 196705,
+   "hours_to_first_label": 0.03666666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 8.38111111111111,
+   "hours_to_triaged": 257.14472222222224
+  },
+  {
+   "number": 196704,
+   "hours_to_first_label": 0.03222222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03222222222222222
+  },
+  {
+   "number": 196703,
+   "hours_to_first_label": 0.03388888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 33.483333333333334,
+   "hours_to_triaged": 0.03388888888888889
+  },
+  {
+   "number": 196702,
+   "hours_to_first_label": 0.025,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 257.1897222222222
+  },
+  {
+   "number": 196701,
+   "hours_to_first_label": 0.035555555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 257.1961111111111
+  },
+  {
+   "number": 196700,
+   "hours_to_first_label": 0.03027777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 98.50944444444444,
+   "hours_to_triaged": 257.20444444444445
+  },
+  {
+   "number": 196699,
+   "hours_to_first_label": 0.025,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 609.3963888888889,
+   "hours_to_triaged": 257.21527777777777
+  },
+  {
+   "number": 196698,
+   "hours_to_first_label": 0.028888888888888888,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 542.9277777777778,
+   "hours_to_triaged": 257.2247222222222
+  },
+  {
+   "number": 196697,
+   "hours_to_first_label": 0.03111111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 257.2336111111111
+  },
+  {
+   "number": 196696,
+   "hours_to_first_label": 0.023333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 257.2416666666667
+  },
+  {
+   "number": 196695,
+   "hours_to_first_label": 0.030555555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 257.25194444444446
+  },
+  {
+   "number": 196694,
+   "hours_to_first_label": 0.035833333333333335,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 257.29305555555555
+  },
+  {
+   "number": 196682,
+   "hours_to_first_label": 0.028333333333333332,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 257.3186111111111
+  },
+  {
+   "number": 196681,
+   "hours_to_first_label": 0.036944444444444446,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 39.2675,
+   "hours_to_triaged": 279.01472222222225
+  },
+  {
+   "number": 196680,
+   "hours_to_first_label": 0.028055555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 22.99138888888889,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196678,
+   "hours_to_first_label": 0.028888888888888888,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.06472222222222222,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196659,
+   "hours_to_first_label": 0.028888888888888888,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 300.32,
+   "hours_to_triaged": 0.028888888888888888
+  },
+  {
+   "number": 196657,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 90.63222222222223
+  },
+  {
+   "number": 196631,
+   "hours_to_first_label": 0.024166666666666666,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.024166666666666666
+  },
+  {
+   "number": 196624,
+   "hours_to_first_label": 0.034444444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 95.01722222222222,
+   "hours_to_triaged": 95.00611111111111
+  },
+  {
+   "number": 196619,
+   "hours_to_first_label": 0.029166666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.27694444444444444,
+   "hours_to_triaged": 0.029166666666666667
+  },
+  {
+   "number": 196616,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 544.8538888888888,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196613,
+   "hours_to_first_label": 0.026944444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.026944444444444444
+  },
+  {
+   "number": 196606,
+   "hours_to_first_label": 0.035277777777777776,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.7175,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196605,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.035833333333333335
+  },
+  {
+   "number": 196596,
+   "hours_to_first_label": 0.03305555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 84.56166666666667
+  },
+  {
+   "number": 196592,
+   "hours_to_first_label": 0.02388888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.22,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196583,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 800.6808333333333,
+   "hours_to_triaged": 0.025555555555555557
+  },
+  {
+   "number": 196582,
+   "hours_to_first_label": 0.035,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.9941666666666666,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196577,
+   "hours_to_first_label": 0.0325,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 103.2125
+  },
+  {
+   "number": 196572,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.024722222222222222
+  },
+  {
+   "number": 196570,
+   "hours_to_first_label": 0.04805555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.04805555555555555
+  },
+  {
+   "number": 196567,
+   "hours_to_first_label": 0.025,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.025
+  },
+  {
+   "number": 196562,
+   "hours_to_first_label": 0.025833333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.08416666666666667
+  },
+  {
+   "number": 196557,
+   "hours_to_first_label": 0.03722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03722222222222222
+  },
+  {
+   "number": 196531,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 3.5572222222222223,
+   "hours_to_triaged": 0.03388888888888889
+  },
+  {
+   "number": 196521,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.02861111111111111
+  },
+  {
+   "number": 196520,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 113.73944444444444
+  },
+  {
+   "number": 196519,
+   "hours_to_first_label": 0.03861111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.193888888888889,
+   "hours_to_triaged": 0.03861111111111111
+  },
+  {
+   "number": 196512,
+   "hours_to_first_label": 0.04583333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.04583333333333333
+  },
+  {
+   "number": 196509,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.0275
+  },
+  {
+   "number": 196495,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03638888888888889
+  },
+  {
+   "number": 196494,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196468,
+   "hours_to_first_label": 0.024722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 660.4608333333333,
+   "hours_to_triaged": 121.1138888888889
+  },
+  {
+   "number": 196467,
+   "hours_to_first_label": 0.020833333333333332,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 22.9975,
+   "hours_to_triaged": 121.03888888888889
+  },
+  {
+   "number": 196459,
+   "hours_to_first_label": 0.026944444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 6.516666666666667
+  },
+  {
+   "number": 196455,
+   "hours_to_first_label": 0.03666666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.6447222222222222,
+   "hours_to_triaged": 0.03666666666666667
+  },
+  {
+   "number": 196452,
+   "hours_to_first_label": 0.026944444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196450,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.04083333333333333
+  },
+  {
+   "number": 196437,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 494.33416666666665,
+   "hours_to_triaged": 124.49222222222222
+  },
+  {
+   "number": 196426,
+   "hours_to_first_label": 0.02638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.02638888888888889
+  },
+  {
+   "number": 196424,
+   "hours_to_first_label": 0.04027777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 9.449166666666667,
+   "hours_to_triaged": 128.24583333333334
+  },
+  {
+   "number": 196404,
+   "hours_to_first_label": 0.024444444444444446,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196394,
+   "hours_to_first_label": 0.024166666666666666,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 133.99527777777777
+  },
+  {
+   "number": 196393,
+   "hours_to_first_label": 0.029444444444444443,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 372.7536111111111,
+   "hours_to_triaged": 372.68833333333333
+  },
+  {
+   "number": 196388,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196385,
+   "hours_to_first_label": 0.025833333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.025833333333333333
+  },
+  {
+   "number": 196377,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.5002777777777778,
+   "hours_to_triaged": 138.34833333333333
+  },
+  {
+   "number": 196369,
+   "hours_to_first_label": 0.023333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 3.1055555555555556,
+   "hours_to_triaged": 0.023333333333333334
+  },
+  {
+   "number": 196361,
+   "hours_to_first_label": 0.03166666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03166666666666667
+  },
+  {
+   "number": 196358,
+   "hours_to_first_label": 0.025,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1048.7308333333333,
+   "hours_to_triaged": 0.025
+  },
+  {
+   "number": 196340,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196337,
+   "hours_to_first_label": 0.03194444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.050833333333333335
+  },
+  {
+   "number": 196322,
+   "hours_to_first_label": 0.03972222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.99,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196313,
+   "hours_to_first_label": 0.02638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.02638888888888889
+  },
+  {
+   "number": 196312,
+   "hours_to_first_label": 0.0275,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 29.03,
+   "hours_to_triaged": 0.0275
+  },
+  {
+   "number": 196309,
+   "hours_to_first_label": 0.030833333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.030833333333333334
+  },
+  {
+   "number": 196305,
+   "hours_to_first_label": 0.026111111111111113,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.026111111111111113
+  },
+  {
+   "number": 196302,
+   "hours_to_first_label": 0.026111111111111113,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.3313888888888887,
+   "hours_to_triaged": 151.90583333333333
+  },
+  {
+   "number": 196299,
+   "hours_to_first_label": 0.03972222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 6.086111111111111,
+   "hours_to_triaged": 0.03972222222222222
+  },
+  {
+   "number": 196289,
+   "hours_to_first_label": 0.03305555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.1025,
+   "hours_to_triaged": 0.03305555555555555
+  },
+  {
+   "number": 196286,
+   "hours_to_first_label": 0.03833333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 239.25222222222223,
+   "hours_to_triaged": 0.03833333333333333
+  },
+  {
+   "number": 196285,
+   "hours_to_first_label": 0.03222222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 4.887777777777778,
+   "hours_to_triaged": 0.03222222222222222
+  },
+  {
+   "number": 196258,
+   "hours_to_first_label": 0.026944444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 158.8852777777778
+  },
+  {
+   "number": 196257,
+   "hours_to_first_label": 0.024166666666666666,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 159.01305555555555
+  },
+  {
+   "number": 196253,
+   "hours_to_first_label": 0.0525,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 5.353888888888889,
+   "hours_to_triaged": 0.0525
+  },
+  {
+   "number": 196251,
+   "hours_to_first_label": 0.03027777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 5.47,
+   "hours_to_triaged": 548.9147222222222
+  },
+  {
+   "number": 196243,
+   "hours_to_first_label": 0.0325,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 868.9536111111111,
+   "hours_to_triaged": 162.73416666666665
+  },
+  {
+   "number": 196238,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 6.809444444444445,
+   "hours_to_triaged": 0.020833333333333332
+  },
+  {
+   "number": 196233,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 23.30472222222222,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196231,
+   "hours_to_first_label": 0.025555555555555557,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 58.52194444444444,
+   "hours_to_triaged": 0.025555555555555557
+  },
+  {
+   "number": 196227,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.044444444444444446
+  },
+  {
+   "number": 196226,
+   "hours_to_first_label": 0.043611111111111114,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.043611111111111114
+  },
+  {
+   "number": 196221,
+   "hours_to_first_label": 0.04055555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.0805555555555555,
+   "hours_to_triaged": 14.630277777777778
+  },
+  {
+   "number": 196219,
+   "hours_to_first_label": 0.03916666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 113.65527777777778,
+   "hours_to_triaged": 0.03916666666666667
+  },
+  {
+   "number": 196218,
+   "hours_to_first_label": 0.029722222222222223,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196215,
+   "hours_to_first_label": 0.025555555555555557,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 189.14055555555555,
+   "hours_to_triaged": 0.025555555555555557
+  },
+  {
+   "number": 196214,
+   "hours_to_first_label": 0.041944444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.041944444444444444
+  },
+  {
+   "number": 196212,
+   "hours_to_first_label": 0.03,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.14972222222222223,
+   "hours_to_triaged": 0.03
+  },
+  {
+   "number": 196211,
+   "hours_to_first_label": 0.03027777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.21666666666666667,
+   "hours_to_triaged": 16.369444444444444
+  },
+  {
+   "number": 196209,
+   "hours_to_first_label": 0.03277777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.3455555555555556,
+   "hours_to_triaged": 0.03277777777777778
+  },
+  {
+   "number": 196208,
+   "hours_to_first_label": 0.03333333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.5683333333333334,
+   "hours_to_triaged": 0.03333333333333333
+  },
+  {
+   "number": 196207,
+   "hours_to_first_label": 0.029722222222222223,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.029722222222222223
+  },
+  {
+   "number": 196199,
+   "hours_to_first_label": 0.025833333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.025833333333333333
+  },
+  {
+   "number": 196198,
+   "hours_to_first_label": 0.02861111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1066.5236111111112,
+   "hours_to_triaged": 0.02861111111111111
+  },
+  {
+   "number": 196193,
+   "hours_to_first_label": 0.03,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03
+  },
+  {
+   "number": 196192,
+   "hours_to_first_label": 0.019444444444444445,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.01972222222222222
+  },
+  {
+   "number": 196190,
+   "hours_to_first_label": 0.029444444444444443,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.029444444444444443
+  },
+  {
+   "number": 196188,
+   "hours_to_first_label": 0.03388888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 56.672222222222224,
+   "hours_to_triaged": 0.03388888888888889
+  },
+  {
+   "number": 196186,
+   "hours_to_first_label": 0.0225,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.0225
+  },
+  {
+   "number": 196177,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 72.23166666666667,
+   "hours_to_triaged": 186.5402777777778
+  },
+  {
+   "number": 196173,
+   "hours_to_first_label": 0.0225,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.21083333333333334,
+   "hours_to_triaged": 36.41111111111111
+  },
+  {
+   "number": 196172,
+   "hours_to_first_label": 0.0225,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 3.6558333333333333,
+   "hours_to_triaged": 0.0225
+  },
+  {
+   "number": 196171,
+   "hours_to_first_label": 0.034166666666666665,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.034166666666666665
+  },
+  {
+   "number": 196166,
+   "hours_to_first_label": 0.025,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 3.388888888888889,
+   "hours_to_triaged": 0.025
+  },
+  {
+   "number": 196165,
+   "hours_to_first_label": 0.02638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 41.170833333333334
+  },
+  {
+   "number": 196164,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 31.45777777777778,
+   "hours_to_triaged": 199.7025
+  },
+  {
+   "number": 196143,
+   "hours_to_first_label": 0.021944444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.021944444444444444
+  },
+  {
+   "number": 196133,
+   "hours_to_first_label": 0.027777777777777776,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 13.817222222222222,
+   "hours_to_triaged": 0.04833333333333333
+  },
+  {
+   "number": 196127,
+   "hours_to_first_label": 0.02722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 55.48388888888889,
+   "hours_to_triaged": 55.480555555555554
+  },
+  {
+   "number": 196122,
+   "hours_to_first_label": 0.04027777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.4833333333333334,
+   "hours_to_triaged": 0.04027777777777778
+  },
+  {
+   "number": 196117,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196113,
+   "hours_to_first_label": 0.02361111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.3558333333333334,
+   "hours_to_triaged": 10.468333333333334
+  },
+  {
+   "number": 196112,
+   "hours_to_first_label": 0.028055555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 10.522222222222222,
+   "hours_to_triaged": 10.479722222222222
+  },
+  {
+   "number": 196110,
+   "hours_to_first_label": 0.02638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.02638888888888889
+  },
+  {
+   "number": 196108,
+   "hours_to_first_label": 0.03888888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196106,
+   "hours_to_first_label": 0.030833333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 3.388888888888889,
+   "hours_to_triaged": 223.225
+  },
+  {
+   "number": 196090,
+   "hours_to_first_label": 0.025833333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 122.42944444444444,
+   "hours_to_triaged": 0.025833333333333333
+  },
+  {
+   "number": 196089,
+   "hours_to_first_label": 0.024722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 122.39333333333333,
+   "hours_to_triaged": 0.024722222222222222
+  },
+  {
+   "number": 198877,
+   "hours_to_first_label": 563.8941666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 563.8941666666667
+  },
+  {
+   "number": 196083,
+   "hours_to_first_label": 0.025277777777777777,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 565.9088888888889,
+   "hours_to_triaged": 565.9113888888888
+  },
+  {
+   "number": 196082,
+   "hours_to_first_label": 0.0375,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.08277777777777778
+  },
+  {
+   "number": 196074,
+   "hours_to_first_label": 0.028888888888888888,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 14.813888888888888,
+   "hours_to_triaged": 0.028888888888888888
+  },
+  {
+   "number": 196073,
+   "hours_to_first_label": 0.03833333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 119.39555555555556,
+   "hours_to_triaged": 0.03833333333333333
+  },
+  {
+   "number": 196067,
+   "hours_to_first_label": 0.036944444444444446,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 47.426944444444445,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 196008,
+   "hours_to_first_label": 0.03611111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 3.9544444444444444,
+   "hours_to_triaged": 0.03611111111111111
+  },
+  {
+   "number": 196004,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.7558333333333334,
+   "hours_to_triaged": 7.627777777777778
+  },
+  {
+   "number": 195996,
+   "hours_to_first_label": 0.050555555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 3.569166666666667,
+   "hours_to_triaged": 0.050555555555555555
+  },
+  {
+   "number": 195993,
+   "hours_to_first_label": 0.034444444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 4.163333333333333,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 195991,
+   "hours_to_first_label": 0.034444444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 4.211111111111111,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 195984,
+   "hours_to_first_label": 0.03194444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 5.4275,
+   "hours_to_triaged": 250.7136111111111
+  },
+  {
+   "number": 195982,
+   "hours_to_first_label": 0.03166666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 5.652222222222222,
+   "hours_to_triaged": 0.07
+  },
+  {
+   "number": 195979,
+   "hours_to_first_label": 0.03722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03722222222222222
+  },
+  {
+   "number": 195978,
+   "hours_to_first_label": 0.03166666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1017.5655555555555,
+   "hours_to_triaged": 0.03166666666666667
+  },
+  {
+   "number": 195977,
+   "hours_to_first_label": 0.03722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 6.753055555555555,
+   "hours_to_triaged": 0.03722222222222222
+  },
+  {
+   "number": 195970,
+   "hours_to_first_label": 0.025555555555555557,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 7.579444444444444,
+   "hours_to_triaged": 14.470277777777778
+  },
+  {
+   "number": 195969,
+   "hours_to_first_label": 0.025833333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 7.894722222222223,
+   "hours_to_triaged": 14.806666666666667
+  },
+  {
+   "number": 195966,
+   "hours_to_first_label": 0.03388888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 9.038055555555555,
+   "hours_to_triaged": 15.8175
+  },
+  {
+   "number": 195964,
+   "hours_to_first_label": 0.02666666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.02666666666666667
+  },
+  {
+   "number": 195963,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 10.068333333333333,
+   "hours_to_triaged": 17.03388888888889
+  },
+  {
+   "number": 195937,
+   "hours_to_first_label": 0.026944444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.1247222222222222,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 195931,
+   "hours_to_first_label": 0.03305555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 16.100833333333334,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 195910,
+   "hours_to_first_label": 0.029166666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.17694444444444443,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 195908,
+   "hours_to_first_label": null,
+   "first_label_by_bot": null,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 195901,
+   "hours_to_first_label": 0.0033333333333333335,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 9.215,
+   "hours_to_triaged": 5.28
+  },
+  {
+   "number": 195897,
+   "hours_to_first_label": 0.04527777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 24.639722222222222,
+   "hours_to_triaged": 0.04527777777777778
+  },
+  {
+   "number": 195891,
+   "hours_to_first_label": 0.04138888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 18.5475,
+   "hours_to_triaged": 0.04138888888888889
+  },
+  {
+   "number": 195890,
+   "hours_to_first_label": 0.02361111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 18.553055555555556,
+   "hours_to_triaged": 0.06527777777777778
+  },
+  {
+   "number": 195889,
+   "hours_to_first_label": 0.03916666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 18.563333333333333,
+   "hours_to_triaged": 0.03916666666666667
+  },
+  {
+   "number": 195888,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 18.578611111111112,
+   "hours_to_triaged": 0.03833333333333333
+  },
+  {
+   "number": 195887,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03916666666666667
+  },
+  {
+   "number": 195866,
+   "hours_to_first_label": 0.03305555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 14.006944444444445,
+   "hours_to_triaged": 0.03305555555555555
+  },
+  {
+   "number": 195851,
+   "hours_to_first_label": 0.03027777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.14916666666666667,
+   "hours_to_triaged": 267.26222222222225
+  },
+  {
+   "number": 195849,
+   "hours_to_first_label": 0.030833333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 22.31138888888889,
+   "hours_to_triaged": 0.030833333333333334
+  },
+  {
+   "number": 195845,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 863.4066666666666,
+   "hours_to_triaged": 10.374722222222223
+  },
+  {
+   "number": 195838,
+   "hours_to_first_label": 0.008611111111111111,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.69,
+   "hours_to_triaged": 0.03361111111111111
+  },
+  {
+   "number": 195832,
+   "hours_to_first_label": 0.03333333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 24.676666666666666,
+   "hours_to_triaged": 0.03361111111111111
+  },
+  {
+   "number": 195825,
+   "hours_to_first_label": 0.0008333333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1287.628888888889,
+   "hours_to_triaged": 0.043611111111111114
+  },
+  {
+   "number": 195824,
+   "hours_to_first_label": 0.03111111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 9.521944444444445,
+   "hours_to_triaged": 0.07194444444444445
+  },
+  {
+   "number": 195823,
+   "hours_to_first_label": 0.0011111111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 15.021944444444445,
+   "hours_to_triaged": 34.71722222222222
+  },
+  {
+   "number": 195822,
+   "hours_to_first_label": 0.028333333333333332,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 321.6019444444444,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 195803,
+   "hours_to_first_label": 0.029444444444444443,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 840.5272222222222,
+   "hours_to_triaged": 0.029444444444444443
+  },
+  {
+   "number": 195784,
+   "hours_to_first_label": 0.028888888888888888,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 47.410555555555554,
+   "hours_to_triaged": 0.028888888888888888
+  },
+  {
+   "number": 195782,
+   "hours_to_first_label": 0.036944444444444446,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 19.504722222222224,
+   "hours_to_triaged": 0.036944444444444446
+  },
+  {
+   "number": 195746,
+   "hours_to_first_label": 0.03166666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 6.989166666666667,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 195743,
+   "hours_to_first_label": 0.035833333333333335,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.035833333333333335
+  },
+  {
+   "number": 195732,
+   "hours_to_first_label": 0.024444444444444446,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1273.6766666666667,
+   "hours_to_triaged": 0.03944444444444444
+  },
+  {
+   "number": 195731,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 721.5702777777777,
+   "hours_to_triaged": 0.03138888888888889
+  },
+  {
+   "number": 195729,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": 0.7152777777777778,
+   "hours_to_triaged": 0.02638888888888889
+  },
+  {
+   "number": 195719,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03277777777777778
+  },
+  {
+   "number": 195716,
+   "hours_to_first_label": 0.028055555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.028055555555555556
+  },
+  {
+   "number": 195715,
+   "hours_to_first_label": 0.030833333333333334,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.030833333333333334
+  },
+  {
+   "number": 195705,
+   "hours_to_first_label": 0.03777777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03777777777777778
+  },
+  {
+   "number": 195701,
+   "hours_to_first_label": 200.33277777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 298.5997222222222
+  },
+  {
+   "number": 195696,
+   "hours_to_first_label": 0.0005555555555555556,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 195694,
+   "hours_to_first_label": 0.0002777777777777778,
+   "first_label_by_bot": false,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.0002777777777777778
+  },
+  {
+   "number": 195685,
+   "hours_to_first_label": 0.034166666666666665,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.034166666666666665
+  },
+  {
+   "number": 195684,
+   "hours_to_first_label": 0.03611111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03611111111111111
+  },
+  {
+   "number": 195682,
+   "hours_to_first_label": 0.04083333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.04083333333333333
+  },
+  {
+   "number": 195681,
+   "hours_to_first_label": 0.028888888888888888,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.028888888888888888
+  },
+  {
+   "number": 195680,
+   "hours_to_first_label": 0.03666666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03666666666666667
+  },
+  {
+   "number": 195679,
+   "hours_to_first_label": 0.04055555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 804.0788888888889,
+   "hours_to_triaged": 0.04055555555555555
+  },
+  {
+   "number": 195678,
+   "hours_to_first_label": 0.050277777777777775,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1269.0919444444444,
+   "hours_to_triaged": 0.050277777777777775
+  },
+  {
+   "number": 195677,
+   "hours_to_first_label": 0.0525,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.05388888888888889
+  },
+  {
+   "number": 195675,
+   "hours_to_first_label": 0.043055555555555555,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 10.4975,
+   "hours_to_triaged": 63.54
+  },
+  {
+   "number": 195674,
+   "hours_to_first_label": 0.041666666666666664,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.041666666666666664
+  },
+  {
+   "number": 195673,
+   "hours_to_first_label": 0.026111111111111113,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 44.363055555555555
+  },
+  {
+   "number": 195670,
+   "hours_to_first_label": 0.0022222222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03222222222222222
+  },
+  {
+   "number": 195665,
+   "hours_to_first_label": 0.08361111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 502.52472222222224,
+   "hours_to_triaged": 64.50111111111111
+  },
+  {
+   "number": 195629,
+   "hours_to_first_label": 0.035833333333333335,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 0.1688888888888889,
+   "hours_to_triaged": 309.1075
+  },
+  {
+   "number": 195607,
+   "hours_to_first_label": 0.029722222222222223,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 311.7341666666667
+  },
+  {
+   "number": 195603,
+   "hours_to_first_label": 0.028333333333333332,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.028333333333333332
+  },
+  {
+   "number": 195604,
+   "hours_to_first_label": 0.02638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 503.97222222222223
+  },
+  {
+   "number": 195595,
+   "hours_to_first_label": 0.03777777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 4.164722222222222,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 195591,
+   "hours_to_first_label": 0.03666666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 5.862777777777778,
+   "hours_to_triaged": 0.03666666666666667
+  },
+  {
+   "number": 195590,
+   "hours_to_first_label": 0.03166666666666667,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03166666666666667
+  },
+  {
+   "number": 195589,
+   "hours_to_first_label": 0.029444444444444443,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 15.78,
+   "hours_to_triaged": 0.029444444444444443
+  },
+  {
+   "number": 195586,
+   "hours_to_first_label": 0.03638888888888889,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 85.2936111111111,
+   "hours_to_triaged": 0.03638888888888889
+  },
+  {
+   "number": 195582,
+   "hours_to_first_label": 0.0475,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 51.772777777777776,
+   "hours_to_triaged": 77.84083333333334
+  },
+  {
+   "number": 195579,
+   "hours_to_first_label": 0.03027777777777778,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 2.641111111111111,
+   "hours_to_triaged": 0.03027777777777778
+  },
+  {
+   "number": 195578,
+   "hours_to_first_label": 0.035277777777777776,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.035277777777777776
+  },
+  {
+   "number": 195569,
+   "hours_to_first_label": 0.03861111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 82.04777777777778
+  },
+  {
+   "number": 195568,
+   "hours_to_first_label": 0.036944444444444446,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.036944444444444446
+  },
+  {
+   "number": 195563,
+   "hours_to_first_label": 0.025555555555555557,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03611111111111111
+  },
+  {
+   "number": 195547,
+   "hours_to_first_label": 0.04722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 522.6961111111111,
+   "hours_to_triaged": 0.04722222222222222
+  },
+  {
+   "number": 195535,
+   "hours_to_first_label": 0.02722222222222222,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": 1.0602777777777779,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 195531,
+   "hours_to_first_label": 0.04083333333333333,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": null
+  },
+  {
+   "number": 195530,
+   "hours_to_first_label": 0.03944444444444444,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 89.83222222222223
+  },
+  {
+   "number": 195529,
+   "hours_to_first_label": 0.03805555555555556,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 0.03805555555555556
+  },
+  {
+   "number": 195527,
+   "hours_to_first_label": 0.04111111111111111,
+   "first_label_by_bot": true,
+   "hours_to_first_other_comment": null,
+   "hours_to_triaged": 228.79611111111112
+  }
+ ]
+}
