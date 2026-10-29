@@ -60,9 +60,7 @@ tools:
     # from hiding content. See DESIGN.md.
     min-integrity: none
   bash:
-    - "python3 .claude/skills/pytorch-issue-triage/scripts/check_issue.py"
-    - "python3 .claude/skills/pytorch-issue-triage/scripts/find_duplicates.py"
-    - "python3 .claude/skills/pytorch-issue-triage/scripts/validate_labels.py"
+    - "python3"
     - "cat"
     - "ls"
 
