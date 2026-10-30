@@ -1,0 +1,11 @@
+[
+  {
+    "engine": "copilot",
+    "role": "main",
+    "configured_model": "gpt-4.1",
+    "resolved_model": "gpt-4.1",
+    "provider": null,
+    "status": "exact",
+    "cause": null
+  }
+]

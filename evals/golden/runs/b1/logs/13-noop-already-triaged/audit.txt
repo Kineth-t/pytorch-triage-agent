@@ -1,0 +1,102 @@
+✓ Downloaded artifacts for run 40841954625
+✓ Downloaded artifacts for run 40841125434
+✓ Downloaded artifacts for run 40840296039
+✓ Downloaded artifacts for run 40839476302
+✓ Downloaded artifacts for run 40838688956
+✓ Downloaded artifacts for run 40837933031
+✓ Downloaded artifacts for run 40829490262
+✅ Triage #12 | success | 6.4m | https://github.com/Kineth-t/pytorch-triage-agent/actions/runs/40841954625
+  run=40841954625 branch=main event=issues engine=copilot/gpt-4.1/v1.0.101
+  comparison: stable vs baseline 40837933031 | No action needed; this run matches the selected successful baseline closely.
+  fingerprint: adaptive/moderate/read_only/moderate/standalone
+  metrics: errors=0 warnings=0 turns=1 tokens=79.9k aic=7.24 working-set-rebuild=1.16× action_min=7
+  friction: occurrences=0 aic=0 ratio=0.0% range=0–0 AIC state=measured
+  ledger: transactions_added=0
+  session: wall=6.4m turns=1 tok/min=12579
+  tokens: in=20.8k out=156 cache_read=58.9k reqs=4 steering=0
+  agent_usage:
+    agent | instances | outcome (completed/failed/incomplete) | requests | tokens (in/out) | credits | effort
+    main main | 1 | 0/0/0 | 4 | 79.7k/156 | 0.000 | 
+  detection_model_usage: model=gpt-4.1-2025-04-14 requests=3
+  github_api: calls=14 quota=8/5.00k
+  jobs: 6/6 passed [pre_activation:9.0s activation:31.0s agent:2.5m detection:2.0m safe_outputs:39.0s conclusion:16.0s]
+  prompt: 13.9k chars file=aw-prompts/prompt.txt
+  findings:
+    [MEDIUM] High Token Usage: Used 79.9k tokens
+      Playbook: https://github.com/github/gh-aw/blob/main/.github/aw/debug-playbook.md#audit-findings
+    [LOW] Cheaper Model Available: This Triage run may not need a frontier model. A smaller model (e.g. gpt-4.1-mini, claude-haiku-4-5) could handle the task at lower cost.
+  assessments:
+    [LOW] This Triage run may not need a frontier model. A smaller model (e.g. gpt-4.1-mini, claude-haiku-4-5) could handle the task at lower cost. | domain=triage resource_profile=moderate actuation=read_only
+  recommendations:
+    [MEDIUM] Try engine.model: gpt-4.1-mini or claude-haiku-4-5 in the workflow frontmatter. — This Triage run may not need a frontier model. A smaller model (e.g. gpt-4.1-mini, claude-haiku-4-5) could handle the task at lower cost.
+  insights:
+    [MEDIUM] 2 anomalous event pattern(s) detected | stage=tool_call score=0.65: new log template discovered; rare cluster (few observations); stage=tool_result score=0.65: new log template discovered; rare cluster (few observations)
+  skill_activations:
+    pytorch-issue-triage: invoked (source: log_parse)
+  mcp_health:
+    safeoutputs: ✅ healthy
+  tools:
+    bash ×1
+    safeoutputs-noop ×1
+    safeoutputs.noop ×1
+    skill ×1
+    skill:pytorch-issue-triage ×1
+  mcp_tools:
+    safeoutputs/noop ×1
+  firewall: 6 requests
+  graders: pass=9 fail=1 error=0 unavailable=0
+    pass artifact-production=0count direction=higher_is_better
+    pass context-growth=1.167factor direction=lower_is_better
+    pass execution-duration=49751ms direction=lower_is_better
+    pass execution-step-count=4count direction=lower_is_better
+    pass loops=0count threshold=3 direction=lower_is_better
+    pass retries=0count threshold=10 direction=lower_is_better
+    pass tool-failure-count=1count threshold=5 direction=lower_is_better
+    fail tool-success-rate=0.75ratio threshold=0.8 direction=higher_is_better
+    pass trajectory-efficiency=1ratio direction=higher_is_better
+    pass working-set-rebuild-factor=1.1596factor direction=lower_is_better
+  logs: /var/folders/nf/0wptn00n5v1fnm_xrk9kxszr0000gn/T/gh-aw-audit/run-40841954625
+
+i MCP Gateway Metrics
+
+Total Requests: 1
+Total Tool Calls: 1
+Total Errors: 0
+Servers: 1
+Time Range: 1m6s
+
+Server Usage
+╭───────────┬────────┬──────────┬────────┬──────╮
+│Server     │Requests│Tool Calls│Avg Time│Errors│
+├───────────┼────────┼──────────┼────────┼──────┤
+│safeoutputs│1       │1         │0ms     │0     │
+╰───────────┴────────┴──────────┴────────┴──────╯
+
+i Unified MCP + Firewall + Agent Event Timeline
+
+Total Events  : 15
+  Gateway     : 4  (tool_calls=4, difc_filtered=0, guard_blocked=0)
+  Agent       : 11  (turns=1, tool_start=3, tool_done=3, messages=4, reasoning=0)
+
+Event Timeline
+╭────────────┬───┬───────────────────┬────────────────────────────────────────────────┬─────────╮
+│Time        │Src│Kind               │Detail                                          │Status   │
+├────────────┼───┼───────────────────┼────────────────────────────────────────────────┼─────────┤
+│01:26:31.966│GW │⚙ tool_call        │safeoutputs/tools/list                          │initiated│
+│01:26:34.088│GW │⚙ tool_call        │github/tools/list                               │initiated│
+│01:26:34.123│GW │⚙ tool_call        │github/prompts/list                             │initiated│
+│01:27:02.714│AG │○ agent_turn       │turn 1                                          │         │
+│01:27:10.705│AG │● assistant_message│                                                │         │
+│01:27:10.706│AG │▶ tool_start       │skill                                           │         │
+│01:27:10.709│AG │■ tool_done        │                                                │success  │
+│01:27:23.361│AG │● assistant_message│                                                │         │
+│01:27:23.362│AG │▶ tool_start       │bash                                            │         │
+│01:27:23.440│AG │■ tool_done        │                                                │success  │
+│01:27:37.967│AG │● assistant_message│                                                │         │
+│01:27:37.968│AG │▶ tool_start       │safeoutputs/safeoutputs-noop                    │         │
+│01:27:38.267│GW │⚙ tool_call        │safeoutputs/noop                                │initiated│
+│01:27:38.275│AG │■ tool_done        │                                                │success  │
+│01:27:53.002│AG │● assistant_message│No action needed: issue already carries 'tria...│         │
+╰────────────┴───┴───────────────────┴────────────────────────────────────────────────┴─────────╯
+✓ Audit complete. Logs saved to /var/folders/nf/0wptn00n5v1fnm_xrk9kxszr0000gn/T/gh-aw-audit/run-40841954625
+i Tip: use --artifacts to select specific artifact sets (agent, firewall, mcp, activation, detection, etc.)

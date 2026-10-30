@@ -1,0 +1,2 @@
+{"message":"No comment posted: security-sensitive report escalated for human review per triage procedure.","type":"noop"}
+{"item_number":8,"labels":[{"confidence":"HIGH","name":"triage review","rationale":"Security signals (RCE, vulnerability) require escalation for human review."},{"confidence":"HIGH","name":"oncall: distributed checkpointing","rationale":"Issue concerns checkpoint state handling and weights_only enforcement."},{"name":"bot-triaged"}],"type":"add_labels"}

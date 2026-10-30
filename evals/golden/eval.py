@@ -21,8 +21,10 @@ import glob
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
+import tempfile
 import time
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -198,11 +200,16 @@ def cmd_collect(a):
         json.dump(bot_comments, open(os.path.join(logdir, "bot_comments.json"), "w"), indent=2, ensure_ascii=False)
         if run and not a.skip_logs:
             rid = str(run["databaseId"])
+            # gh run download refuses to overwrite, so clear artifacts from an earlier attempt.
+            shutil.rmtree(os.path.join(logdir, "artifacts"), ignore_errors=True)
             subprocess.run(["gh", "run", "download", rid, "-R", r, "-D", os.path.join(logdir, "artifacts")],
                            capture_output=True, text=True)
-            audit = subprocess.run(["gh", "aw", "audit", rid, "-R", r], capture_output=True, text=True)
+            # Keep gh aw's ~20 MB per-run cache out of the repo (default is .github/aw/logs).
+            audit = subprocess.run(["gh", "aw", "audit", rid, "--repo", r,
+                                    "-o", os.path.join(tempfile.gettempdir(), "gh-aw-audit")],
+                                   capture_output=True, text=True)
             open(os.path.join(logdir, "audit.txt"), "w").write(audit.stdout + audit.stderr)
-            actual["evidence"] = evidence(logdir, audit.stdout)
+            actual["evidence"] = evidence(logdir, audit.stdout + audit.stderr)
         json.dump(actual, open(os.path.join(bd, "actual", f"{cid}.json"), "w"), indent=2, ensure_ascii=False)
         print(f"{cid}: labels={bot_labels} comments={len(bot_comments)} templates={templates} run={run and run['conclusion']}")
 
@@ -234,10 +241,11 @@ def evidence(logdir, audit_text):
             ev["skill_inventory"] = "pytorch-issue-triage" in txt
         if "SKILL.md" in txt and "pytorch-issue-triage" in txt and ev["skill_md_read"] is None:
             ev["skill_md_read"] = os.path.relpath(p, logdir)
-        mm = re.search(r"TRIAGE-SUMMARY [^\n\"]+", txt)
-        if mm:
-            ev["triage_summary"] = mm.group(0)
-    mm = re.search(r"(?im)^\s*model\s*[:=]\s*(\S+)", audit_text)
+        # Skip the template in SKILL.md and the prompt ("class=<class>").
+        for mm in re.finditer(r"TRIAGE-SUMMARY procedure=[^\n\"\\]+", txt):
+            if "<class>" not in mm.group(0):
+                ev["triage_summary"] = mm.group(0)
+    mm = re.search(r"engine=[^/\s]+/([^/\s]+)", audit_text) or re.search(r"(?im)^\s*model\s*[:=]\s*(\S+)", audit_text)
     ev["model"] = mm.group(1) if mm else None
     return ev
 
@@ -307,10 +315,11 @@ def cmd_compare(a):
                     f"{'yes' if ev.get('skill_inventory') else '?'} | {'; '.join(res['problems']) or '-'} |")
     json.dump(results, open(os.path.join(bd, "results.json"), "w"), indent=2)
     csv_path = os.path.join(ROOT, "runs.csv")
-    new = not os.path.exists(csv_path)
-    with open(csv_path, "a", encoding="utf-8") as fh:
-        if new:
-            fh.write("batch,case,issue,run_id,conclusion,model,verdict\n")
+    # Rewrite this batch's rows so re-running compare does not duplicate them.
+    old = open(csv_path, encoding="utf-8").read().splitlines()[1:] if os.path.exists(csv_path) else []
+    with open(csv_path, "w", encoding="utf-8") as fh:
+        fh.write("batch,case,issue,run_id,conclusion,model,verdict\n")
+        fh.writelines(line + "\n" for line in old if not line.startswith(f"{a.batch},"))
         for cid, res in results.items():
             act = json.load(open(os.path.join(bd, "actual", f"{cid}.json")))
             run = act.get("run") or {}

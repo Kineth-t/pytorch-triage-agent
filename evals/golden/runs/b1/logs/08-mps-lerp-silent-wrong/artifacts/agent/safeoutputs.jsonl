@@ -1,0 +1,2 @@
+{"message":"Triage complete: labels applied, no comment needed. See TRIAGE-SUMMARY for details.","type":"noop"}
+{"item_number":9,"labels":[{"confidence":"HIGH","name":"module: mps","rationale":"Issue concerns MPS backend producing incorrect results."},{"confidence":"HIGH","name":"module: correctness (silent)","rationale":"Describes silent incorrect results without error."},{"confidence":"HIGH","name":"bot-triaged","rationale":"First-pass triage by bot."}],"type":"add_labels"}

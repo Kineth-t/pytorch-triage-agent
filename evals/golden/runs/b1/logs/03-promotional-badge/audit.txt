@@ -1,0 +1,117 @@
+✓ Downloaded artifacts for run 40837933031
+✓ Downloaded artifacts for run 40829490262
+✅ Triage #6 | success | 6.7m | https://github.com/Kineth-t/pytorch-triage-agent/actions/runs/40837933031
+  run=40837933031 branch=main event=issues engine=copilot/gpt-4.1/v1.0.101
+  comparison: changed vs baseline 40829490262 | Review the behavior change against the selected successful baseline before treating it as the new normal.
+  fingerprint: exploratory/broad/read_only/heavy/standalone
+  metrics: errors=0 warnings=0 turns=1 tokens=143k aic=10.64 working-set-rebuild=1.19× action_min=7
+  friction: occurrences=0 aic=0 ratio=0.0% range=0–0 AIC state=measured
+  ledger: transactions_added=0
+  session: wall=6.7m turns=1 tok/min=21403
+  tokens: in=21.5k out=362 cache_read=121k reqs=7 steering=0
+  agent_usage:
+    agent | instances | outcome (completed/failed/incomplete) | requests | tokens (in/out) | credits | effort
+    main main | 1 | 0/0/0 | 7 | 143k/362 | 0.000 | 
+  detection_model_usage: model=gpt-4.1-2025-04-14 requests=4
+  github_api: calls=17 quota=6/5.00k
+  jobs: 6/6 passed [pre_activation:35.0s activation:44.0s agent:2.1m detection:2.0m safe_outputs:16.0s conclusion:33.0s]
+  prompt: 13.9k chars file=aw-prompts/prompt.txt
+  findings:
+    [MEDIUM] High Token Usage: Used 143k tokens
+      Playbook: https://github.com/github/gh-aw/blob/main/.github/aw/debug-playbook.md#audit-findings
+    [HIGH] Resource Heavy For Domain: This Triage run consumed a heavy execution profile for its task shape.
+    [MEDIUM] Weak Agentic Control: The run showed signs of broad or weakly controlled agentic behavior.
+    [LOW] Cheaper Model Available: This Triage run may not need a frontier model. A smaller model (e.g. gpt-4.1-mini, claude-haiku-4-5) could handle the task at lower cost.
+  assessments:
+    [HIGH] This Triage run consumed a heavy execution profile for its task shape. | turns=1 tool_types=7 duration=6m41s write_actions=0
+    [MEDIUM] The run showed signs of broad or weakly controlled agentic behavior. | friction=0 execution=exploratory actuation=read_only
+    [LOW] This Triage run may not need a frontier model. A smaller model (e.g. gpt-4.1-mini, claude-haiku-4-5) could handle the task at lower cost. | domain=triage resource_profile=heavy actuation=read_only
+  recommendations:
+    [HIGH] Compare this run to similar successful runs and trim unnecessary turns, tools, or write actions. — This Triage run consumed a heavy execution profile for its task shape.
+    [MEDIUM] Tighten instructions, reduce unnecessary tools, or delay write actions until the workflow has stronger evidence. — The run showed signs of broad or weakly controlled agentic behavior.
+    [MEDIUM] Try engine.model: gpt-4.1-mini or claude-haiku-4-5 in the workflow frontmatter. — This Triage run may not need a frontier model. A smaller model (e.g. gpt-4.1-mini, claude-haiku-4-5) could handle the task at lower cost.
+  insights:
+    [MEDIUM] Exploratory execution path | turns=1 tool_types=7
+    [MEDIUM] 2 anomalous event pattern(s) detected | stage=tool_call score=0.65: new log template discovered; rare cluster (few observations); stage=tool_result score=0.65: new log template discovered; rare cluster (few observations)
+  skill_activations:
+    pytorch-issue-triage: invoked (source: log_parse)
+  mcp_health:
+    safeoutputs: ✅ healthy
+  tools:
+    bash ×3
+    safeoutputs-add_labels ×1
+    safeoutputs-noop ×1
+    safeoutputs.add_labels ×1
+    safeoutputs.noop ×1
+    skill ×1
+    skill:pytorch-issue-triage ×1
+  mcp_tools:
+    safeoutputs/add_labels ×1
+    safeoutputs/noop ×1
+  firewall: 9 requests
+  graders: pass=9 fail=1 error=0 unavailable=0
+    pass artifact-production=0count direction=higher_is_better
+    pass context-growth=1.2132factor direction=lower_is_better
+    pass execution-duration=58840ms direction=lower_is_better
+    pass execution-step-count=7count direction=lower_is_better
+    pass loops=0count threshold=3 direction=lower_is_better
+    pass retries=0count threshold=10 direction=lower_is_better
+    pass tool-failure-count=2count threshold=5 direction=lower_is_better
+    fail tool-success-rate=0.75ratio threshold=0.8 direction=higher_is_better
+    pass trajectory-efficiency=0.75ratio direction=higher_is_better
+    pass working-set-rebuild-factor=1.1943factor direction=lower_is_better
+  logs: /var/folders/nf/0wptn00n5v1fnm_xrk9kxszr0000gn/T/gh-aw-audit/run-40837933031
+
+i MCP Gateway Metrics
+
+Total Requests: 2
+Total Tool Calls: 2
+Total Errors: 0
+Servers: 1
+Time Range: 1m10s
+
+Server Usage
+╭───────────┬────────┬──────────┬────────┬──────╮
+│Server     │Requests│Tool Calls│Avg Time│Errors│
+├───────────┼────────┼──────────┼────────┼──────┤
+│safeoutputs│2       │2         │0ms     │0     │
+╰───────────┴────────┴──────────┴────────┴──────╯
+
+i Unified MCP + Firewall + Agent Event Timeline
+
+Total Events  : 25
+  Gateway     : 5  (tool_calls=5, difc_filtered=0, guard_blocked=0)
+  Agent       : 20  (turns=1, tool_start=6, tool_done=6, messages=7, reasoning=0)
+
+Event Timeline
+╭────────────┬───┬───────────────────┬────────────────────────────────────────────────┬─────────╮
+│Time        │Src│Kind               │Detail                                          │Status   │
+├────────────┼───┼───────────────────┼────────────────────────────────────────────────┼─────────┤
+│07:51:46.307│GW │⚙ tool_call        │safeoutputs/tools/list                          │initiated│
+│07:51:48.555│GW │⚙ tool_call        │github/tools/list                               │initiated│
+│07:51:48.587│GW │⚙ tool_call        │github/prompts/list                             │initiated│
+│07:52:09.486│AG │○ agent_turn       │turn 1                                          │         │
+│07:52:16.187│AG │● assistant_message│                                                │         │
+│07:52:16.189│AG │▶ tool_start       │skill                                           │         │
+│07:52:16.193│AG │■ tool_done        │                                                │success  │
+│07:52:27.839│AG │● assistant_message│                                                │         │
+│07:52:27.841│AG │▶ tool_start       │bash                                            │         │
+│07:52:27.915│AG │■ tool_done        │                                                │success  │
+│07:52:32.708│AG │● assistant_message│                                                │         │
+│07:52:32.709│AG │▶ tool_start       │bash                                            │         │
+│07:52:32.764│AG │■ tool_done        │                                                │success  │
+│07:52:44.449│AG │● assistant_message│                                                │         │
+│07:52:44.451│AG │▶ tool_start       │bash                                            │         │
+│07:52:44.500│AG │■ tool_done        │                                                │success  │
+│07:52:50.576│AG │● assistant_message│                                                │         │
+│07:52:50.578│AG │▶ tool_start       │safeoutputs/safeoutputs-add_labels              │         │
+│07:52:50.856│GW │⚙ tool_call        │safeoutputs/add_labels                          │initiated│
+│07:52:50.865│AG │■ tool_done        │                                                │success  │
+│07:52:56.657│AG │● assistant_message│                                                │         │
+│07:52:56.659│AG │▶ tool_start       │safeoutputs/safeoutputs-noop                    │         │
+│07:52:56.668│GW │⚙ tool_call        │safeoutputs/noop                                │initiated│
+│07:52:56.672│AG │■ tool_done        │                                                │success  │
+│07:53:09.039│AG │● assistant_message│TRIAGE-SUMMARY procedure=pytorch-issue-triage...│         │
+╰────────────┴───┴───────────────────┴────────────────────────────────────────────────┴─────────╯
+✓ Audit complete. Logs saved to /var/folders/nf/0wptn00n5v1fnm_xrk9kxszr0000gn/T/gh-aw-audit/run-40837933031
+i Tip: use --artifacts to select specific artifact sets (agent, firewall, mcp, activation, detection, etc.)

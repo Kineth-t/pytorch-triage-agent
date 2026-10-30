@@ -1,0 +1,47 @@
+2026/10/29 07:53:58| Processing Configuration File: /etc/squid/squid.conf (depth 0)
+2026/10/29 07:53:58| ERROR: 'pinger_enable' requires --enable-icmp
+2026/10/29 07:53:58| WARNING: HTTP requires the use of Via
+2026/10/29 07:53:58| Created PID file (/var/run/squid/squid.pid)
+2026/10/29 07:53:58| Current Directory is /
+2026/10/29 07:53:58| Starting Squid Cache version 7.6-VCS for x86_64-pc-linux-musl...
+2026/10/29 07:53:58| Service Name: squid
+2026/10/29 07:53:58| Process ID 1
+2026/10/29 07:53:58| Process Roles: master worker
+2026/10/29 07:53:58| With 65536 file descriptors available
+2026/10/29 07:53:58| Initializing IP Cache...
+2026/10/29 07:53:58| DNS IPv6 socket created at [::], FD 10
+2026/10/29 07:53:58| DNS IPv4 socket created at 0.0.0.0, FD 11
+2026/10/29 07:53:58| Adding nameserver 168.63.129.16 from squid.conf
+2026/10/29 07:53:58| Logfile: opening log /var/log/squid/access.log
+2026/10/29 07:53:58| WARNING: log name now starts with a module name. Use 'stdio:/var/log/squid/access.log'
+2026/10/29 07:53:58| Logfile: opening log /var/log/squid/audit.jsonl
+2026/10/29 07:53:58| WARNING: log name now starts with a module name. Use 'stdio:/var/log/squid/audit.jsonl'
+2026/10/29 07:53:58| Local cache digest enabled; rebuild/rewrite every 3600/3600 sec
+2026/10/29 07:53:58| Store logging disabled
+2026/10/29 07:53:58| Swap maxSize 0 + 65536 KB, estimated 5041 objects
+2026/10/29 07:53:58| Target number of buckets: 252
+2026/10/29 07:53:58| Using 8192 Store buckets
+2026/10/29 07:53:58| Max Mem  size: 65536 KB
+2026/10/29 07:53:58| Max Swap size: 0 KB
+2026/10/29 07:53:58| Using Least Load store dir selection
+2026/10/29 07:53:58| Current Directory is /
+2026/10/29 07:53:58| Finished loading MIME types and icons.
+2026/10/29 07:53:58| HTCP Disabled.
+2026/10/29 07:53:58| Squid plugin modules loaded: 0
+2026/10/29 07:53:58| Adaptation support is off.
+2026/10/29 07:53:58| Accepting SSL bumped HTTP Socket connections at conn3 local=[::]:3128 remote=[::] FD 14 flags=9
+    listening port: 3128
+2026/10/29 07:53:58| Accepting SSL bumped HTTP Socket connections at conn5 local=[::]:3128 remote=[::] FD 15 flags=9
+    listening port: [::]:3128
+2026/10/29 07:53:58| ERROR: listen(..., 16384) system call failed: (98) Address in use
+    listening port: [::]:3128
+2026/10/29 07:53:59| storeLateRelease: released 0 objects
+2026/10/29 07:55:14| Preparing for shutdown after 6 requests
+2026/10/29 07:55:14| Waiting 0 seconds for active connections to finish
+2026/10/29 07:55:14| Closing HTTP(S) port [::]:3128
+    listening port: 3128
+2026/10/29 07:55:14| Closing HTTP(S) port [::]:3128
+    listening port: [::]:3128
+2026/10/29 07:55:15| Shutdown: Negotiate authentication.
+2026/10/29 07:55:15| Shutdown: Digest authentication.
+2026/10/29 07:55:15| Shutdown: Basic authentication.

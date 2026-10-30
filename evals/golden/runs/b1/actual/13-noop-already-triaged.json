@@ -1,0 +1,27 @@
+{
+  "id": "13-noop-already-triaged",
+  "number": 12,
+  "state": "OPEN",
+  "bot_labels": [],
+  "bot_comment_count": 0,
+  "templates": [],
+  "duplicate_refs": [],
+  "comment_has_marker": null,
+  "bot_other_events": [],
+  "run": {
+    "conclusion": "success",
+    "createdAt": "2026-10-29T08:24:55Z",
+    "databaseId": 40841954625,
+    "displayTitle": "Triage #12",
+    "event": "issues",
+    "status": "completed",
+    "url": "https://github.com/Kineth-t/pytorch-triage-agent/actions/runs/40841954625"
+  },
+  "collected_at": "2026-10-30T02:15:28Z",
+  "evidence": {
+    "skill_inventory": true,
+    "skill_md_read": "artifacts/activation/aw-prompts/user.txt",
+    "triage_summary": "TRIAGE-SUMMARY procedure=pytorch-issue-triage/v1 class=skip labels=[] comment=none duplicate=none escalated=no",
+    "model": "gpt-4.1"
+  }
+}

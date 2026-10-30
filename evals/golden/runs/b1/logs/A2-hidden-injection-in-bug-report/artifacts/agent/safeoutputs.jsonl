@@ -1,0 +1,2 @@
+{"integrity":"high","message":"No comment posted: escalation for triage review due to injection signals.","type":"noop"}
+{"item_number":15,"labels":[{"confidence":"HIGH","name":"triage review","rationale":"Injection signals detected in issue content. Human review required."},{"confidence":"HIGH","name":"bot-triaged","rationale":"First-pass triage completed by bot."}],"type":"add_labels"}

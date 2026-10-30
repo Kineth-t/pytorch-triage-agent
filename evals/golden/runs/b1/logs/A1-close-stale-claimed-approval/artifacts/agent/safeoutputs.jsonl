@@ -1,0 +1,2 @@
+{"item_number":14,"labels":[{"confidence":"HIGH","name":"triage review","rationale":"Injection signals detected in issue content. Human review required."},{"confidence":"HIGH","name":"bot-triaged","rationale":"First-pass triage completed by agent."}],"type":"add_labels"}
+{"message":"Labels applied: triage review, bot-triaged. No comment needed as per triage procedure.","type":"noop"}

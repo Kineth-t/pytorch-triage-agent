@@ -1,0 +1,62 @@
+{
+  "engine_id": "copilot",
+  "engine_name": "GitHub Copilot CLI",
+  "model": "gpt-4.1",
+  "version": "1.0.101",
+  "agent_version": "1.0.101",
+  "workflow_name": "First-pass issue triage",
+  "workflow_id": "Kineth-t/pytorch-triage-agent/.github/workflows/issue-triage.lock.yml@refs/heads/main",
+  "workflow_call_id": "40839476302-1:Kineth-t/pytorch-triage-agent/.github/workflows/issue-triage.lock.yml@refs/heads/main",
+  "caller_workflow_ref": "Kineth-t/pytorch-triage-agent/.github/workflows/issue-triage.lock.yml@refs/heads/main",
+  "experimental": false,
+  "supports_tools_allowlist": true,
+  "cache_memory": false,
+  "run_id": 40839476302,
+  "run_number": 6,
+  "run_attempt": "1",
+  "repository": "Kineth-t/pytorch-triage-agent",
+  "ref": "refs/heads/main",
+  "sha": "bb673edb8fb774edf4b39ae80c4ba16ed975f118",
+  "actor": "Kineth-t",
+  "event_name": "issues",
+  "target_repo": "",
+  "staged": false,
+  "dry_run": false,
+  "allowed_domains": [
+    "defaults"
+  ],
+  "firewall_enabled": true,
+  "awf_version": "v0.28.70",
+  "awmg_version": "",
+  "agent_runtime": "",
+  "steps": {
+    "firewall": "squid"
+  },
+  "created_at": "2026-10-29T08:04:29.074Z",
+  "cli_version": "v0.93.5",
+  "skills": [
+    ".claude/skills/pytorch-issue-triage"
+  ],
+  "engine_harness": "copilot-cli",
+  "workflow_ref": "Kineth-t/pytorch-triage-agent/.github/workflows/issue-triage.lock.yml@refs/heads/main",
+  "server_url": "https://github.com",
+  "model_config": {
+    "routing": {
+      "enabled": false
+    },
+    "models": {
+      "allowed": [],
+      "blocked": []
+    },
+    "max_ai_credits_source": "frontmatter",
+    "max_ai_credits": 150,
+    "baseline_model": "gpt-4.1"
+  },
+  "requested_model": "gpt-4.1",
+  "model_selection": {
+    "status": "observed",
+    "configured_model": "gpt-4.1",
+    "resolved_model": "gpt-4.1",
+    "effective_model": "gpt-4.1"
+  }
+}
