@@ -67,6 +67,11 @@ def validate(proposed, existing=()):
     types = [l for l in labels if l in ("feature", "enhancement", "function request")]
     if len(types) > 1:
         errors.append(f"pick one type label, not {types}")
+    if "module: correctness (silent)" in labels and "triage review" not in labels:
+        errors.append("silent wrong results must be escalated: add 'triage review' (Step 6)")
+    if "triage review" in labels and not (modules or oncall):
+        warnings.append("'triage review' goes on top of routing labels; add module:/oncall: unless off-topic")
+
     if "better-on-discuss-forum" in labels and (modules or oncall):
         warnings.append("question redirected to the forum normally needs no routing labels")
 

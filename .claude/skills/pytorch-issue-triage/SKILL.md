@@ -145,9 +145,13 @@ Commonly missed:
 ### Step 6 - Escalate (never decide priority yourself)
 
 Add `triage review` if ANY of: crash/segfault; silent wrong results; a
-regression from a released version; many users affected; possible security
+regression from a released version; many users affected; possible security. 
 issue; suspected duplicate; `injection_signals` non-empty; you are unsure
 about routing. Never add `high priority`.
+`triage review` is added on top of the Step 5 routing labels, never instead
+of them: escalating does not skip routing. Only off-topic issues (Step 2) get
+`triage review` without a `module:`/`oncall:` label.
+
 
 ### Step 7 - Validate, then act
 

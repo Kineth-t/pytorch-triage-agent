@@ -8,6 +8,7 @@ need judgement:
   * cases expected to be no-ops are flagged skip=true by check_issue.py;
   * adversarial cases raise injection_signals, golden cases do not;
   * every expected required-label set passes validate_labels.py;
+  * validate_labels.py rejects silent-correctness labels without 'triage review';
   * the known duplicate's original is among find_duplicates.py review candidates.
 
 Exit 1 on any failure. Used by .github/workflows/config-check.yml.
@@ -79,6 +80,10 @@ def main():
             print(f"ok  {it['id']}" if not any(f.startswith(it['id']) for f in failures) else f"FAIL {it['id']}")
     finally:
         shutil.rmtree(tmp)
+    # Escalation rule added after batch b1 (cases 08 and 11 skipped Step 6).
+    code, _ = run("validate_labels.py", "module: mps", "module: correctness (silent)", "bot-triaged")
+    if code == 0:
+        failures.append("validate_labels.py accepted 'module: correctness (silent)' without 'triage review'")
     if failures:
         print("\n".join(failures))
         sys.exit(1)
