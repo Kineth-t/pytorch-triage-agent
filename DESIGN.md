@@ -117,7 +117,8 @@ and post ≤1 comment on the triggering issue, or no-op; framework jobs may open
    misleading comment, since templates are procedural, not enforced.
 5. **Stop it from a phone.** Browser: Settings → Variables → `TRIAGE_AGENT_ENABLED=false`; Actions →
    workflow → ⋯ → Disable; cancel any running `Triage #n` before its `safe_outputs` job; revoke the PAT
-   Tested from a phone on 30 Oct 2026: with the variable false, issue #24's run was skipped (all jobs, including agent); with the workflow disabled, issue #25 started no run. Disabling needs "Request Desktop Site"; the mobile layout hides the button. Screenshots kept outside the repo.
+   if needed. Tested by phone, 30 Oct 2026: variable `false` → #24's run skipped (all jobs);
+   workflow disabled → #25 got no run. Disabling needs "Request Desktop Site"; screenshots off-repo.
 
 ## 6. Unresolved
 
