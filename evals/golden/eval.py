@@ -138,7 +138,10 @@ def cmd_create(a):
     if not agent_enabled(r) and not a.force:
         sys.exit("TRIAGE_AGENT_ENABLED is not 'true'; the agent would not run.")
     m = load_mapping(a.batch)
-    todo = [c for c in load_cases(a.only) if c["input"]["id"] not in m["cases"]]
+    cases = load_cases(a.only)
+    if a.only and len(cases) != len(a.only):
+        sys.exit(f"--only: unknown case id(s) {sorted(set(a.only) - {c['input']['id'] for c in cases})}")
+    todo = [c for c in cases if c["input"]["id"] not in m["cases"]]
     for k, c in enumerate(todo):
         inp = c["input"]
         n, url = create_issue(r, inp["title"], inp["body"], inp["preset_labels"])

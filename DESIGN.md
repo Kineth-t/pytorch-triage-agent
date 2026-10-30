@@ -85,7 +85,7 @@ Status: **I** = implemented, **T** = tested by me, **P** = proposed only. Detail
 - **Budgets (I, ⟨T: observed AIC/run⟩):** see §2; public repo, so Actions minutes are free.
 - **Audit trail (I):** one run per issue, `gh aw audit` (model, tokens, AIC, tool calls), run
   artifacts, committed `evals/golden/runs/`.
-- **Kill switch (I, ⟨T from phone⟩):** variable gate → disable workflow → revoke PAT; cancel a
+- **Kill switch (I, T from phone, 30 Oct 2026):** variable gate → disable workflow → revoke PAT; cancel a
   running `Triage #n` before its `safe_outputs` job.
 - **Drift detection (partial):** golden batch after config/gh-aw change, new model name, or every
   two weeks; I review `results.md`. Not scheduled automatically (15 runs per batch).
@@ -117,7 +117,7 @@ and post ≤1 comment on the triggering issue, or no-op; framework jobs may open
    misleading comment, since templates are procedural, not enforced.
 5. **Stop it from a phone.** Browser: Settings → Variables → `TRIAGE_AGENT_ENABLED=false`; Actions →
    workflow → ⋯ → Disable; cancel any running `Triage #n` before its `safe_outputs` job; revoke the PAT
-   if needed. ⟨TODO: tested on <date>, screenshots in `docs/evidence/`⟩.
+   Tested from a phone on 30 Oct 2026: with the variable false, issue #24's run was skipped (all jobs, including agent); with the workflow disabled, issue #25 started no run. Disabling needs "Request Desktop Site"; the mobile layout hides the button. Screenshots kept outside the repo.
 
 ## 6. Unresolved
 
