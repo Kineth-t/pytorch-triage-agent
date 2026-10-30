@@ -29,9 +29,10 @@ permissions:
 
 engine:
   id: copilot
-  # No `model:` - the Copilot Student plan only allows automatic model
-  # selection, so the model cannot be pinned. The model actually used is read
-  # from `gh aw audit <run-id>` and recorded in evals/golden/runs.csv.
+  # Model pinned via repo variables GH_AW_MODEL_AGENT_COPILOT and
+  # GH_AW_MODEL_DETECTION_COPILOT (gpt-4.1); the Student plan rejected the
+  # automatic choice. `gh aw audit <run-id>` records the model actually used.
+  # It is recorded per case in evals/golden/runs.csv.
 
 # ---------------------------------------------------------------- budgets
 timeout-minutes: 8
