@@ -1,0 +1,8 @@
+{"ts":1793359156488,"event":"TRACK_START","rid":"8e1de6ea-405d-4822-8406-fae0b04ac0d3","provider":"copilot","path":"/models","streaming":false,"ct":"application/json","ce":"(none)","status":200}
+{"ts":1793359156532,"event":"TRACK_END","rid":"8e1de6ea-405d-4822-8406-fae0b04ac0d3","result":"no_usage","streaming":false,"bytes":44794,"overflow":false,"ct":"application/json","ce":"(none)"}
+{"ts":1793359160902,"event":"TRACK_START","rid":"847580c4-fc9d-4d78-92e7-29677912985c","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1793359163626,"event":"TRACK_END","rid":"847580c4-fc9d-4d78-92e7-29677912985c","result":"ok","streaming":true,"model":"gpt-4.1-2025-04-14","input":20199,"output":25,"cache_read":0}
+{"ts":1793359167315,"event":"TRACK_START","rid":"6afc8428-7859-4169-9dc2-10b19f39a9a0","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1793359170174,"event":"TRACK_END","rid":"6afc8428-7859-4169-9dc2-10b19f39a9a0","result":"ok","streaming":true,"model":"gpt-4.1-2025-04-14","input":241,"output":28,"cache_read":20096}
+{"ts":1793359171473,"event":"TRACK_START","rid":"6617e8eb-3af6-414e-9d2a-6085b60e5095","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1793359181006,"event":"TRACK_END","rid":"6617e8eb-3af6-414e-9d2a-6085b60e5095","result":"ok","streaming":true,"model":"gpt-4.1-2025-04-14","input":358,"output":97,"cache_read":20224}

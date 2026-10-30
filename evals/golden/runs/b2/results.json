@@ -1,0 +1,149 @@
+{
+  "01-question-reopen-pr": {
+    "verdict": "FAIL",
+    "problems": [
+      "missing required labels ['better-on-discuss-forum', 'bot-triaged']",
+      "comment templates ['request_more_info'] != expected ['redirect_to_forum'] (alternatives [])"
+    ],
+    "extra_labels": [],
+    "label_precision": null,
+    "label_recall": 0.0,
+    "actual_labels": [],
+    "templates": [
+      "request_more_info"
+    ],
+    "run_conclusion": "success",
+    "evidence": {
+      "skill_inventory": true,
+      "skill_md_read": "artifacts/activation/aw-prompts/user.txt",
+      "triage_summary": "TRIAGE-SUMMARY procedure=pytorch-issue-triage/v1 class=insufficient_info labels=[bot-triaged] comment=request_more_info duplicate=none escalated=no",
+      "model": "gpt-4.1"
+    }
+  },
+  "02-docs-feedback-no-info": {
+    "verdict": "FAIL",
+    "problems": [
+      "missing required labels ['module: docs']",
+      "comment templates [] != expected ['request_more_info'] (alternatives [])"
+    ],
+    "extra_labels": [],
+    "label_precision": 1.0,
+    "label_recall": 0.5,
+    "actual_labels": [
+      "bot-triaged"
+    ],
+    "templates": [],
+    "run_conclusion": "success",
+    "evidence": {
+      "skill_inventory": true,
+      "skill_md_read": "artifacts/activation/aw-prompts/user.txt",
+      "triage_summary": "TRIAGE-SUMMARY procedure=pytorch-issue-triage/v1 class=insufficient info labels=[bot-triaged] comment=request_more_info duplicate=none escalated=no",
+      "model": "gpt-4.1"
+    }
+  },
+  "05-mps-unpool-input-checks": {
+    "verdict": "PASS",
+    "problems": [],
+    "extra_labels": [],
+    "label_precision": 1.0,
+    "label_recall": 1.0,
+    "actual_labels": [
+      "bot-triaged",
+      "module: error checking",
+      "module: mps"
+    ],
+    "templates": [],
+    "run_conclusion": "success",
+    "evidence": {
+      "skill_inventory": true,
+      "skill_md_read": "artifacts/activation/aw-prompts/user.txt",
+      "triage_summary": "TRIAGE-SUMMARY procedure=pytorch-issue-triage/v1 class=bug labels=[module: mps, module: error checking, bot-triaged] comment=none duplicate=none escalated=no",
+      "model": "gpt-4.1"
+    }
+  },
+  "06-dataloader-prefetch-zero": {
+    "verdict": "PASS",
+    "problems": [],
+    "extra_labels": [],
+    "label_precision": 1.0,
+    "label_recall": 1.0,
+    "actual_labels": [
+      "bot-triaged",
+      "module: dataloader",
+      "module: error checking"
+    ],
+    "templates": [],
+    "run_conclusion": "success",
+    "evidence": {
+      "skill_inventory": true,
+      "skill_md_read": "artifacts/activation/aw-prompts/user.txt",
+      "triage_summary": "TRIAGE-SUMMARY procedure=pytorch-issue-triage/v1 class=bug labels=[module: dataloader, module: error checking, bot-triaged] comment=none duplicate=none escalated=no",
+      "model": "gpt-4.1"
+    }
+  },
+  "07-typing-stub": {
+    "verdict": "PASS (extra labels)",
+    "problems": [],
+    "extra_labels": [
+      "function request"
+    ],
+    "label_precision": 0.75,
+    "label_recall": 1.0,
+    "actual_labels": [
+      "bot-triaged",
+      "function request",
+      "module: loss",
+      "module: typing"
+    ],
+    "templates": [],
+    "run_conclusion": "success",
+    "evidence": {
+      "skill_inventory": true,
+      "skill_md_read": "artifacts/activation/aw-prompts/user.txt",
+      "triage_summary": "TRIAGE-SUMMARY procedure=pytorch-issue-triage/v1 class=feature labels=[module: typing, module: loss, function request, bot-triaged] comment=none duplicate=none escalated=no",
+      "model": "gpt-4.1"
+    }
+  },
+  "09-fsdp-redirect-distributed": {
+    "verdict": "FAIL",
+    "problems": [
+      "missing required labels ['oncall: distributed', 'bot-triaged']"
+    ],
+    "extra_labels": [],
+    "label_precision": null,
+    "label_recall": 0.0,
+    "actual_labels": [],
+    "templates": [],
+    "run_conclusion": "success",
+    "evidence": {
+      "skill_inventory": true,
+      "skill_md_read": "artifacts/activation/aw-prompts/user.txt",
+      "triage_summary": "TRIAGE-SUMMARY procedure=pytorch-issue-triage/v1 class=bug labels=[oncall: distributed, bot-triaged] comment=none duplicate=none escalated=no",
+      "model": "gpt-4.1"
+    }
+  },
+  "10-pt2-cond-symint": {
+    "verdict": "FAIL",
+    "problems": [
+      "missing required labels ['module: higher order operators']"
+    ],
+    "extra_labels": [
+      "module: compile ux"
+    ],
+    "label_precision": 0.6666666666666666,
+    "label_recall": 0.6666666666666666,
+    "actual_labels": [
+      "bot-triaged",
+      "module: compile ux",
+      "oncall: pt2"
+    ],
+    "templates": [],
+    "run_conclusion": "success",
+    "evidence": {
+      "skill_inventory": true,
+      "skill_md_read": "artifacts/activation/aw-prompts/user.txt",
+      "triage_summary": "TRIAGE-SUMMARY procedure=pytorch-issue-triage/v1 class=bug/feature/enhancement/function/docs labels=[oncall: pt2, module: compile ux, bot-triaged] comment=none duplicate=none escalated=no",
+      "model": "gpt-4.1"
+    }
+  }
+}

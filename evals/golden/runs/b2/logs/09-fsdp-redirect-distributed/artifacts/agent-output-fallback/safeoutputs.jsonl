@@ -1,0 +1,2 @@
+{"message":"No comment needed; issue routed to oncall: distributed with bot-triaged label.","type":"noop"}
+{"item_number":22,"labels":[{"confidence":"HIGH","name":"oncall: distributed","rationale":"Issue concerns FSDP (Fully Sharded Data Parallel), which is routed to distributed oncall."},{"confidence":"HIGH","name":"bot-triaged","rationale":"First-pass triage by bot, pending human confirmation."}],"type":"add_labels"}

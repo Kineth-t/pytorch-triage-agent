@@ -1,0 +1,120 @@
+✓ Downloaded artifacts for run 40993397859
+✅ Triage #16 | success | 7.2m | https://github.com/Kineth-t/pytorch-triage-agent/actions/runs/40993397859
+  run=40993397859 branch=main event=issues engine=copilot/gpt-4.1/v1.0.101
+  comparison: stable vs baseline 40843655548 | No action needed; this run matches the selected successful baseline closely.
+  fingerprint: exploratory/broad/selective_write/heavy/standalone
+  metrics: errors=0 warnings=0 turns=1 tokens=124k aic=9.85 working-set-rebuild=1.22× action_min=8
+  ledger: transactions_added=0
+  session: wall=7.2m turns=1 tok/min=17203
+  tokens: in=22.0k out=478 cache_read=101k reqs=6 steering=0
+  agent_usage:
+    agent | instances | outcome (completed/failed/incomplete) | requests | tokens (in/out) | credits | effort
+    main main | 1 | 0/0/0 | 6 | 123k/478 | 0.000 | 
+  detection_model_usage: model=gpt-4.1-2025-04-14 requests=1
+  github_api: calls=12 quota=4/5.00k
+  jobs: 6/6 passed [pre_activation:31.0s activation:57.0s agent:3.2m detection:1.3m safe_outputs:17.0s conclusion:24.0s]
+  prompt: 13.9k chars file=aw-prompts/prompt.txt
+  findings:
+    [MEDIUM] High Token Usage: Used 124k tokens
+      Playbook: https://github.com/github/gh-aw/blob/main/.github/aw/debug-playbook.md#audit-findings
+    [HIGH] Resource Heavy For Domain: This Triage run consumed a heavy execution profile for its task shape.
+    [MEDIUM] Weak Agentic Control: The run showed signs of broad or weakly controlled agentic behavior.
+    [LOW] Cheaper Model Available: This Triage run may not need a frontier model. A smaller model (e.g. gpt-4.1-mini, claude-haiku-4-5) could handle the task at lower cost.
+  assessments:
+    [HIGH] This Triage run consumed a heavy execution profile for its task shape. | turns=1 tool_types=8 duration=7m12s write_actions=2
+    [MEDIUM] The run showed signs of broad or weakly controlled agentic behavior. | friction=0 execution=exploratory actuation=selective_write
+    [LOW] This Triage run may not need a frontier model. A smaller model (e.g. gpt-4.1-mini, claude-haiku-4-5) could handle the task at lower cost. | domain=triage resource_profile=heavy actuation=selective_write
+  recommendations:
+    [HIGH] Compare this run to similar successful runs and trim unnecessary turns, tools, or write actions. — This Triage run consumed a heavy execution profile for its task shape.
+    [MEDIUM] Tighten instructions, reduce unnecessary tools, or delay write actions until the workflow has stronger evidence. — The run showed signs of broad or weakly controlled agentic behavior.
+    [MEDIUM] Try engine.model: gpt-4.1-mini or claude-haiku-4-5 in the workflow frontmatter. — This Triage run may not need a frontier model. A smaller model (e.g. gpt-4.1-mini, claude-haiku-4-5) could handle the task at lower cost.
+  insights:
+    [MEDIUM] Exploratory execution path | turns=1 tool_types=8
+    [LOW] 1 anomalous event pattern(s) detected | stage=tool_call score=0.65: new log template discovered; rare cluster (few observations)
+  skill_activations:
+    pytorch-issue-triage: invoked (source: log_parse)
+  mcp_health:
+    safeoutputs: ✅ healthy
+  safe_outputs: 1 items — 1 comment(s)
+  created:
+    add_comment https://github.com/Kineth-t/pytorch-triage-agent/issues/16#issuecomment-6513755432
+  tools:
+    bash ×3
+    safeoutputs-add_comment ×1
+    safeoutputs-add_labels ×1
+    safeoutputs.add_comment ×1
+    safeoutputs.add_labels ×1
+    skill ×1
+    view ×1
+    skill:pytorch-issue-triage ×1
+  mcp_tools:
+    safeoutputs/add_comment ×1
+    safeoutputs/add_labels ×1
+  firewall: 8 requests
+  graders: pass=9 fail=1 error=0 unavailable=0
+    pass artifact-production=1count direction=higher_is_better
+    pass context-growth=1.2499factor direction=lower_is_better
+    pass execution-duration=91316ms direction=lower_is_better
+    pass execution-step-count=6count direction=lower_is_better
+    pass loops=0count threshold=3 direction=lower_is_better
+    pass retries=0count threshold=10 direction=lower_is_better
+    pass tool-failure-count=2count threshold=5 direction=lower_is_better
+    fail tool-success-rate=0.7778ratio threshold=0.8 direction=higher_is_better
+    pass trajectory-efficiency=0.7778ratio direction=higher_is_better
+    pass working-set-rebuild-factor=1.2246factor direction=lower_is_better
+  logs: /var/folders/nf/0wptn00n5v1fnm_xrk9kxszr0000gn/T/gh-aw-audit/run-40993397859
+
+i MCP Gateway Metrics
+
+Total Requests: 2
+Total Tool Calls: 2
+Total Errors: 0
+Servers: 1
+Time Range: 1m40s
+
+Server Usage
+╭───────────┬────────┬──────────┬────────┬──────╮
+│Server     │Requests│Tool Calls│Avg Time│Errors│
+├───────────┼────────┼──────────┼────────┼──────┤
+│safeoutputs│2       │2         │0ms     │0     │
+╰───────────┴────────┴──────────┴────────┴──────╯
+
+i Unified MCP + Firewall + Agent Event Timeline
+
+Total Events  : 26
+  Gateway     : 5  (tool_calls=5, difc_filtered=0, guard_blocked=0)
+  Agent       : 21  (turns=1, tool_start=7, tool_done=7, messages=6, reasoning=0)
+
+Event Timeline
+╭────────────┬───┬───────────────────┬────────────────────────────────────────────────┬─────────╮
+│Time        │Src│Kind               │Detail                                          │Status   │
+├────────────┼───┼───────────────────┼────────────────────────────────────────────────┼─────────┤
+│02:46:52.965│GW │⚙ tool_call        │safeoutputs/tools/list                          │initiated│
+│02:46:54.323│GW │⚙ tool_call        │github/tools/list                               │initiated│
+│02:46:54.356│GW │⚙ tool_call        │github/prompts/list                             │initiated│
+│02:47:23.392│AG │○ agent_turn       │turn 1                                          │         │
+│02:47:35.576│AG │● assistant_message│                                                │         │
+│02:47:35.578│AG │▶ tool_start       │skill                                           │         │
+│02:47:35.581│AG │■ tool_done        │                                                │success  │
+│02:47:53.105│AG │● assistant_message│                                                │         │
+│02:47:53.106│AG │▶ tool_start       │bash                                            │         │
+│02:47:53.107│AG │▶ tool_start       │bash                                            │         │
+│02:47:53.202│AG │■ tool_done        │                                                │success  │
+│02:47:53.206│AG │■ tool_done        │                                                │success  │
+│02:48:02.536│AG │● assistant_message│                                                │         │
+│02:48:02.537│AG │▶ tool_start       │bash                                            │         │
+│02:48:02.584│AG │■ tool_done        │                                                │success  │
+│02:48:13.803│AG │● assistant_message│                                                │         │
+│02:48:13.805│AG │▶ tool_start       │safeoutputs/safeoutputs-add_labels              │         │
+│02:48:13.806│AG │▶ tool_start       │view                                            │         │
+│02:48:13.811│AG │■ tool_done        │                                                │success  │
+│02:48:14.087│GW │⚙ tool_call        │safeoutputs/add_labels                          │initiated│
+│02:48:14.095│AG │■ tool_done        │                                                │success  │
+│02:48:33.111│AG │● assistant_message│                                                │         │
+│02:48:33.112│AG │▶ tool_start       │safeoutputs/safeoutputs-add_comment             │         │
+│02:48:33.122│GW │⚙ tool_call        │safeoutputs/add_comment                         │initiated│
+│02:48:33.131│AG │■ tool_done        │                                                │success  │
+│02:48:55.384│AG │● assistant_message│TRIAGE-SUMMARY procedure=pytorch-issue-triage...│         │
+╰────────────┴───┴───────────────────┴────────────────────────────────────────────────┴─────────╯
+✓ Audit complete. Logs saved to /var/folders/nf/0wptn00n5v1fnm_xrk9kxszr0000gn/T/gh-aw-audit/run-40993397859
+i Tip: use --artifacts to select specific artifact sets (agent, firewall, mcp, activation, detection, etc.)

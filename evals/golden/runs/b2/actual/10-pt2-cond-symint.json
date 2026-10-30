@@ -1,0 +1,31 @@
+{
+  "id": "10-pt2-cond-symint",
+  "number": 26,
+  "state": "OPEN",
+  "bot_labels": [
+    "bot-triaged",
+    "module: compile ux",
+    "oncall: pt2"
+  ],
+  "bot_comment_count": 0,
+  "templates": [],
+  "duplicate_refs": [],
+  "comment_has_marker": null,
+  "bot_other_events": [],
+  "run": {
+    "conclusion": "success",
+    "createdAt": "2026-10-30T11:41:07Z",
+    "databaseId": 41049841797,
+    "displayTitle": "Triage #26",
+    "event": "issues",
+    "status": "completed",
+    "url": "https://github.com/Kineth-t/pytorch-triage-agent/actions/runs/41049841797"
+  },
+  "collected_at": "2026-10-30T15:56:14Z",
+  "evidence": {
+    "skill_inventory": true,
+    "skill_md_read": "artifacts/activation/aw-prompts/user.txt",
+    "triage_summary": "TRIAGE-SUMMARY procedure=pytorch-issue-triage/v1 class=bug/feature/enhancement/function/docs labels=[oncall: pt2, module: compile ux, bot-triaged] comment=none duplicate=none escalated=no",
+    "model": "gpt-4.1"
+  }
+}

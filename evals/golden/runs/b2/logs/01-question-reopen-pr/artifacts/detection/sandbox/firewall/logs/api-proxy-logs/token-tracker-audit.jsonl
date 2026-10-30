@@ -1,0 +1,6 @@
+{"ts":1793328607176,"event":"TRACK_START","rid":"7b1090a7-84d5-4091-b74c-ca4bf88cda2c","provider":"copilot","path":"/models","streaming":false,"ct":"application/json","ce":"(none)","status":200}
+{"ts":1793328607241,"event":"TRACK_END","rid":"7b1090a7-84d5-4091-b74c-ca4bf88cda2c","result":"no_usage","streaming":false,"bytes":45006,"overflow":false,"ct":"application/json","ce":"(none)"}
+{"ts":1793328614776,"event":"TRACK_START","rid":"00139984-6450-4c80-a5d9-861b212ce975","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1793328618798,"event":"TRACK_END","rid":"00139984-6450-4c80-a5d9-861b212ce975","result":"ok","streaming":true,"model":"gpt-4.1-2025-04-14","input":20200,"output":34,"cache_read":0}
+{"ts":1793328619284,"event":"TRACK_START","rid":"1fca9fcb-e0ca-4280-aa7b-14b11b5a05bf","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":429}
+{"ts":1793328619287,"event":"TRACK_END","rid":"1fca9fcb-e0ca-4280-aa7b-14b11b5a05bf","result":"skip_status","status":429}

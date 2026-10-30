@@ -1,0 +1,2 @@
+{"message":"Triage complete: bug in MPS unpooling input validation, labelled as module: mps, module: error checking, bot-triaged. No comment needed.","type":"noop"}
+{"item_number":19,"labels":[{"confidence":"HIGH","name":"module: mps","rationale":"Issue concerns unpooling operators on Apple GPU (MPS)."},{"confidence":"HIGH","name":"module: error checking","rationale":"Report is about missing input validation in unpooling ops."},{"confidence":"HIGH","name":"bot-triaged","rationale":"First-pass triage complete per procedure."}],"type":"add_labels"}

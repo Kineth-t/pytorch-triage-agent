@@ -1,0 +1,27 @@
+{
+  "description": "The only comment bodies the triage agent may post. Adapted from pytorch/pytorch .agents/skills/triaging-issues/templates.json (BSD-3-Clause). Differences from upstream: no template closes an issue and no template edits the issue body; a maintainer does both if needed. The agent posts at most ONE comment per run, so when several templates apply, join their bodies in the order listed in SKILL.md under a single header and footer.",
+  "header": "> [!NOTE]\n> Automated first-pass triage (AI-generated, not yet reviewed by a maintainer). Labels and suggestions may be wrong; a maintainer will confirm.",
+  "footer": "<sub>Triage procedure: pytorch-issue-triage v1</sub>",
+  "templates": {
+    "redirect_to_forum": {
+      "use_when": "The issue is a usage or process question, not a bug report or feature request.",
+      "body": "This looks like a usage question rather than a bug report or feature request. Usage questions get faster answers on the [PyTorch Discussion Forum](https://discuss.pytorch.org/), where both the community and maintainers respond. A maintainer will decide whether to close this issue; if you believe it is actually a bug, please add a minimal reproduction."
+    },
+    "request_more_info": {
+      "use_when": "There is not enough information to tell whether this is a bug, a feature request or a question, or the report has no reproduction at all.",
+      "body": "Thanks for the report. To triage this, could you share:\n\n- A minimal repro (a small, self-contained script or exact steps)\n- The full error message / stack trace\n- The output of `python -m torch.utils.collect_env`"
+    },
+    "request_self_contained_reproduction": {
+      "use_when": "Reproducing the issue requires downloading external files (.zip, .pt, .pth, .pkl, .safetensors, .onnx, .bin) or files from external storage (Google Drive, Dropbox, OneDrive, Mega, WeTransfer, Hugging Face model files).",
+      "body": "Maintainers avoid downloading external files to reproduce issues. Could you reproduce this with a self-contained script instead (for example with random weights or synthetic data)? If the files contain extreme values (very large values, NaN, inf), please mention that too."
+    },
+    "possible_duplicate": {
+      "use_when": "You read a find_duplicates.py review candidate and confirmed it describes the same defect (same component, symptom and trigger).",
+      "body": "This may be a duplicate of #{number} (\"{title}\"). If it is the same problem, please follow that issue instead; if not, please explain the difference so a maintainer can keep both open."
+    },
+    "numerical_accuracy": {
+      "use_when": "You applied 'module: edge cases' because the report is about extremal values or precision differences between backends/dtypes.",
+      "body": "This may be related to expected floating-point accuracy limits. PyTorch documents behaviour for extremal values and backend/dtype precision differences in the [Numerical Accuracy notes](https://docs.pytorch.org/docs/stable/notes/numerical_accuracy.html). If you believe this goes beyond expected numerical behaviour, a reproducer with values well inside the normal range would help."
+    }
+  }
+}

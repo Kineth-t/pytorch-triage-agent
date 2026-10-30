@@ -1,0 +1,12 @@
+{"ts":1793335032133,"event":"TRACK_START","rid":"6fd7059e-c367-4536-b71b-fae465f9eb13","provider":"copilot","path":"/models","streaming":false,"ct":"application/json","ce":"(none)","status":200}
+{"ts":1793335032179,"event":"TRACK_END","rid":"6fd7059e-c367-4536-b71b-fae465f9eb13","result":"no_usage","streaming":false,"bytes":45006,"overflow":false,"ct":"application/json","ce":"(none)"}
+{"ts":1793335036279,"event":"TRACK_START","rid":"471e0357-af87-4cdf-b558-76bf0073c546","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1793335040174,"event":"TRACK_END","rid":"471e0357-af87-4cdf-b558-76bf0073c546","result":"ok","streaming":true,"model":"gpt-4.1-2025-04-14","input":20200,"output":25,"cache_read":0}
+{"ts":1793335046205,"event":"TRACK_START","rid":"cbf05919-fb8a-4cd0-85d1-8ab64d5405e9","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1793335050170,"event":"TRACK_END","rid":"cbf05919-fb8a-4cd0-85d1-8ab64d5405e9","result":"ok","streaming":true,"model":"gpt-4.1-2025-04-14","input":275,"output":33,"cache_read":20096}
+{"ts":1793335055227,"event":"TRACK_START","rid":"19ed052d-c98f-4fd0-90ac-45d3553b4a12","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1793335058136,"event":"TRACK_END","rid":"19ed052d-c98f-4fd0-90ac-45d3553b4a12","result":"ok","streaming":true,"model":"gpt-4.1-2025-04-14","input":81,"output":26,"cache_read":20352}
+{"ts":1793335061737,"event":"TRACK_START","rid":"76d2a1a9-d979-4307-8d25-79ac233f1825","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1793335069028,"event":"TRACK_END","rid":"76d2a1a9-d979-4307-8d25-79ac233f1825","result":"ok","streaming":true,"model":"gpt-4.1-2025-04-14","input":129,"output":56,"cache_read":20352}
+{"ts":1793335069291,"event":"TRACK_START","rid":"6be7f700-8831-49c5-a0f2-14864c2bea84","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":429}
+{"ts":1793335069296,"event":"TRACK_END","rid":"6be7f700-8831-49c5-a0f2-14864c2bea84","result":"skip_status","status":429}

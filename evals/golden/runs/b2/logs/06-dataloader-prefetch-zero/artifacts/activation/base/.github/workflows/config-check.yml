@@ -1,0 +1,33 @@
+# Deterministic checks on the agent's configuration. Not an agent: no model,
+# no secrets, read-only token. Runs on every PR that touches the agent's files
+# so a reviewer (CODEOWNERS) sees a red check before merging a weakened config.
+name: Agent config check
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/issue-triage.*"
+      - ".github/scripts/**"
+      - ".claude/**"
+      - "scripts/check_config.py"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Consistency checks
+        env:
+          CI: "true"
+        run: python3 scripts/check_config.py
+      - name: Skill scripts compile
+        run: python3 -m py_compile .claude/skills/pytorch-issue-triage/scripts/*.py .github/scripts/*.py evals/golden/eval.py
+      - name: Skill scripts self-test on golden inputs
+        run: python3 evals/golden/tools/selftest_scripts.py
