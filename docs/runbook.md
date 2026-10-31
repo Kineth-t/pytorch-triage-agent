@@ -32,7 +32,7 @@ on that date until someone recompiles with a new date.
 
 | Budget | Value | Where |
 |---|---|---|
-| Runs per user | 10 per 60 min, admins included | `user-rate-limit` |
+| Runs per user | 10 per 60 min; admins are exempt (the compiler drops `ignored-roles: []`), untested | `user-rate-limit` |
 | Agent runtime | 8 min agentic step; 60 min agent job; 10 min detection | `timeout-minutes`, compiler defaults |
 | Model turns | 30 per run | `max-turns` |
 | AI credits | 150 per run, 1,500 per rolling 24 h for this workflow | `max-ai-credits`, `max-daily-ai-credits` |
