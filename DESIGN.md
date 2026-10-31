@@ -117,7 +117,7 @@ and post ≤1 comment on the triggering issue, or no-op. Framework jobs may open
 5. **Stop it from a phone.** Browser: Settings → Variables → `TRIAGE_AGENT_ENABLED=false`, then Actions →
    workflow → ⋯ → Disable, cancel any running `Triage #n` before its `safe_outputs` job, and revoke the PAT
    if needed. Tested by phone, 30 Oct 2026: variable `false` → #24's run skipped (all jobs),
-   workflow disabled → #25 got no run. Disabling needs "Request Desktop Site". Screenshots are kept off-repo.
+   workflow disabled → #25 got no run. Disabling needs "Request Desktop Site". Screenshots in docs/evidence/.
 
 ## 6. Unresolved
 
