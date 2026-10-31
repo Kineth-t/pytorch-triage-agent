@@ -38,15 +38,3 @@ See [docs/setup.md](docs/setup.md), then [evals/golden/README.md](evals/golden/R
 gh aw compile issue-triage && python3 scripts/check_config.py
 python3 evals/golden/tools/selftest_scripts.py
 ```
-
-## Before submitting (owner checklist)
-
-- [x] Review and edit every `expected.json`; remove the `DRAFT` status; commit before the first run (`6edb72e`).
-- [x] `scripts/measure_need.py` for Sep 2026 and Sep 2025; put the numbers in DESIGN.md §1.
-- [x] Smoke test; confirm skill loading (`skill_inventory.json`, `TRIAGE-SUMMARY` line).
-- [x] Run golden batches (b1, b2, b3); collect; compare; explain every failure in `evals/golden/RESULTS.md`.
-- [x] Run A1 and A2; record what was attempted, rejected and written.
-- [x] Kill-switch test from a phone; screenshots in `docs/evidence/`. The burst test was not run
-      (admins are exempt from the compiled rate limit; see `evals/golden/RESULTS.md`).
-- [ ] Replace every ⟨TODO⟩ in DESIGN.md; rewrite the AI-use statement yourself; keep ≤150 lines.
-- [ ] Submit the link to the exact commit (public repo, or add `ctreude` as collaborator).
