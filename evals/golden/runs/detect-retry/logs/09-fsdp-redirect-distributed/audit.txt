@@ -1,0 +1,68 @@
+✓ Downloaded artifacts for run 41005884673
+✅ Triage #22 | success | 2.6m | https://github.com/Kineth-t/pytorch-triage-agent/actions/runs/41005884673
+  run=41005884673 branch=main event=issues engine=copilot/gpt-4.1/v1.0.101
+  comparison: changed vs baseline 41003484272 | Compare prompt or task-shape changes because this run needed more turns than the selected successful baseline.
+  fingerprint: directed/narrow/read_only/lean/standalone
+  metrics: errors=0 warnings=0 turns=4 tokens=71.9k aic=3.61 working-set-rebuild=1.00× action_min=3
+  friction: occurrences=0 aic=0 ratio=0.0% range=0–0 AIC state=measured
+  ledger: transactions_added=0
+  session: wall=2.6m turns=4 tok/min=28215
+  tokens: in=18.0k out=19 cache_read=0 reqs=1 steering=0
+  agent_usage:
+    agent | instances | outcome (completed/failed/incomplete) | requests | tokens (in/out) | credits | effort
+    main main | 1 | 0/0/0 | 1 | 18.0k/19 | 0.000 | 
+  github_api: calls=12 quota=12/5.00k
+  jobs: 6/6 passed [detection:2.0m pre_activation:9.0s agent:2.9m activation:27.0s safe_outputs:13.0s conclusion:13.0s]
+  prompt: 13.9k chars file=aw-prompts/prompt.txt
+  findings:
+    [MEDIUM] High Token Usage: Used 71.9k tokens
+      Playbook: https://github.com/github/gh-aw/blob/main/.github/aw/debug-playbook.md#audit-findings
+    [LOW] Potential Deterministic Alternative: This Triage run looks stable enough that deterministic automation may be a simpler fit.
+  assessments:
+    [LOW] This Triage run looks stable enough that deterministic automation may be a simpler fit. | turns=4 tool_types=2 actuation=read_only
+  recommendations:
+    [MEDIUM] Consider whether a scripted rule or deterministic workflow step could replace this agentic path. — This Triage run looks stable enough that deterministic automation may be a simpler fit.
+  insights:
+    [LOW] 1 anomalous event pattern(s) detected | stage=tool_call score=0.65: new log template discovered; rare cluster (few observations)
+  skill_activations:
+    pytorch-issue-triage: invoked (source: log_parse)
+  tools:
+    skill ×1
+    skill:pytorch-issue-triage ×1
+  firewall: 7 requests
+  graders: pass=10 fail=0 error=0 unavailable=0
+    pass artifact-production=0count direction=higher_is_better
+    pass context-growth=1factor direction=lower_is_better
+    pass execution-duration=1614ms direction=lower_is_better
+    pass execution-step-count=1count direction=lower_is_better
+    pass loops=0count threshold=3 direction=lower_is_better
+    pass retries=0count threshold=10 direction=lower_is_better
+    pass tool-failure-count=0count threshold=5 direction=lower_is_better
+    pass tool-success-rate=1ratio threshold=0.8 direction=higher_is_better
+    pass trajectory-efficiency=1ratio direction=higher_is_better
+    pass working-set-rebuild-factor=1factor direction=lower_is_better
+  logs: /var/folders/nf/0wptn00n5v1fnm_xrk9kxszr0000gn/T/gh-aw-audit/run-41005884673
+
+i Unified MCP + Firewall + Agent Event Timeline
+
+Total Events  : 10
+  Gateway     : 3  (tool_calls=3, difc_filtered=0, guard_blocked=0)
+  Agent       : 7  (turns=4, tool_start=1, tool_done=1, messages=1, reasoning=0)
+
+Event Timeline
+╭────────────┬───┬───────────────────┬──────────────────────┬─────────╮
+│Time        │Src│Kind               │Detail                │Status   │
+├────────────┼───┼───────────────────┼──────────────────────┼─────────┤
+│05:00:46.634│GW │⚙ tool_call        │safeoutputs/tools/list│initiated│
+│05:00:48.166│GW │⚙ tool_call        │github/tools/list     │initiated│
+│05:00:48.201│GW │⚙ tool_call        │github/prompts/list   │initiated│
+│05:01:16.134│AG │○ agent_turn       │turn 1                │         │
+│05:01:17.796│AG │● assistant_message│                      │         │
+│05:01:17.798│AG │▶ tool_start       │skill                 │         │
+│05:01:17.801│AG │■ tool_done        │                      │success  │
+│05:01:23.998│AG │○ agent_turn       │turn 2                │         │
+│05:01:35.232│AG │○ agent_turn       │turn 3                │         │
+│05:01:56.428│AG │○ agent_turn       │turn 4                │         │
+╰────────────┴───┴───────────────────┴──────────────────────┴─────────╯
+✓ Audit complete. Logs saved to /var/folders/nf/0wptn00n5v1fnm_xrk9kxszr0000gn/T/gh-aw-audit/run-41005884673
+i Tip: use --artifacts to select specific artifact sets (agent, firewall, mcp, activation, detection, etc.)

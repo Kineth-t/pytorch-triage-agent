@@ -1,0 +1,14 @@
+[2026-10-30T17:04:56.649Z] [INFO] [difc] Guard policy: {"allow-only":{"approval-labels":[],"blocked-users":[],"min-integrity":"none","repos":"all","trusted-users":[]}}
+[2026-10-30T17:04:56.783Z] [INFO] [difc] Loaded discovered WASM guard from file: 00-github-guard.wasm
+[2026-10-30T17:04:57.834Z] [WARN] [difc] FORCED REPOS=PUBLIC: workflow repo Kineth-t/pytorch-triage-agent is public — overriding allow-only scope to 'public' to prevent private data reads
+[2026-10-30T17:04:57.836Z] [INFO] [difc] Registered guard 'github'
+[2026-10-30T17:04:57.842Z] [DEBUG] [backend] GetOrLaunch called for server: github
+[2026-10-30T17:04:57.843Z] [INFO] [backend] Launching MCP backend server: server=github, command=docker, args=[run --rm -i -e NO_COLOR=... -e TERM=... -e PYTHONUNBUFFERED=... -e GITHUB_TOOLSETS=issu... -e GITHUB_FEATURES=fiel... -e GITHUB_HOST=http... -e GITHUB_PERSONAL_ACCESS_TOKEN=ghs_... -e GITHUB_READ_ONLY=... ghcr.io/github/github-mcp-server:v2.0.3]
+[2026-10-30T17:05:06.042Z] [INFO] [backend] [stderr] time=2026-10-30T17:05:06.025Z level=INFO msg="starting server" version=v2.0.3 host=https://github.com readOnly=true lockdownEnabled=false
+[2026-10-30T17:05:06.419Z] [INFO] [backend] [stderr] GitHub MCP Server running on stdio
+[2026-10-30T17:05:06.452Z] [INFO] [backend] [stderr] time=2026-10-30T17:05:06.451Z level=INFO msg="server run start"
+[2026-10-30T17:05:06.452Z] [INFO] [backend] [stderr] time=2026-10-30T17:05:06.451Z level=INFO msg="server connecting"
+[2026-10-30T17:05:06.512Z] [INFO] [backend] [stderr] time=2026-10-30T17:05:06.482Z level=INFO msg="server session connected" session_id=""
+[2026-10-30T17:05:06.516Z] [INFO] [backend] Successfully launched MCP backend server: server=github
+[2026-10-30T17:05:06.516Z] [INFO] [backend] Backend server info: name=github-mcp-server, version=v2.0.3
+[2026-10-30T17:05:06.561Z] [INFO] [backend] Successfully registered tools from github (took 8.717763916s)

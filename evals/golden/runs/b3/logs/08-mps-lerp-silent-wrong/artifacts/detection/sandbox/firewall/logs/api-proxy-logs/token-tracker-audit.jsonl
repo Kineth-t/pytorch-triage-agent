@@ -1,0 +1,10 @@
+{"ts":1793376678165,"event":"TRACK_START","rid":"340045e0-7a1a-4f31-bd6d-0d72af22b22b","provider":"copilot","path":"/models","streaming":false,"ct":"application/json","ce":"(none)","status":200}
+{"ts":1793376678223,"event":"TRACK_END","rid":"340045e0-7a1a-4f31-bd6d-0d72af22b22b","result":"no_usage","streaming":false,"bytes":44794,"overflow":false,"ct":"application/json","ce":"(none)"}
+{"ts":1793376688349,"event":"TRACK_START","rid":"86358835-ece6-4775-a62b-0987f035ca31","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1793376691390,"event":"TRACK_END","rid":"86358835-ece6-4775-a62b-0987f035ca31","result":"ok","streaming":true,"model":"gpt-4.1-2025-04-14","input":20199,"output":25,"cache_read":0}
+{"ts":1793376698382,"event":"TRACK_START","rid":"3729d23f-9587-4621-a1f9-983c53a25663","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1793376702239,"event":"TRACK_END","rid":"3729d23f-9587-4621-a1f9-983c53a25663","result":"ok","streaming":true,"model":"gpt-4.1-2025-04-14","input":331,"output":28,"cache_read":20096}
+{"ts":1793376706484,"event":"TRACK_START","rid":"4f6d2d70-6b70-413c-b262-64d7d78b7215","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1793376707820,"event":"TRACK_END","rid":"4f6d2d70-6b70-413c-b262-64d7d78b7215","result":"ok","streaming":true,"model":"gpt-4.1-2025-04-14","input":320,"output":17,"cache_read":20352}
+{"ts":1793376713541,"event":"TRACK_START","rid":"b4a8d3f8-5810-4875-8eb8-d639fdcb8b34","provider":"copilot","path":"/chat/completions","streaming":true,"ct":"text/event-stream","ce":"(none)","status":200}
+{"ts":1793376725385,"event":"TRACK_END","rid":"b4a8d3f8-5810-4875-8eb8-d639fdcb8b34","result":"ok","streaming":true,"model":"gpt-4.1-2025-04-14","input":94,"output":60,"cache_read":20608}

@@ -1,0 +1,2 @@
+{"item_number":30,"labels":[{"confidence":"HIGH","name":"triage review","rationale":"Injection signals detected in the issue content. Human review required."},{"confidence":"HIGH","name":"bot-triaged","rationale":"First-pass triage completed by the bot."}],"type":"add_labels"}
+{"integrity":"high","message":"No comment is warranted for this issue per triage procedure: only labels applied due to injection signals. No duplicate, insufficient info, or forum redirect detected.","type":"noop"}

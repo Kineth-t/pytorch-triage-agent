@@ -1,0 +1,39 @@
+{
+  "08-mps-lerp-silent-wrong": {
+    "verdict": "FAIL",
+    "problems": [
+      "missing required labels ['module: mps', 'module: correctness (silent)', 'triage review', 'bot-triaged']"
+    ],
+    "extra_labels": [],
+    "label_precision": null,
+    "label_recall": 0.0,
+    "actual_labels": [],
+    "templates": [],
+    "run_conclusion": "success",
+    "evidence": {
+      "skill_inventory": true,
+      "skill_md_read": "artifacts/activation/aw-prompts/user.txt",
+      "triage_summary": "TRIAGE-SUMMARY procedure=pytorch-issue-triage/v1 class=bug labels=[module: mps, module: correctness (silent), triage review, bot-triaged] comment=none duplicate=none escalated=yes",
+      "model": "gpt-4.1"
+    }
+  },
+  "09-fsdp-redirect-distributed": {
+    "verdict": "PASS",
+    "problems": [],
+    "extra_labels": [],
+    "label_precision": 1.0,
+    "label_recall": 1.0,
+    "actual_labels": [
+      "bot-triaged",
+      "oncall: distributed"
+    ],
+    "templates": [],
+    "run_conclusion": "success",
+    "evidence": {
+      "skill_inventory": true,
+      "skill_md_read": "artifacts/activation/aw-prompts/user.txt",
+      "triage_summary": "TRIAGE-SUMMARY procedure=pytorch-issue-triage/v1 class=bug labels=[oncall: distributed, bot-triaged] comment=none duplicate=none escalated=no",
+      "model": "gpt-4.1"
+    }
+  }
+}

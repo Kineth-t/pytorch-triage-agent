@@ -1,0 +1,17 @@
+{
+  "batch": "detect-retry",
+  "background": {},
+  "cases": {
+    "09-fsdp-redirect-distributed": {
+      "number": 22,
+      "url": "https://github.com/Kineth-t/pytorch-triage-agent/issues/22",
+      "created_at": "2026-10-30T04:59:17Z"
+    },
+    "08-mps-lerp-silent-wrong": {
+      "number": 28,
+      "url": "https://github.com/Kineth-t/pytorch-triage-agent/issues/28",
+      "created_at": "2026-10-30T16:05:07Z"
+    }
+  },
+  "note": "Detection job re-run only (agent output unchanged) on 31 Oct: 09 = run 41005884673 attempt 5, 08 = run 41086647886 attempt 3."
+}

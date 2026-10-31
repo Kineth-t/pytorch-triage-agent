@@ -1,0 +1,149 @@
+✓ Downloaded artifacts for run 41086647886
+✓ Downloaded artifacts for run 41049841797
+✓ Downloaded artifacts for run 41005884673
+✓ Downloaded artifacts for run 41003484272
+✓ Downloaded artifacts for run 41000888534
+✓ Downloaded artifacts for run 40998499263
+✅ Triage #28 | success | 7.9m | https://github.com/Kineth-t/pytorch-triage-agent/actions/runs/41086647886
+  run=41086647886 branch=main event=issues engine=copilot/gpt-4.1/v1.0.101
+  comparison: changed vs baseline 41049841797 | Review the behavior change against the selected successful baseline before treating it as the new normal.
+  fingerprint: exploratory/broad/read_only/heavy/standalone
+  metrics: errors=0 warnings=0 turns=1 tokens=196k aic=13.87 working-set-rebuild=1.31× action_min=8
+  friction: occurrences=1 aic=1.54 ratio=11.1% range=1.03–2.05 AIC tokens=21814 tool-calls=1 state=statistical ±17%
+  ledger: transactions_added=0
+  session: wall=7.9m turns=1 tok/min=24799
+  tokens: in=23.6k out=677 cache_read=172k reqs=9 steering=0
+  agent_usage:
+    agent | instances | outcome (completed/failed/incomplete) | requests | tokens (in/out) | credits | effort
+    main main | 1 | 0/0/0 | 9 | 196k/677 | 0.000 | 
+  detection_model_usage: model=gpt-4.1-2025-04-14 requests=4
+  github_api: calls=15 quota=5/5.00k
+  jobs: 6/6 passed [pre_activation:11.0s activation:33.0s agent:4.2m detection:2.0m safe_outputs:21.0s conclusion:19.0s]
+  prompt: 13.9k chars file=aw-prompts/prompt.txt
+  findings:
+    [MEDIUM] High Token Usage: Used 196k tokens
+      Playbook: https://github.com/github/gh-aw/blob/main/.github/aw/debug-playbook.md#audit-findings
+    [HIGH] Resource Heavy For Domain: This Triage run consumed a heavy execution profile for its task shape.
+    [MEDIUM] Weak Agentic Control: The run showed signs of broad or weakly controlled agentic behavior.
+    [LOW] Cheaper Model Available: This Triage run may not need a frontier model. A smaller model (e.g. gpt-4.1-mini, claude-haiku-4-5) could handle the task at lower cost.
+  assessments:
+    [HIGH] This Triage run consumed a heavy execution profile for its task shape. | turns=1 tool_types=10 duration=7m55s write_actions=0
+    [MEDIUM] The run showed signs of broad or weakly controlled agentic behavior. | friction=0 execution=exploratory actuation=read_only
+    [LOW] This Triage run may not need a frontier model. A smaller model (e.g. gpt-4.1-mini, claude-haiku-4-5) could handle the task at lower cost. | domain=triage resource_profile=heavy actuation=read_only
+  recommendations:
+    [HIGH] Compare this run to similar successful runs and trim unnecessary turns, tools, or write actions. — This Triage run consumed a heavy execution profile for its task shape.
+    [MEDIUM] Tighten instructions, reduce unnecessary tools, or delay write actions until the workflow has stronger evidence. — The run showed signs of broad or weakly controlled agentic behavior.
+    [MEDIUM] Try engine.model: gpt-4.1-mini or claude-haiku-4-5 in the workflow frontmatter. — This Triage run may not need a frontier model. A smaller model (e.g. gpt-4.1-mini, claude-haiku-4-5) could handle the task at lower cost.
+  insights:
+    [MEDIUM] Exploratory execution path | turns=1 tool_types=10
+    [MEDIUM] 2 anomalous event pattern(s) detected | stage=tool_call score=0.65: new log template discovered; rare cluster (few observations); stage=tool_result score=0.65: new log template discovered; rare cluster (few observations)
+  skill_activations:
+    pytorch-issue-triage: invoked (source: log_parse)
+  mcp_health:
+    github: ✅ healthy
+    safeoutputs: ✅ healthy
+  tools:
+    bash ×6
+    github.search_repositories ×5
+    github.issue_read ×2
+    github-issue_read ×1
+    safeoutputs-add_labels ×1
+    safeoutputs-noop ×1
+    safeoutputs.add_labels ×1
+    safeoutputs.noop ×1
+    skill ×1
+    skill:pytorch-issue-triage ×1
+  mcp_tools:
+    github/issue_read ×2
+    github/search_repositories ×5
+    safeoutputs/add_labels ×1
+    safeoutputs/noop ×1
+  friction_drivers:
+    source=agent_session driver=session_tool_failure occurrences=1 counted=1 state=statistical aic=1.54 tokens=21814 tool-calls=1
+  friction_events:
+    source=agent_session driver=session_tool_failure: agent session tool executions x1 counted=1 state=statistical aic=1.54 tokens=21814 tool-calls=1
+  firewall: 11 requests
+  graders: pass=7 fail=3 error=0 unavailable=0
+    pass artifact-production=0count direction=higher_is_better
+    pass context-growth=1.3501factor direction=lower_is_better
+    pass execution-duration=158935ms direction=lower_is_better
+    pass execution-step-count=9count direction=lower_is_better
+    fail loops=4count threshold=3 direction=lower_is_better
+    pass retries=0count threshold=10 direction=lower_is_better
+    fail tool-failure-count=9count threshold=5 direction=lower_is_better
+    fail tool-success-rate=0.5263ratio threshold=0.8 direction=higher_is_better
+    pass trajectory-efficiency=0.4737ratio direction=higher_is_better
+    pass working-set-rebuild-factor=1.3139factor direction=lower_is_better
+  logs: /var/folders/nf/0wptn00n5v1fnm_xrk9kxszr0000gn/T/gh-aw-audit/run-41086647886
+
+i MCP Gateway Metrics
+
+Total Requests: 9
+Total Tool Calls: 9
+Total Errors: 0
+Servers: 2
+Time Range: 2m59s
+
+Server Usage
+╭───────────┬────────┬──────────┬────────┬──────╮
+│Server     │Requests│Tool Calls│Avg Time│Errors│
+├───────────┼────────┼──────────┼────────┼──────┤
+│github     │7       │7         │0ms     │0     │
+│safeoutputs│2       │2         │0ms     │0     │
+╰───────────┴────────┴──────────┴────────┴──────╯
+
+i Unified MCP + Firewall + Agent Event Timeline
+
+Total Events  : 42
+  Gateway     : 12  (tool_calls=12, difc_filtered=0, guard_blocked=0)
+  Agent       : 30  (turns=1, tool_start=10, tool_done=10, messages=9, reasoning=0)
+
+Event Timeline
+╭────────────┬───┬───────────────────┬────────────────────────────────────────────────┬─────────╮
+│Time        │Src│Kind               │Detail                                          │Status   │
+├────────────┼───┼───────────────────┼────────────────────────────────────────────────┼─────────┤
+│16:06:52.086│GW │⚙ tool_call        │safeoutputs/tools/list                          │initiated│
+│16:06:53.682│GW │⚙ tool_call        │github/tools/list                               │initiated│
+│16:06:53.721│GW │⚙ tool_call        │github/prompts/list                             │initiated│
+│16:07:17.919│AG │○ agent_turn       │turn 1                                          │         │
+│16:07:23.658│AG │● assistant_message│                                                │         │
+│16:07:23.659│AG │▶ tool_start       │skill                                           │         │
+│16:07:23.661│AG │■ tool_done        │                                                │success  │
+│16:07:42.882│AG │● assistant_message│                                                │         │
+│16:07:42.884│AG │▶ tool_start       │bash                                            │         │
+│16:07:42.884│AG │▶ tool_start       │bash                                            │         │
+│16:07:42.947│AG │■ tool_done        │                                                │success  │
+│16:07:42.960│AG │■ tool_done        │                                                │success  │
+│16:07:59.938│AG │● assistant_message│                                                │         │
+│16:07:59.939│AG │▶ tool_start       │bash                                            │         │
+│16:07:59.940│AG │▶ tool_start       │bash                                            │         │
+│16:07:59.964│AG │■ tool_done        │                                                │success  │
+│16:07:59.968│AG │■ tool_done        │                                                │success  │
+│16:08:12.878│AG │● assistant_message│                                                │         │
+│16:08:12.879│AG │▶ tool_start       │github/github-issue_read                        │         │
+│16:08:13.116│GW │⚙ tool_call        │github/search_repositories                      │initiated│
+│16:08:13.119│GW │⚙ tool_call        │github/search_repositories                      │initiated│
+│16:08:13.122│GW │⚙ tool_call        │github/issue_read                               │initiated│
+│16:08:13.954│GW │⚙ tool_call        │github/issue_read                               │initiated│
+│16:08:14.614│GW │⚙ tool_call        │github/search_repositories                      │initiated│
+│16:08:14.618│GW │⚙ tool_call        │github/search_repositories                      │initiated│
+│16:08:14.621│GW │⚙ tool_call        │github/search_repositories                      │initiated│
+│16:08:14.628│AG │■ tool_done        │                                                │success  │
+│16:08:35.947│AG │● assistant_message│                                                │         │
+│16:08:35.949│AG │▶ tool_start       │bash                                            │         │
+│16:08:35.989│AG │■ tool_done        │                                                │success  │
+│16:08:59.487│AG │● assistant_message│                                                │         │
+│16:08:59.488│AG │▶ tool_start       │bash                                            │         │
+│16:08:59.531│AG │■ tool_done        │                                                │success  │
+│16:09:29.151│AG │● assistant_message│                                                │         │
+│16:09:29.152│AG │▶ tool_start       │safeoutputs/safeoutputs-add_labels              │         │
+│16:09:29.388│GW │⚙ tool_call        │safeoutputs/add_labels                          │initiated│
+│16:09:29.394│AG │■ tool_done        │                                                │success  │
+│16:09:51.525│AG │● assistant_message│                                                │         │
+│16:09:51.526│AG │▶ tool_start       │safeoutputs/safeoutputs-noop                    │         │
+│16:09:51.533│GW │⚙ tool_call        │safeoutputs/noop                                │initiated│
+│16:09:51.536│AG │■ tool_done        │                                                │success  │
+│16:09:59.362│AG │● assistant_message│Labels applied: module: mps, module: correctn...│         │
+╰────────────┴───┴───────────────────┴────────────────────────────────────────────────┴─────────╯
+✓ Audit complete. Logs saved to /var/folders/nf/0wptn00n5v1fnm_xrk9kxszr0000gn/T/gh-aw-audit/run-41086647886
+i Tip: use --artifacts to select specific artifact sets (agent, firewall, mcp, activation, detection, etc.)

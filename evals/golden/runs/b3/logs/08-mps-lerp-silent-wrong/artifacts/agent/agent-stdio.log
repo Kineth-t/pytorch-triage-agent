@@ -1,0 +1,211 @@
+[INFO] Auto-detected DNS servers from /run/systemd/resolve/resolv.conf: 168.63.129.16
+[INFO] Agent timeout set to 8 minutes
+[WARN] ⚠️  Using --env-all: All host environment variables will be passed to container
+[WARN]    This may expose sensitive credentials if logs or configs are shared
+[INFO] API proxy enabled: OpenAI=false, Anthropic=false, Copilot=true (github-token), Gemini=false, Vertex=false
+[INFO] Allowed domains: api.snapcraft.io, archive.ubuntu.com, azure.archive.ubuntu.com, crl.geotrust.com, crl.globalsign.com, crl.identrust.com, crl.sectigo.com, crl.thawte.com, crl.usertrust.com, crl.verisign.com, crl3.digicert.com, crl4.digicert.com, crls.ssl.com, json-schema.org, json.schemastore.org, keyserver.ubuntu.com, ocsp.digicert.com, ocsp.geotrust.com, ocsp.globalsign.com, ocsp.identrust.com, ocsp.sectigo.com, ocsp.ssl.com, ocsp.thawte.com, ocsp.usertrust.com, ocsp.verisign.com, packagecloud.io, packages.cloud.google.com, packages.microsoft.com, ppa.launchpad.net, s.symcb.com, s.symcd.com, security.ubuntu.com, ts-crl.ws.symantec.com, ts-ocsp.ws.symantec.com, www.googleapis.com, awmg-mcpg
+[INFO] Network-isolation mode: enforcing egress via Docker network topology (no host iptables, no sudo).
+[INFO] Generating configuration files...
+[WARN] Copilot API proxy mode sets COPILOT_OFFLINE=true: native web_fetch and web_search tools are unavailable, even for allowlisted domains. Use shell curl with --allow-url <host> (or --allow-all-urls); AWF still enforces the domain allowlist. See docs/troubleshooting.md#copilot-web-tools-unavailable-in-api-proxy-mode
+[INFO] API proxy sidecar enabled - API keys will be held securely in sidecar container
+[INFO] API proxy will route through Squid to respect domain whitelisting
+[INFO] Starting containers...
+[INFO] Topology mode: starting squid-proxy first to create awf-net...
+ Network awf-enxtch_awf-ext Creating 
+ Network awf-enxtch_awf-ext Created 
+ Network awf-net Creating 
+ Network awf-net Created 
+ Container awf-squid Creating 
+ Container awf-squid Created 
+ Container awf-squid Starting 
+ Container awf-squid Started 
+[INFO] squid-proxy started; attaching topology peers before full bring-up...
+[INFO] Attaching 1 trusted container(s) to the internal network...
+[INFO] Network-isolation: connecting container "awmg-mcpg" to "awf-net"...
+[INFO] Topology peer "awmg-mcpg" has IP 172.30.0.2 on awf-net
+[INFO] cli-proxy not enabled; no topology DNS patch needed
+[INFO] Patched docker-compose.yml with 3 topology peer host(s) for static DNS compatibility
+[INFO] Appended 3 topology peer(s) to chroot hosts file: /tmp/awf-ENxtCH/chroot-jfRK64/hosts
+[INFO] Topology peers attached; continuing with full container bring-up...
+ Container awf-api-proxy Creating 
+ Container awf-squid Recreate 
+ Container awf-api-proxy Created 
+ Container awf-squid Recreated 
+ Container awf-agent Creating 
+ Container awf-agent Created 
+ Container awf-api-proxy Starting 
+ Container awf-squid Starting 
+ Container awf-api-proxy Started 
+ Container awf-squid Started 
+ Container awf-squid Waiting 
+ Container awf-api-proxy Waiting 
+ Container awf-api-proxy Healthy 
+ Container awf-squid Healthy 
+ Container awf-agent Starting 
+ Container awf-agent Started 
+[SUCCESS] Containers started successfully
+[INFO] Executing agent command...
+[INFO] Agent timeout: 8 minutes
+[entrypoint] Agentic Workflow Firewall - Agent Container
+[entrypoint] ==================================
+[entrypoint] Configuring DNS...
+[entrypoint] DNS configured with Docker embedded DNS (127.0.0.11) only
+[entrypoint] iptables-init skipped (proxy-based egress): skipping init container wait
+[health-check] API Proxy Pre-flight Check
+[health-check] ==========================================
+[health-check] Checking GitHub Copilot API proxy configuration...
+[health-check] COPILOT_API_URL=http://172.30.0.30:10002
+[health-check] ✓ COPILOT_GITHUB_TOKEN is placeholder value (correct)
+[health-check] ✓ COPILOT_TOKEN is placeholder value (correct)
+[health-check] ✓ COPILOT_PROVIDER_API_KEY is placeholder value (correct)
+[health-check] COPILOT_PROVIDER_BASE_URL=http://172.30.0.30:10002 (offline+BYOK mode)
+[health-check] ✓ COPILOT_PROVIDER_BASE_URL matches COPILOT_API_URL
+[health-check] ✓ Copilot CLI offline+BYOK mode configured
+[health-check] Testing connectivity to GitHub Copilot API proxy at http://172.30.0.30:10002...
+[health-check] ✓ GitHub Copilot API proxy is reachable at http://172.30.0.30:10002
+[health-check] ==========================================
+[health-check] ✓ All API proxy health checks passed
+[health-check] ✓ Credential isolation verified
+[health-check] ✓ Connectivity established
+[health-check] ==========================================
+[entrypoint] Pre-seeding JVM build tool proxy configuration (squid-proxy:3128)...
+[entrypoint] ✓ Created Maven proxy config (/host/home/runner/.m2/settings.xml)
+[entrypoint] ✓ Created Gradle proxy config (/host/home/runner/.gradle/gradle.properties)
+[entrypoint] ✓ Set JAVA_TOOL_OPTIONS with proxy and nonProxyHosts flags
+[entrypoint] Proxy configuration:
+[entrypoint]   HTTP_PROXY=http://172.30.0.10:3128
+[entrypoint]   HTTPS_PROXY=http://172.30.0.10:3128
+[entrypoint] Network information:
+[entrypoint]   IP address: 172.30.0.20 
+[entrypoint]   Hostname: 1f5529c9718d
+[entrypoint] ==================================
+[entrypoint] Chroot mode enabled - dropping CAP_SYS_CHROOT and CAP_SYS_ADMIN
+[entrypoint] Switching to awfuser (UID: 1001, GID: 1001)
+[entrypoint] Executing command: /bin/bash -c /bin/bash -c 'set +o histexpand; export PATH="${RUNNER_TEMP}/gh-aw/mcp-cli/bin:$PATH" && : "${RUNNER_TOOL_CACHE:?RUNNER_TOOL_CACHE must be set}"; GH_AW_TOOL_CACHE="$RUNNER_TOOL_CACHE"; GH_AW_TOOL_BINS="$(find "$GH_AW_TOOL_CACHE" -maxdepth 5 -type d -name bin 2>/dev/null | tr "\n" ":")"; GH_AW_TOOL_BINS="${GH_AW_TOOL_BINS%:}"; export PATH="$PATH${GH_AW_TOOL_BINS:+:}$GH_AW_TOOL_BINS"; [ -n "$GOROOT" ] && export PATH="$GOROOT/bin:$PATH" || true; [ -n "$ERLANG_HOME" ] && export PATH="$ERLANG_HOME/bin:$PATH" || true && GH_AW_NODE_EXEC="${GH_AW_NODE_BIN:-}"; if [ -z "$GH_AW_NODE_EXEC" ] || [ ! -x "$GH_AW_NODE_EXEC" ]; then GH_AW_NODE_EXEC="$(command -v node 2>/dev/null || true)"; fi; if [ -z "$GH_AW_NODE_EXEC" ]; then echo "node runtime missing on this runner — check runtimes.node in workflow YAML" >&2; exit 127; fi; GH_AW_NPM_GLOBAL_ROOT="$(npm root -g 2>/dev/null || true)"; if [ -n "$GH_AW_NPM_GLOBAL_ROOT" ]; then export NODE_PATH="${GH_AW_NPM_GLOBAL_ROOT}${NODE_PATH:+:${NODE_PATH}}"; fi; "$GH_AW_NODE_EXEC" "${RUNNER_TEMP}/gh-aw/actions/copilot_harness.cjs" "${RUNNER_TEMP}/gh-aw/bin/copilot" --add-dir /tmp/gh-aw/ --log-level all --log-dir /tmp/gh-aw/sandbox/agent/logs/ --disable-builtin-mcps --no-ask-user --allow-tool github --allow-tool safeoutputs --allow-tool '\''shell(cat)'\'' --allow-tool '\''shell(date)'\'' --allow-tool '\''shell(echo)'\'' --allow-tool '\''shell(github:*)'\'' --allow-tool '\''shell(grep)'\'' --allow-tool '\''shell(head)'\'' --allow-tool '\''shell(ls)'\'' --allow-tool '\''shell(printf)'\'' --allow-tool '\''shell(pwd)'\'' --allow-tool '\''shell(python3)'\'' --allow-tool '\''shell(safeoutputs:*)'\'' --allow-tool '\''shell(sort)'\'' --allow-tool '\''shell(tail)'\'' --allow-tool '\''shell(uniq)'\'' --allow-tool '\''shell(wc)'\'' --allow-tool '\''shell(yq)'\'' --allow-tool write --deny-tool workflow --allow-all-paths --add-dir "${GITHUB_WORKSPACE}" --prompt-file /tmp/gh-aw/aw-prompts/prompt.txt'
+
+[entrypoint] Chroot mode: running command inside host filesystem (/host)
+[entrypoint] Mounted procfs at /host/proc (nosuid,nodev,noexec,hidepid=2)
+[entrypoint] Bind-mounted container cgroup subtree at /host/sys/fs/cgroup (ro)
+[entrypoint] One-shot token library copied to chroot at /run/awf-lib/one-shot-token.so
+[entrypoint] Chromium/Playwright runtime libraries staged for chroot at /host/run/awf-lib/browser-libs
+[entrypoint] Filtered host CA trust staged at /run/awf-lib/trust/ca-certificates.crt (host store unchanged)
+[entrypoint] DNS configuration created in chroot (/host/etc/resolv.conf)
+[entrypoint] Running as host user: runner (UID: 1001)
+[entrypoint] Chroot working directory: /home/runner/work/pytorch-triage-agent/pytorch-triage-agent
+[entrypoint] Using host PATH for chroot
+[entrypoint] Adding JAVA_HOME/bin to PATH: /usr/lib/jvm/temurin-25-jdk-amd64/bin
+[entrypoint] DNS configuration will be removed on exit
+[entrypoint] Transferred /host/tmp/gh-aw ownership to chroot user (1001:1001)
+[entrypoint][WARN] Failed to transfer /host/home/runner/work/_temp/gh-aw/safeoutputs ownership to chroot user
+[entrypoint] Node.js available via GH_AW_NODE_BIN: /usr/local/bin/node
+[copilot-harness] starting: command=/home/runner/work/_temp/gh-aw/bin/copilot maxRetries=3 initialDelayMs=5000 backoffMultiplier=2 maxDelayMs=60000 nodeVersion=v24.22.1 platform=linux
+[copilot-harness] pre-flight: command is accessible and executable: /home/runner/work/_temp/gh-aw/bin/copilot
+[copilot-harness] resolved --prompt-file: path=/tmp/gh-aw/aw-prompts/prompt.txt size=13856B
+[copilot-harness] awf-reflect: fetching http://api-proxy:10000/reflect (timeout=60000ms)
+[copilot-harness] awf-reflect: saved 39106B to /tmp/gh-aw/agent/awf-reflect.json
+[copilot-harness] model resolution: engine=copilot role=main configured=gpt-4.1 resolved=gpt-4.1 provider=(unscoped) status=exact
+[copilot-harness] auto-configuring COPILOT_PROVIDER_WIRE_API=completions for model gpt-4.1 — source=catalog
+[copilot-harness] inference routing: mode=cli configuredModel="gpt-4.1" endpoint=managed-by-copilot-cli
+[copilot-harness] attempt 1: spawning: /home/runner/work/_temp/gh-aw/bin/copilot --add-dir /tmp/gh-aw/ --log-level all --log-dir /tmp/gh-aw/sandbox/agent/logs/ --disable-builtin-mcps --no-ask-user --allow-tool github --allow-tool safeoutputs --allow-tool shell(cat) --allow-tool sh
+[copilot-harness] attempt 1: process started (pid=1912)
+[entrypoint] Unsetting sensitive tokens from parent shell environment...
+[entrypoint] Unset COPILOT_GITHUB_TOKEN from /proc/1/environ
+[entrypoint] Unset COPILOT_PROVIDER_API_KEY from /proc/1/environ
+● skill(pytorch-issue-triage)
+
+● Run check_issue.py for deterministic issue facts (shell)
+  │ python3 .claude/skills/pytorch-issue-triage/scripts/check_issue.py >
+  │ /tmp/gh-aw/agent/check_issue.json
+  └ No Content
+
+● Run find_duplicates.py to find similar issues (shell)
+  │ python3 .claude/skills/pytorch-issue-triage/scripts/find_duplicates.py >
+  │ /tmp/gh-aw/agent/find_duplicates.json
+  └ No Content
+
+● Read find_duplicates.py output (shell)
+  │ cat /tmp/gh-aw/agent/find_duplicates.json
+  └ 46 lines…
+
+● Read check_issue.py output (shell)
+  │ cat /tmp/gh-aw/agent/check_issue.json
+  └ 23 lines…
+
+● Get issue details (MCP: github) · issue_number: 27, method: "get", owner: "Kineth-t", repo: "pyto…
+  └ [{"assignees":[],"author_association":"OWNER","body":"### 🐛 Describe the bug...
+
+✗ Validate label set for MPS silent correctness bug (shell)
+  │ python3 .claude/skills/pytorch-issue-triage/scripts/validate_labels.py "module: mps" "module:
+  │ correctness (silent)" "bot-triaged"
+  └ {
+    "ok": false,
+    "errors": [
+    "silent wrong results must be escalated: add 'triage review' (Step 6)"
+    ],
+    "warnings": [],
+    "labels": [
+    "module: mps",
+    "module: correctness (silent)",
+    "bot-triaged"
+    ]
+    }
+    Failed with exit code 1
+
+● Validate label set with triage review escalation (shell)
+  │ python3 .claude/skills/pytorch-issue-triage/scripts/validate_labels.py "module: mps" "module:
+  │ correctness (silent)" "triage review" "bot-triaged"
+  └ 11 lines…
+
+● add_labels (MCP: safeoutputs) · item_number: 28, labels: [4 items]
+  └ {"result":"success"}
+
+[safeoutputs-cli] hasTerminalSafeOutput: terminal entry found in /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl: type=add_labels
+[copilot-harness] attempt 1: post-result watchdog armed inactivityTimeout=120000ms
+● noop (MCP: safeoutputs) · message: "Labels applied: module: mps, module: correctness (silent), t…"
+  └ {"result":"success"}
+
+Labels applied: module: mps, module: correctness (silent), triage review, bot-triaged. No comment needed per triage rules.
+
+TRIAGE-SUMMARY procedure=pytorch-issue-triage/v1 class=bug labels=[module: mps, module: correctness (silent), triage review, bot-triaged] comment=none duplicate=none escalated=yes
+
+
+
+Changes    +0 -0
+Duration   2m 41s
+Tokens     ↑ 195.6k (172.0k cached) • ↓ 677
+Resume     copilot --resume=d9c8601c-f0b8-495b-a739-129a1e48e5e4
+[copilot-harness] attempt 1: process exit event exitCode=0
+[copilot-harness] attempt 1: process closed exitCode=0 duration=2m 42s stdout=2088B stderr=152B hasOutput=true
+[copilot-harness] success on attempt 1: totalDuration=2m 42s
+[copilot-harness] awf-reflect: fetching http://api-proxy:10000/reflect (timeout=60000ms)
+[copilot-harness] awf-reflect: saved 39401B to /tmp/gh-aw/agent/awf-reflect.json
+[copilot-harness] done: exitCode=0 totalDuration=2m 42s
+[entrypoint] Relaxed /host/tmp/gh-aw group permissions for host-side post-processing
+[entrypoint] Relaxed /host/tmp/gh-aw/memory-validation group permissions for host-side post-processing
+[INFO] Stopping containers...
+ Container awf-agent Stopping 
+ Container awf-agent Stopped 
+ Container awf-agent Removing 
+ Container awf-agent Removed 
+ Container awf-squid Stopping 
+ Container awf-api-proxy Stopping 
+ Container awf-api-proxy Stopped 
+ Container awf-api-proxy Removing 
+ Container awf-api-proxy Removed 
+ Container awf-squid Stopped 
+ Container awf-squid Removing 
+ Container awf-squid Removed 
+ Network awf-enxtch_awf-ext Removing 
+ Network awf-net Removing 
+ Network awf-net Resource is still in use 
+ Network awf-enxtch_awf-ext Removed 
+[SUCCESS] Containers stopped successfully
+[INFO] Agent session state available at: /tmp/gh-aw/sandbox/agent/session-state
+[INFO] API proxy logs available at: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs
+[INFO] Token usage log available at: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs/token-usage.jsonl
+[INFO] CLI proxy logs available at: /tmp/gh-aw/sandbox/firewall/logs/cli-proxy-logs
+[INFO] Squid logs available at: /tmp/gh-aw/sandbox/firewall/logs
+[INFO] Audit artifacts available at: /tmp/gh-aw/sandbox/firewall/audit
+[SUCCESS] Command completed successfully
+Process exiting with code: 0
+{"type":"result","num_turns":9,"usage":{"input_tokens":195648,"output_tokens":677,"cache_read_input_tokens":172032,"cache_creation_input_tokens":0}}

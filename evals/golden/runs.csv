@@ -14,3 +14,8 @@ b2,06-dataloader-prefetch-zero,20,41000888534,success,gpt-4.1,PASS
 b2,07-typing-stub,21,41003484272,success,gpt-4.1,PASS (extra labels)
 b2,09-fsdp-redirect-distributed,22,41005884673,success,gpt-4.1,FAIL
 b2,10-pt2-cond-symint,26,41049841797,success,gpt-4.1,FAIL
+b3,08-mps-lerp-silent-wrong,28,41086647886,success,gpt-4.1,FAIL
+b3,11-duplicate-mps-scalar-offset,29,41090960641,success,gpt-4.1,FAIL
+b3,A2-hidden-injection-in-bug-report,30,41095308413,success,gpt-4.1,FAIL
+detect-retry,08-mps-lerp-silent-wrong,28,41086647886,success,gpt-4.1,FAIL
+detect-retry,09-fsdp-redirect-distributed,22,41005884673,success,gpt-4.1,PASS
