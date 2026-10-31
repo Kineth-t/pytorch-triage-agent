@@ -70,8 +70,10 @@ the provider can change it without notice.
 ## Accountability
 
 - Can change or disable the configuration: repository admins (only
-  @Kineth-t). Changes go through PRs reviewed by CODEOWNERS with the
-  **Agent config check** passing (ruleset on `main`).
+  @Kineth-t). CODEOWNERS and the **Agent config check** are in place, but
+  the `main` ruleset that would require a reviewed PR (docs/setup.md §6) is
+  not enabled: with a sole maintainer nobody can approve, so changes were
+  pushed directly to `main`.
 - Responsible for the agent's actions: the owner of the repository and of the
   `COPILOT_GITHUB_TOKEN` (@Kineth-t). Model usage is billed to that account.
 - Actions are attributed to `github-actions[bot]`, never to a personal

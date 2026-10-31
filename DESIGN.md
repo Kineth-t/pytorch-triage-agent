@@ -1,7 +1,5 @@
 # DESIGN: first-pass issue triage for PyTorch
 
-Items marked ⟨TODO⟩ need results from my own runs; everything else is implemented.
-
 ## 1. Workflow and need
 
 The agent triages newly opened pytorch/pytorch issues: it routes each issue to a team queue or
@@ -37,8 +35,9 @@ Each risk is handled by the strongest mechanism available (file in brackets):
 - **Exfiltration:** firewall allows only `defaults`; fetching happens in a pre-agent step.
 - **Runaway cost:** 10 runs/h/user, 8-min timeout, 30 turns, 150 AIC/run, 1,500 AIC/day,
   `stop-after: 2026-12-31`, Student allowance with no paid overage.
-- **Silent weakening of the config:** CODEOWNERS, ruleset and `config-check.yml`
-  (`check_config.py` fails if a reserved label is unblocked or the agent job gains write).
+- **Silent weakening of the config:** CODEOWNERS and `config-check.yml` (`check_config.py` fails if a
+  reserved label is unblocked or the agent job gains write); the `main` ruleset (docs/setup.md §6) is not enabled.
+
 
 **Rule placement.** Repository facts → `AGENTS.md`; procedure → `.claude/skills/pytorch-issue-triage/`;
 hard limits → workflow permissions/safe outputs. Deterministic checks are scripts: `check_issue.py`
@@ -68,8 +67,11 @@ blocked `enhancement`, `module: dynamo`, … → removed, now caught by `check_c
 duplicate scored only 0.19 against its original and an unrelated MPS issue 0.16 → scores cannot
 decide, so the model reviews candidates ≥0.12; (4) `label_command` cannot share a workflow with
 `issues: opened`, so golden reruns re-create issues and archive old copies (`eval-archive`).
-⟨TODO: results table summary from `evals/golden/RESULTS.md`: pass/fail per case, every failure
-explained, precision/recall, skill-load evidence (`skill_inventory.json`, `TRIAGE-SUMMARY` line).⟩
+Runs (gpt-4.1; all 18 loaded the skill: `skill_inventory.json`, `TRIAGE-SUMMARY`): b1 3/8 PASS, b2 3/7
+(precision 0.93/0.88, recall 0.64/0.60); 6/15 cases pass on their latest run; 0 closes, 0 off-target writes.
+Failures: escalated *or* routed, not both (08, 11, A2); right queue, wrong module (04, 10); misread edges
+(01, 03); own comment, not the template (02, 11); threat detection gave no verdict in 4/18 runs and gh-aw then
+drops labels (lost correct 08, 09). A validator *error* added after b1 made 08/11 escalate; a *warning* did not fix A2.
 
 ## 4. Governance
 
@@ -79,10 +81,9 @@ Status: **I** = implemented, **T** = tested by me, **P** = proposed only. Detail
   named `Triage #<n>`; comments link to the run. Model usage is billed to my PAT (Copilot Requests only).
 - **Least privilege (I, compiled):** agent `contents/issues: read`, GitHub MCP `issues` toolset,
   sparse checkout; `check_config.py` asserts the agent job has no write permission.
-- **Safe outputs (I, T: A1/A2 made one label call, nothing else; blocks never triggered):** 1 label call ≤6 labels, 1 comment, `noop`; blocked labels; triggering issue only.
-- **Human approval (I for labels, partial for config):** bot labels stay suggestions until a human
-  adds `triaged`; config changes need PR + CODEOWNERS + green check. Gap: I cannot approve my own PR.
-- **Budgets (I, T: 7–15 AIC/run, median ~10, 13 runs):** see §2; public repo, so Actions minutes are free.
+- **Human approval (I for labels, P for config):** bot labels stay suggestions until a human
+  adds `triaged`; config PR + CODEOWNERS + green check needs a ruleset, not enabled (sole maintainer, I pushed to `main`).
+- **Budgets (I, T: 7–15 AIC/run, median ~11, 17 runs):** see §2; public repo, so Actions minutes are free.
 - **Audit trail (I):** one run per issue, `gh aw audit` (model, tokens, AIC, tool calls), run
   artifacts, committed `evals/golden/runs/`.
 - **Kill switch (I, T from phone, 30 Oct 2026):** variable gate → disable workflow → revoke PAT; cancel a
@@ -107,13 +108,13 @@ and post ≤1 comment on the triggering issue, or no-op; framework jobs may open
    triggers a golden batch, and a newly failing case trips kill switch level 1 until explained. Between
    batches the signal is humans removing bot labels. Detection latency: up to two weeks.
 3. **300 issues in a week (~43/day).** Each issue gets its own run (per-issue concurrency group); the
-   per-user limit does not bind. Caps: 1,500 AIC/day (≈150 runs at the measured ~10 AIC/run) and the 200 AIC/month
-   Student allowance (≈20 runs). But the binding limit was Copilot HTTP 429 after ~8 runs/day (29 and 30 Oct): ~35 of 43
-   issues/day would fail and gh-aw opens a failure issue. Untriaged issues stay in the human queue (`-label:bot-triaged`).
+   per-user limit does not bind. Caps: 1,500 AIC/day (≈140 runs at the measured ~11 AIC/run) and the 200 AIC/month
+   Student allowance (≈18 runs). Copilot returned HTTP 429 on 29 Oct (after 6 runs) and 30 Oct (after 8), yet after a
+   subscription renewal 5 more succeeded that day (13 in total): the real limit is unknown. Failed runs leave issues in the human queue (`-label:bot-triaged`).
 4. **A tool returns malicious instructions.** The agent can still only do what safe outputs allow: wrong
    but allowlisted labels and one sanitised comment on the triggering issue, after threat detection.
    It cannot reach other issues, write code, read secrets, or reach non-default hosts. Residual risk: a
-   misleading comment, since templates are procedural, not enforced.
+   misleading comment, since templates are procedural, not enforced (seen in 02, 11), and a failed detection still posts the comment (01).
 5. **Stop it from a phone.** Browser: Settings → Variables → `TRIAGE_AGENT_ENABLED=false`; Actions →
    workflow → ⋯ → Disable; cancel any running `Triage #n` before its `safe_outputs` job; revoke the PAT
    if needed. Tested by phone, 30 Oct 2026: variable `false` → #24's run skipped (all jobs);
@@ -121,8 +122,9 @@ and post ≤1 comment on the triggering issue, or no-op; framework jobs may open
 
 ## 6. Unresolved
 
-Copilot HTTP 429 after ~8 runs/day on the Student plan; comment templates are not enforced (case 02 paraphrased
-its own comment); injection patterns tuned on my two attacks; weak duplicate ranking on small corpora; no second human to approve config PRs; manual drift reruns.
+Copilot limits on the Student plan are undocumented and erratic (429s, a 403 after renewal; see Q3); threat
+detection gave no verdict in 4/18 runs and gh-aw then drops the labels; templates are not enforced (02, 11);
+escalation can still replace routing (A2); injection patterns tuned on my two attacks; weak duplicate ranking on small corpora; no second human to approve config PRs; manual drift reruns.
 
 ## 7. Agent bill of materials
 
@@ -141,8 +143,7 @@ its own comment); injection patterns tuned on my two attacks; weak duplicate ran
 
 ## 8. AI-use statement
 
-⟨TODO: rewrite in your own words.⟩ Claude (Anthropic) drafted the workflow, skill, scripts, eval
-harness, docs and this file; it selected the cases from GitHub data and drafted expected outcomes.
+Claude drafted the workflow, skill, scripts, eval
+harness, docs and this file and it selected the cases from GitHub data and drafted expected outcomes.
 I reviewed and edited every expected outcome before running, ran all tests, wrote the results and
-failure analysis, and verified the configuration by compiling it, reading the `.lock.yml`, and checking
-the evidence above. I can explain every file.
+failure analysis, and verified the configuration by compiling it, reading the `.lock.yml`, and checking the evidence above.
