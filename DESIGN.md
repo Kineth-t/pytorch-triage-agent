@@ -145,4 +145,4 @@ Escalation can still replace routing (A2). Injection patterns are tuned on my tw
 Claude drafted the workflow, skill, scripts, eval
 harness, docs and this file and it selected the cases from GitHub data and drafted expected outcomes.
 I reviewed and edited every expected outcome before running, ran all tests, wrote the results and
-failure analysis, and verified the configuration by compiling it, reading the `.lock.yml`, and checking the evidence above.
+failure analysis, and verified the configuration by compiling it, checking the `.lock.yml`, and checking the evidence above.
